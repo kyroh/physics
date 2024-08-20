@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{cancel}
+
+\newcommand{\mile}{\text{mi}}
+\newcommand{\gallon}{\text{gal}}
+\newcommand{\kilo}{\text{k}}
+\newcommand{\liter}{\text{L}}
+\newcommand{\meter}{\text{m}}
+\newcommand{\second}{\text{s}}
+\newcommand{\foot}{\text{ft}}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+\flushleft
+Physics 4A - Classical Mechanics \hfill Prof. Roger King\\
+\hrule
+
+\begin{center}
+    \vspace{14pt}
+    \textbf{\LARGE Homework 1} \\
+    \vspace{12pt}
+    \text{\large Aaron W. Tarajos}
+
+    \textit{\today}
+    \vspace{14pt}
+\end{center}
+
+\hrule
+
+\section*{Problem 1}
+The fuel consumption of cars is specified in Europe in terms of liters per 100 km. Convert
+30 miles per gallon to this unit. Note that 1 gallon (U.S.) = 3.79 L.
+
+\subsection*{Solution}
+We are given 30 \si{{\mile\per\gallon}} to covert to \si{{\litre\per100\kilo\meter}}. The desired units in some sense are the reciprocal of the given units--volume unit of fuel per distance unit traveled compared to distance unit traveled per unit of fuel.
+\[
+	30 \frac{\mile}{\gallon} = \frac{1}{30} \frac{\text{gal}}{\mile}
+\]
+Then we use chain multiplaction to convert miles to kilometers and gallons to liters;
+\begin{align*}
+	\frac{1}{30} \frac{\cancel{\gallon}}{\mile} \cdot \frac{3.79}{1} \frac{\liter}{\cancel{\gallon}} &= \frac{3.79}{30} \frac{\liter}{\mile} \\
+	\frac{3.79}{30} \frac{\liter}{\cancel{\mile}} \cdot \frac{1}{1.609} \frac{\cancel{\mile}}{\kilo\meter} &= \frac{3.79}{48.27} \frac{\liter}{\kilo\meter} \\
+	\frac{3.79}{48.27} \frac{\liter}{\kilo\meter} = 0.0785 \frac{\liter}{\kilo\meter} &= 7.85 \frac{\liter}{100 \kilo\meter}
+\end{align*}
+
+\section*{Problem 2}
+Check the following for dimensional consistency where $t$ is time (s), $\nu$ is speed (m/s), $a$ is acceleration (m/s$^2$), and $x$ is position (m):
+\begin{enumerate}
+	\item $x = \frac{\nu^2}{2a}$
+	\item $x = \frac{1}{2}at$
+	\item $t = \sqrt{\frac{2x}{a}}$
+\end{enumerate}
+
+\subsection*{Solution}
+Checking the dimensional consistency effectively means checking the arithmetic of the units used for each quantity. Meaning that for example the first equation;
+\[
+	x = \frac{\nu^2}{2a}
+\]
+the units of $\nu^2$ and $2a$ must cancel such that we are left with just meters, $\meter$, and we find that they do;
+\[
+	\frac{\left( \meter/\second \right)^2}{\meter/\second^2} = \frac{\meter^{\cancel{2}^1}}{\cancel{\second^2}} \cdot \frac{\cancel{\second^2}}{\cancel{\meter}} = \meter
+\]
+For equation two, we are again looking for position, m, and find that it is not dimensionally consistent;
+
+\[
+	\frac{\meter}{\second^2} \cdot \second \ne \meter
+\]
+For equation three, we are looking for time in seconds, s and find that it is dimensionally consistent;
+
+\[
+	\sqrt{\frac{m}{\meter/\second^2}} = \cancel{\meter^{1/2}} \cdot \frac{\second^{2 \cdot 1/2}}{\cancel{\meter^{1/2}}} = s
+\]
+
+\section*{Problem 3}
+A can of paint that covers 20.0 m$^2$ costs \$24.60. The walls of a room 13.0 ft x 18.0 ft are
+8.00 ft high. What is the cost of paint for the walls?
+
+\subsection*{Solution}
+If the room is 13 ft x 18 ft then it is
+
+\[
+	13\cancel{\foot} \cdot \frac{0.3048}{1} \frac{\meter}{\cancel{\foot}} = 3.9624 \meter
+\]
+by 5.4864m with 2.4383m high walls and the total surface area to cover is the sum of the surface area of each wall.
+
+\[
+	\text{area} = 2\left( 3.9624 \meter \cdot 2.4383 \meter \right) + 2 \left( 5.4864 \meter \cdot 2.4383 \meter \right) = 23.039 \meter^2
+\]
+and so we will nee to buy 2 cans of paint to cover the walls costing us \$49.20. Suppose we are lucky and the store agrees to refund the remaining paint in the partially used can, meters painted per dollar spent;
+\[
+	\frac{24.60}{20} \frac{\$}{\meter^2} = 1.23 \frac{\$}{\meter^2}
+\]
+and with 23.039m$^2$ to paint we have a cost of
+\[
+	23.039 \meter^2 \cdot 1.23 \frac{\$}{\meter^2} = \$28.34
+\]
+
+\section*{Problem 4}
+
+
+\end{document}
