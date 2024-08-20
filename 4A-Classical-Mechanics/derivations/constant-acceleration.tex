@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{cancel}
+
+\newcommand{\mile}{\text{mi}}
+\newcommand{\gallon}{\text{gal}}
+\newcommand{\kilo}{\text{k}}
+\newcommand{\liter}{\text{L}}
+\newcommand{\meter}{\text{m}}
+\newcommand{\second}{\text{s}}
+\newcommand{\foot}{\text{ft}}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+\flushleft
+Physics 4A - Classical Mechanics \hfill Prof. Roger King\\
+\hrule
+
+\begin{center}
+    \vspace{14pt}
+    \textbf{\LARGE Derivation of Equations for Constant Acceleration} \\
+    \vspace{12pt}
+    \text{\large Aaron W. Tarajos}
+
+    \textit{\today}
+    \vspace{14pt}
+\end{center}
+
+\hrule
+
+\section*{Velocity at time $t$}
+The change in velocity, $d\nu$, is equal to the product of acceleration, $a$, and the change in time $dt$.
+\[
+	d\nu = a dt
+\]
+and we integrate to find the equation to solve for velocity;
+\begin{align*}
+	d\nu &= adt \\
+	\int d\nu &= \int adt \\
+	\int d\nu &= a \int dt \\
+	\nu &= at + c \\
+	\nu_0 &= a(0) + c = c \\
+	\nu &= at + \nu_0
+\end{align*}
+
+\section*{Position at time $t$}
+Similar to accceleration we integrate velocity to find the equation to solve for position.
+\begin{align*}
+	dx &= \nu dt \\
+	\int dx &= \int \nu dt \\
+	&= \int \left( \nu_0 + at \right) dt \\
+	&= \nu_0 \int dt + a \int tdt \\
+	x &= \nu_0t + \frac{1}{2} at^2 + c \\
+	x-x_0 &= \nu_0t + \frac{1}{2} at^2 \\
+\end{align*}
+
+\section*{An equation without time}
+We can solve problems for a various circumstances where one of these variables are missing from the problem entirely using the two previous derivations, starting with an equation without time. Given
+\[
+	x - x_0 = \nu_0 t + \frac{1}{2} at^2
+\]
+and
+\[
+	\nu = \nu_0 + at
+\]
+We start with the second equation to solve for time as a function of initial velocity, velocity and acceleration;
+\[
+	\frac{\nu - \nu_0}{a} = t
+\]
+Furthermore, because acceleration is constant we know that average velocity, $\bar{\nu}$, is
+\[
+	\bar{\nu} = \frac{\nu + \nu_0}{2}
+\]
+as well as
+\[
+	x = \bar{\nu}t + x_0
+\]
+substituting our equations for time and average velocity;
+
+\begin{align*}
+	\left( \frac{\nu + \nu_0}{2} \right) \left( \frac{\nu - \nu_0}{a} \right) + x_0 &= x \\
+	\frac{\nu^2 - \nu_o^2}{2a} + x_0 &= x \\
+	\nu^2 = 2a \left( x - x_0 \right) + \nu_0^2
+\end{align*}
+
+\section*{An equation without acceleration}
+Given
+
+\[
+	x = x_o + \bar{\nu}t
+\]
+and
+
+\[
+	\bar{\nu} = \frac{\nu + \nu_0}{2}
+\]
+we obtain
+
+\[
+	x - x_0 = \frac{\nu + \nu_0}{2} t
+\]
+
+\section*{An equation without initial velocity}
+Given
+\[
+	\nu_0 = \nu - at
+\]
+We substitute this into the equation for change in position
+\[
+	x - x_0 = \frac{\left( \nu + \nu - at \right) t}{2}
+\]
+\[
+	x - x_0 = \frac{2\nu t - at^2}{2}
+\]
+\[
+	x - x_0 = \nu t - \frac{at^2}{2}
+\]
+
+\end{document}
