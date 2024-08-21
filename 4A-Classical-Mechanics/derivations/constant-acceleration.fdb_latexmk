@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1724220802.55778 "constant-acceleration.tex" "constant-acceleration.pdf" "constant-acceleration" 1724220803.45656 0
+["pdflatex"] 1724260444.4437 "constant-acceleration.tex" "constant-acceleration.pdf" "constant-acceleration" 1724260445.30241 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716849630 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1716849630 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -8,7 +8,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1716849630 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1716849630 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1716849630 1124 6c73e740cf17375f03eec0ee63599741 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1716849630 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1716849630 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1716849630 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1716849630 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1716849630 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -18,7 +18,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1716849630 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1716849630 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1716849630 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1716849630 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1716849630 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1716849630 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1716849630 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty" 1716849630 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -160,8 +160,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724110245.24702 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724110218 7112993 4235f54f76c8f50f4126b7b4640591a0 ""
-  "constant-acceleration.aux" 1724220803.38427 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "constant-acceleration.tex" 1724220802.22761 3082 c9d44a2510aea4630a6325b68fc61f79 ""
+  "constant-acceleration.aux" 1724260445.2319 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "constant-acceleration.tex" 1724260438.0352 3057 b398ed4365383d798448714d2be66c76 ""
   (generated)
   "constant-acceleration.aux"
   "constant-acceleration.log"
