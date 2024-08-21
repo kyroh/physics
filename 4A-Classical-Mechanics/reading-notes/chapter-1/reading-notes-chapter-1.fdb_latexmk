@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1724253570.74784 "reading-notes-chapter-1.tex" "reading-notes-chapter-1.pdf" "reading-notes-chapter-1" 1724253571.151 0
+["pdflatex"] 1724254669.60538 "reading-notes-chapter-1.tex" "reading-notes-chapter-1.pdf" "reading-notes-chapter-1" 1724254670.01512 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716849630 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1716849630 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1716849630 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1716849630 1288 655e228510b4c2a1abe905c368440826 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1716849630 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1716849630 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1716849630 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1716849630 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1716849630 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -15,7 +15,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1716849630 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1716849630 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1716849630 32716 08e384dc442464e7285e891af9f45947 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1716849630 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1716849630 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1716849630 11493 4f5ed183a47d3197cf8cd322325db6de ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1716849630 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1716849630 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -158,8 +158,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724142091.24844 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724142056 7113008 2471b1ad2e45654500d1e1015bed409b ""
-  "reading-notes-chapter-1.aux" 1724253571.11129 215 92494b24b4691dd1b0abec3e5470071b "pdflatex"
-  "reading-notes-chapter-1.tex" 1724253570.38461 4938 d7b5c018ff11e186418ec58d606bcc61 ""
+  "reading-notes-chapter-1.aux" 1724254669.97845 215 92494b24b4691dd1b0abec3e5470071b "pdflatex"
+  "reading-notes-chapter-1.tex" 1724254668.47513 4969 d67103dbed74837fddc2932ee4f8a05e ""
   (generated)
   "reading-notes-chapter-1.aux"
   "reading-notes-chapter-1.log"
