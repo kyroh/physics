@@ -90,15 +90,15 @@ If the room is 13 ft x 18 ft then it is
 by 5.4864m with 2.4383m high walls and the total surface area to cover is the sum of the surface area of each wall.
 
 \[
-	\text{area} = 2\left( 3.9624 \meter \cdot 2.4383 \meter \right) + 2 \left( 5.4864 \meter \cdot 2.4383 \meter \right) = 46.078 \meter^2
+	\text{area} = 2\left( 3.9624 \meter \cdot 2.4383 \meter \right) + 2 \left( 5.4864 \meter \cdot 2.4383 \meter \right) = 23.039 \meter^2
 \]
-and so we will need to cover to buy 3 cans of paint to cover the walls costing us \$73.8. Suppose we are lucky and the store agrees to refund the remaining paint in the partially used can, meters painted per dollar spent;
+and so we will need to cover 46.078 $\meter^2$  to buy 2 cans of paint to cover the walls costing us \$49.20. Suppose we are lucky and the store agrees to refund the remaining paint in the partially used can, meters painted per dollar spent;
 \[
 	\frac{24.60}{20} \frac{\$}{\meter^2} = 1.23 \frac{\$}{\meter^2}
 \]
-and with 46.078 m$^2$ to paint we have a cost of
+and with 23.039m$^2$ to paint we have a cost of
 \[
-	46.078 \meter^2 \cdot 1.23 \frac{\$}{\meter^2} = \$56.68
+	23.039 \meter^2 \cdot 1.23 \frac{\$}{\meter^2} = \$28.34
 \]
 
 \section*{Problem 4}
