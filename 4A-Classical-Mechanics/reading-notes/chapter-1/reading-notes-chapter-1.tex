@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{cancel}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\flushleft{Physics 4A - Classical Mechanics} \hfill Prof. Roger King\\
+
+\hrule
+
+\begin{center}
+    \vspace{14pt}
+    \textbf{\LARGE Chapter 1 - Measurement} \\
+    \vspace{12pt}
+    \text{\large Aaron W. Tarajos}
+
+    \textit{\today}
+    \vspace{14pt}
+\end{center}
+
+\hrule
+
+\section*{1.1 Measuring Things Including Length}
+
+\subsection*{key ideas}
+\begin{enumerate}
+	\item Physics is based on measurement of physical quantities (in the classical sense I'd hardly say that QFT is based on measurement). To conduct these measurements there are certain quantities that are defined and used as based quantities and other quantities are derived from base quantities.
+	\item The international system of units is the standard emphasized in this book and is generally the standard used in physics. Their definitions of base quantities are as close to invariable as we are capable of constructing.
+	\item We convert units using chainlink conversion, the successive multiplication of conversion factors. Units are manitputaled using the same arithmetic as other algebraic quantities.
+	\item The meter is defined by the distance traveled at the speed of light in a vacuum for a specified amount of time.
+\end{enumerate}
+
+\subsection*{1.1.1 Measuring Things}
+
+Each of the base quantities is measured in its own units such that the standrad corresponds to exactly 1.0 unit of the base qunatity. There are three base quantities; length, mass, and time defined by the meter, kilogram, and second respectively.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c|c}
+	\textbf{Quantity} & \textbf{Symbol} & \textbf{SI Unit} \\ \hline
+	Length & $l$ & meter (m) \\
+	Mass & $m$ & kilogram (kg) \\
+	Time & $t$ & second (s) \\
+    \end{tabular}
+    \caption{Standard Base Quantities in SI Units}
+    \label{tab:base_quantities}
+\end{table}
+
+\subsection*{1.1.2 The International System of Units}
+
+There are 4 other base quantities defined by the SI however they are defined in terms of the first three, length, mass, and time. For example the watt is;
+\[
+	1\ \unit{\watt} = 1\ \unit{\kilo\gram} \cdot \unit{\meter^2\per\second^2}
+\]
+Exponentiation of base 10 is used in scientific notation to express very large or very small numbers in a more concise way;
+
+\[
+	3,560,000,000\ \unit{\meter} = 3.56 \times 10^9\ \unit{\meter}
+\]
+
+\subsection*{1.1.3 Changing Units}
+
+We use chainlink conversion to convert from one unit to another, each number and its unit must be treated together, we perform the arithmetic on the units in the same way we do with numbers. For example converting two minutes to seconds;
+
+\[
+	2\ \cancel{\unit{\minute}} \left( \frac{60\ \unit{\second}}{1\ \cancel{\unit{\minute}}} \right) = 120\ \unit{\second}
+\]
+
+\subsection*{1.1.4 Length}
+
+The standard meter was constructed from a platinum iridium bar in 1792, some number of years later we needed something more precise so they defined it in terms of the wavelength of light emited from atoms of krypton-86. Then 20 years later we needed something even more precise so the meter was defined as the distance traveled by light in a vacuum in $1/299\ 792\ 458$ of a second. That makes the speed of light exactly;
+
+\[
+	c = 299\ 792\ 458\ \unit{{\meter\per\second}}
+\]
+
+\subsection*{1.1.5 Significant figures}
+
+Sometimes we round things, this should be second nature to everyone at this point.
+
+\section*{1.2 Time}
+Time can be standardized by any repeating phenomenon. A time standard must be able to answer two questions; when did it happen? And what was the duration? No mention of where the original seconds, minutes, day etc. came from but pressumably it was the rotation of the earth? More precise clocks needed so we built atomic clocks. Now the second is defined by the oscillations of light emitted from cesium-133. Time signals are projected via radio wave around the world to keep clocks in sync.
+
+The French tried to re-defined the day to match the SI system of base 10, never caught on but they show a 10 hour day clock consisting of 100 minute hours, called decimal time. Yes the two clocks pictured show the same time.
+
+\section*{1.3 Mass}
+\subsection*{key ideas}
+\begin{enumerate}
+	\item The kilogram is defined by a cylinder of platinum iridum kept near Paris. For more precise measures of mass we use a second standard defined by a carbon-12 atom.
+	\item Density, $\rho$, is the mass per unit volume;
+
+		\[
+			\rho = \frac{m}{V}
+		\]
+\end{enumerate}
+
+There really isn't anything important in these sections that isn't already in the key ideas beyond the exact formulation of the carbon-12 definition of the kilogram;
+\[
+	1\ \text{u} = 1.660 538 86 \times 10^{-27} \unit{\kilo\gram}
+\]
+
+\end{document}
