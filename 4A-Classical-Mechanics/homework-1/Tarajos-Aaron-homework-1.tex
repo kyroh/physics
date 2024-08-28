@@ -73,7 +73,7 @@ The units of \( \nu^2 \) and \( 2a \) must cancel such that we are left with jus
 \frac{\left( \meter/\second \right)^2}{\meter/\second^2} = \frac{\meter^2}{\second^2} \cdot \frac{\second^2}{\meter} = \meter
 \]
 
-Thus, Equation 1 is dimensionally consistent.
+Therefore, Equation 1 is dimensionally consistent.
 
 \paragraph{Equation 2: \( x = \frac{1}{2}at \)}
 
@@ -99,50 +99,28 @@ Equation 3 is dimensionally consistent.
 A can of paint that covers \(20.0 \, \si{\meter^2}\) costs \$24.60. The walls of a room \(13.0 \, \si{\foot} \times 18.0 \, \si{\foot}\) are \(8.00 \, \si{\foot}\) high. What is the cost of paint for the walls?
 
 \subsection*{Solution}
-First, convert the dimensions of the room to meters:
-
+We need to start by deriving an equation that yields the number of cans of paint required to cover the surface area, $A$, as a function of the given dimensions.
 \[
-13 \, \cancel{\foot} \cdot \frac{0.3048 \, \meter}{1 \, \cancel{\foot}} = 3.9624 \, \meter
+	A = 2h(x_1 + x_2)\ \foot^2
 \]
+where $x_1$ and $x_2$ are the lengths of the respective edges and $h$ is the height of the walls. If each can is capable of covering $y\ \meter^2$ then then it will cover $3.28084y\ \foot^2$ and so our equation for $n$ cans becomes;
 \[
-18 \, \cancel{\foot} \cdot \frac{0.3048 \, \meter}{1 \, \cancel{\foot}} = 5.4864 \, \meter
+	n = \left\lceil\frac{2h(x_1 + x_2)}{3.28084y}\right\rceil = \left\lceil\frac{2\cdot8.00(13.0 + 18.0)}{3.28084\cdot20}\right\rceil = 3
 \]
-\[
-8 \, \cancel{\foot} \cdot \frac{0.3048 \, \meter}{1 \, \cancel{\foot}} = 2.4384 \, \meter
-\]
-
-The total surface area to cover is the sum of the surface area of each wall:
-
-\[
-\text{Area} = 2\left( 3.9624 \, \meter \cdot 2.4384 \, \meter \right) + 2 \left( 5.4864 \, \meter \cdot 2.4384 \, \meter \right) = 46.08 \, \meter^2
-\]
-
-We will need to buy 3 cans of paint to cover the walls, costing us \$73.80. If the store agrees to refund the remaining paint in the partially used can, the cost per square meter is:
-
-\[
-\frac{24.60 \, \text{\$}}{20 \, \meter^2} = 1.23 \, \text{\$}/\meter^2
-\]
-
-The total cost of painting \(46.08 \, \meter^2\) is:
-
-\[
-46.08 \, \meter^2 \cdot 1.23 \, \text{\$}/\meter^2 = \$56.68
-\]
+3 cans at \$24.60 per can gives us a total cost of \$73.80 to paint the walls.
 
 \section*{Problem 4}
 Consider a race car on a \(5.00 \, \si{\kilo\meter}\) track. Car A finishes the race in \(4.00 \, \si{\hour}\) and is 1.50 laps ahead of B at this time. What is B's time for the race?
 
 \subsection*{Solution}
-We determine Car B's race time by finding how far it has traveled in the time it took Car A to finish the race and then determine the time it would have taken Car B to complete the full distance.
-
-Since Car B was \(7.5 \, \si{\kilo\meter}\) behind Car A, Car B traveled \(292.5 \, \si{\kilo\meter}\) in 4 hours. We can then solve for the time \( t_B \) it took Car B to finish the full \(300 \, \si{\kilo\meter}\):
+We determine Car B's race time by finding how far it has traveled in the time it took Car A to finish the race and then determine the time it would have taken Car B to complete the full distance. Since Car B was \(7.5 \, \si{\kilo\meter}\) behind Car A, Car B traveled \(292.5 \, \si{\kilo\meter}\) in 4 hours. We can then solve for the time \( t_B \) it took Car B to finish the full \(300 \, \si{\kilo\meter}\):
 
 \[
 \frac{292.5 \, \si{\kilo\meter}}{4 \, \si{\hour}} = \frac{300 \, \si{\kilo\meter}}{t_B \, \si{\hour}}
 \]
 
 \[
-t_B = \frac{300 \, \si{\kilo\meter} \times 4 \, \si{\hour}}{292.5 \, \si{\kilo\meter}} \approx 4.102 \, \si{\hour}
+t_B = \frac{300 \, \si{\kilo\meter} \cdot 4 \, \si{\hour}}{292.5 \, \si{\kilo\meter}} \approx 4.10 \, \si{\hour}
 \]
 
 \section*{Problem 5}
@@ -167,11 +145,17 @@ v_2 = \frac{v_1 \cdot t_1}{t_2}
 Substituting the given values:
 
 \[
-v_2 = \frac{65.5 \, \si{\kilo\meter\per\hour} \times 82.67 \, \si{\hour}}{92.70 \, \si{\hour}} \approx 58.41 \, \si{\kilo\meter\per\hour}
+v_2 = \frac{65.5 \, \si{\kilo\meter\per\hour} \cdot 82.67 \, \si{\hour}}{92.70 \, \si{\hour}} \approx 58.41 \, \si{\kilo\meter\per\hour}
 \]
 
 \section*{Problem 6}
 Based on the graph below, estimate the instantaneous velocity at the following times: (a) 1.0 s; (b) 2.5 s; (c) 3.5 s; (d) 4.5 s; (e) 5.0 s;
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{graph.png}
+    \label{fig:my_graph}
+\end{figure}
 
 \subsection*{Solution}
 
@@ -192,23 +176,20 @@ The average velocity is defined as:
 \[
 v_{\text{avg}} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 \]
-
 Substituting the values:
 
 \[
-v_{\text{avg}} = \frac{-5.10 \, \si{\meter} - 7.00 \, \si{\meter}}{7.00 \, \si{\second} - 2.25 \, \si{\second}} = \frac{-12.10 \, \si{\meter}}{4.75 \, \si{\second}} \approx -2.547 \, \si{\meter\per\second}
+v_{\text{avg}} = \frac{-5.10 \, \si{\meter} - 7.00 \, \si{\meter}}{7.00 \, \si{\second} - 2.25 \, \si{\second}} = \frac{-12.10 \, \si{\meter}}{4.75 \, \si{\second}} \approx -2.55 \, \si{\meter\per\second}
 \]
-
 The average acceleration is defined as:
 
 \[
 a_{\text{avg}} = \frac{\Delta v}{\Delta t} = \frac{v_2 - v_1}{t_2 - t_1}
 \]
-
 Substituting the values:
 
 \[
-a_{\text{avg}} = \frac{6.00 \, \si{\meter\per\second} - 3.50 \, \si{\meter\per\second}}{7.00 \, \si{\second} - 2.25 \, \si{\second}} = \frac{2.50 \, \si{\meter\per\second}}{4.75 \, \si{\second}} \approx 0.526 \, \si{\meter\per\second^2}
+a_{\text{avg}} = \frac{6.00 \, \si{\meter\per\second} - 3.50 \, \si{\meter\per\second}}{7.00 \, \si{\second} - 2.25 \, \si{\second}} = \frac{2.50 \, \si{\meter\per\second}}{4.75 \, \si{\second}} \approx 0.53 \, \si{\meter\per\second^2}
 \]
 
 \section*{Problem 8}
@@ -221,7 +202,6 @@ The average velocity is the change in position over the change in time. First, f
 \[
 x(3) = 4.50e^{-0.9}, \quad x(2) = 4.50e^{-0.6}
 \]
-
 The average velocity is then:
 
 \[
@@ -233,10 +213,9 @@ The instantaneous velocity is the derivative of the position function:
 
 \begin{align*}
 v(t) &= \frac{d}{dt} \left( 4.50e^{-0.30t} \right) \\
-&= -0.30 \times 4.50e^{-0.30t} \\
+&= -0.30 \cdot 4.50e^{-0.30t} \\
 &= -1.35e^{-0.30t}
 \end{align*}
-
 Evaluating at \( t = 2.00 \, \si{\second} \):
 
 \[
@@ -249,7 +228,6 @@ The instantaneous acceleration is the derivative of the velocity function:
 \[
 a(t) = \frac{d}{dt} \left( -1.35e^{-0.30t} \right) = 0.405e^{-0.30t}
 \]
-
 Evaluating at \( t = 2.00 \, \si{\second} \):
 
 \[
