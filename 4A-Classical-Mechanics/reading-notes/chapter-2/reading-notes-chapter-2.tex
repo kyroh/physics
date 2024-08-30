@@ -2,9 +2,10 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{pgfplots}
-
+\usepackage{txfonts}
+\usepackage{siunitx}
+\usepackage{hyperref}
 \usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
-
 \pgfplotsset{compat=1.18}
 
 \begin{document}
@@ -33,9 +34,9 @@ Physics 4A - Classical Mechanics \hfill Prof. Roger King
 		\]
 	\item Average velocity is the displacement of a particle over the time interval
 		\[
-			\nu_{avg} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+			v_{avg} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 		\]
-	\item The sign of $\nu_{avg}$ indicates the direction of the motion with respect to the origin. Average velocity is not a function of distance traveled it is a function of initial and final position.
+	\item The sign of $v_{avg}$ indicates the direction of the motion with respect to the origin. Average velocity is not a function of distance traveled it is a function of initial and final position.
 	\item On a graph of $x$ and $t$, average velocity is the slope of the line connecting two points on the graph.
 	\item Average speed, $s_{avg}$ is the total distance travel over the time interval
 		\[
@@ -90,12 +91,12 @@ We can think of change in position as a graph of plotted as a function of positi
 \end{center}
 
 \paragraph{Average Velocity:}
-Average velocity, $\nu_{avg}$, is defined as the displacement (change in position) of an object over the time interval during which the displacement occurs:
+Average velocity, $v_{avg}$, is defined as the displacement (change in position) of an object over the time interval during which the displacement occurs:
 
 \[
-\nu_{avg} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+v_{avg} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 \]
-Here, $\Delta x$ is the displacement, and $\Delta t$ is the time interval. The sign of $\nu_{avg}$ indicates the direction of motion relative to the origin, making it a vector quantity. On a graph of position versus time, average velocity corresponds to the slope of the line connecting two points on the graph.
+Here, $\Delta x$ is the displacement, and $\Delta t$ is the time interval. The sign of $v_{avg}$ indicates the direction of motion relative to the origin, making it a vector quantity. On a graph of position versus time, average velocity corresponds to the slope of the line connecting two points on the graph.
 
 \paragraph{Average Speed:}
 Average speed, $s_{avg}$, differs from average velocity as it considers the total distance traveled by the object rather than its displacement. It is defined as:
@@ -113,16 +114,53 @@ Unlike average velocity, average speed is a scalar quantity and does not conside
 \section*{2.2 Instantaneous Velocity and Speed}\
 \subsection*{key ideas}
 \begin{itemize}
-	\item The instantaneous velocity of a particle, $\nu$ is;
+	\item The instantaneous velocity of a particle, $v$ is;
 		\[
-			\nu = \lim_{t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}
+			v = \lim_{t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}
 		\]
-	\item If $\nu_{\text{avg}}$ is the slope of the line between two points then it is relatively intuitive that the instantaneous velocity is the derivative of the function $x(t)$.
-	\item Speed is the magnitude of $\nu$, $|\nu|$.
+	\item If $v_{\text{avg}}$ is the slope of the line between two points then it is relatively intuitive that the instantaneous velocity is the derivative of the function $x(t)$.
+	\item Speed is the magnitude of $v$, $|v|$.
 \end{itemize}
 
 There really isn't much to this section beyond the key ideas beyond the importance of the fact that speed is agnostic to direction and we cannot derive velocity from speed because it is not a vector quantity, it has incomplete information.
 
 \section*{2.3 Acceleration}
+\subsection*{key ideas}
+\begin{itemize}
+	\item Average acceleration is the ratio between $\Delta v$ and $\Delta t$.
+	\[
+		a_{avg} = \frac{\Delta v}{\Delta t}
+	\]
+	\item The sign indicates direction.
+	\item Acceleration $a$ is the derivative of velocity with respect to time.
+	\[
+		a = \frac{dv}{dt} = \frac{d^2x}{dt^2}
+	\]
+\end{itemize}
+The units for acceleration are generally $length / time^2$. Acceleration is responsible for sensations not velocity or speed.
+Sometimes these large changes in velocity are expressed in terms of $g$ units.
+\[
+	1\ g = 9.8\ \unit{\meter\per\second^2}
+\]
+Sign indicates direction of the acceleration \textbf{not} whether the particle is speeding up or slowing down.
+When the signs of $v$ and $a$ match, the object is speeding up when they do not, the object is slowing down.
+
+\section*{2.4 Constant acceleration}
+There are a number of equations that we can use to solve problems with less information, if and only if acceleration is constant.
+Acceleration of 0 is still constant acceleration.
+We have a number of equations that are used to solve for a given variable;
+\begin{itemize}
+	\item Velocity: $v = at + v_0$.
+	\item Position: $x-x_0 = v_0t + \frac{1}{2} at^2$
+	\item Unknown time: $v^2 = 2a \left( x - x_0 \right) + v_0^2$
+	\item Unknown acceleration: $x - x_0 = \frac{v + v_0}{2} t$
+	\item Unknown initial velocity: $x - x_0 = v t - \frac{at^2}{2}$
+\end{itemize}
+Refer to my derivations of constant acceleration equations for more details\footnote{\href{https://github.com/kyroh/physics/blob/main/4A-Classical-Mechanics/derivations/constant-acceleration.pdf}{https://github.com/kyroh/physics/blob/main/4A-Classical-Mechanics/derivations/constant-acceleration.pdf}}.
+
+\section*{2.5 Free-fall Acceleration}
+Free-fall acceleration is one of the most impactful examples of motion in a straight line.
+The units $g$ are derived from the rate of acceleration in free-fall.
+All objects in free-fall in a vacuum are subject to the same downward acceleration.
 
 \end{document}
