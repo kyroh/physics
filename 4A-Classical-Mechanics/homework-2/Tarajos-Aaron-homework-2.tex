@@ -69,7 +69,7 @@ which is approximately 42.66 meters. Now, we already know that $v_A$ is constant
 \begin{align*}
 	v_B &= v_{0b} + at \\
 	v_B &= 0 + \left( 3 \right) \cdot \left( \frac{16}{3} \right) \\
-	v_B &= 16\ \unit{\meter\per\second}
+	v_B &= 16\ \unit{{\meter\per\second}}
 \end{align*}
 
 \section*{Problem 3}
@@ -78,27 +78,46 @@ to stop given that: (a) it brakes to a stop in 64.0 m; (b) it crashes head-on in
 crumples by 1.00 m.
 
 \subsection*{Solution}
-Given that we are missing time, we can use the following equation to solve for acceleration in both circumstances and then use the acceleration to solve for time.
+Given that we are missing time, we can use the following equation to solve for acceleration in both circumstances;
 \begin{align*}
 	v^2 &= 2a \Delta x + v_0^2 \\
-	v^2  - v_0^2 &= 2a \Delta x \\
-	a &= \frac{v^2  - v_0^2}{2\Delta x}
+	v^2  - v_0^2 &= 2a \Delta x
 \end{align*}
+\begin{equation}
+	a = \frac{v^2  - v_0^2}{2\Delta x}
+\end{equation}
+and solve for time using
+\begin{align*}
+	\Delta x &= \frac{v + v_0}{2} t \\
+	2 \Delta x &= \left(v + v_0 \right) t \\
+\end{align*}
+\begin{equation}
+	t = \frac{2 \Delta x}{v + v_0}
+\end{equation}
 We have a unit conversion from km/h to m/s so that we have consistent units for distance and so that the timescale matches the distance units.
 \[
-	115\ \unit{\kilo\meter\per\hour} \cdot 1000\ \unit{\meter\per\kilo\meter} \cdot \frac{1}{3600}\ \unit{\hour\per\second} = 31.944 \unit{\meter\per\second}
+	115\ \unit{\kilo\meter\per\hour} \cdot 1000\ \unit{{\meter\per\kilo\meter}} \cdot \frac{1}{3600}\ \unit{\hour\per\second} = 31.944\ \unit{{\meter\per\second}}
 \]
-Now we subsitute our values into the equation to find that aceleration when braking to a stop is;
+Now we subsitute our values into Eq.1 to find that aceleration when braking to a stop is;
 \[
 	\frac{0 - 31.944^2}{2\left(64.0\right)} = -8.0\ \unit{\meter\per\second^2}
 \]
-The time elapsed over that distance then is
+The time elapsed over that distance using Eq.2 is;
 
 \[
 	t = \frac{2 \Delta x}{v + v_0}
 \]
 \[
-	\frac{2 (64.0)}{0 + 31.944} = 4.0 \unit{\second}
+	\frac{2 (64.0)}{0 + 31.944} = 4.0\ \unit{\second}
+\]
+For the case where the car is stopped by a pole 1.00 m away. We use the same equations;
+\[
+	\frac{0-31.944^2}{2(1.00)} = -510.2\ \unit{\meter\per\second^2}
+\]
+and
+
+\[
+	\frac{2(1)}{0 + 31.944} = 0.06\ \unit{\second}
 \]
 
 \section*{Problem 4}
@@ -106,6 +125,26 @@ An object moves with constant acceleration. At $t = 2.50$ s, the position of the
 $x = 2.00$ m and its velocity is $v = 4.50$ m/s. At $t = 7.00$ s, $v = -12.0$ m/s. Find: (a) the
 position and the velocity at $t = 0$; (b) the average speed from 2.50 s to 7.00 s, and (c) the
 average velocity from 2.50 s to 7.00 s.
+
+\subsection*{Solution}
+We start by finding the acceleration
+\begin{align*}
+	v &= at + v_0 \\
+	v - v_0 &= at \\
+	a &= \frac{v - v_0}{t} \\
+	\frac{-12.00 - 4.50}{4.50} &= \frac{-16.50}{4.50}\ \unit{\meter\per\second^2}
+\end{align*}
+Then the velocity at $t=0$ is
+\begin{align*}
+	v &= at + v_0 \\
+	v_0 &= v - at \\
+	v_0 &= 4.50 - \left(\frac{-16.50}{4.50}\right) 2.50 \\
+	v_0 &= 13.66\ \unit{{\meter\per\second}}
+\end{align*}
+Where position is
+\begin{align*}
+	t
+\end{align*}
 
 \section*{Problem 5}
 A ball thrown vertically up from the ground rises to height of 24.0 m. How high would it rise

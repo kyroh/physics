@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  3 SEP 2024 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  4 SEP 2024 10:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -641,15 +641,15 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 28865 strings out of 476076
- 745635 string characters out of 5793775
+ 28867 strings out of 476076
+ 745695 string characters out of 5793775
  1938187 words of memory out of 5000000
- 50548 multiletter control sequences out of 15000+600000
+ 50550 multiletter control sequences out of 15000+600000
  584254 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,10n,107p,740b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,10n,107p,740b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-2.pdf (3 pages, 56440 bytes).
+Output written on Tarajos-Aaron-homework-2.pdf (3 pages, 56758 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
