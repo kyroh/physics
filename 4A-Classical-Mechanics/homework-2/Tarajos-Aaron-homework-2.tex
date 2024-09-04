@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Homework 2} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{Problem 1}
+In the graph below, is there any time, or time interval, for which the following hold? (a)
+$v = 0,\ a = 0$; (b) $v = 0,\ a \ne 0$; (c) $v \ne 0, a = 0$; (d) $v > 0,\ a > 0$; (e) $v > 0,\ a < 0$;
+(f) $v < 0,\ a < 0$; (g) $v < 0,\ a > 0$.
+
+\subsection*{Solution}
+
+\section*{Problem 2}
+The figure below shows the $v$ versus $t$ graphs for cars A and B. At $t = 0$ both are at $x = 0$.
+Estimate: (a) where and when they meet again; and (b) their velocities when they meet.
+
+\subsection*{Solution}
+To find when and where the cars meet again after $t = 0$, we must find when $\Delta x$ is equal for both cars. Car A has constant velocity which means that $\Delta x$ is given by;
+
+\[
+	\Delta x = v_A t
+\]
+where $v_A$ is the velocity of Car A. Also, we can see that Car B has constant acceleration which means that $\Delta x$ is given by;
+\[
+	\Delta x = v_{0B} t + \frac{1}{2} a t^2
+\]
+where $v_{0B}$ is the initial velocity of car B. We set these equations equal to eachother and re-arrange it to solve for time.
+\begin{align*}
+	v_A t &= v_{0B} t + \frac{1}{2} a t^2 \\
+	v_A t &= \left( v_{0B} + \frac{1}{2} a t \right) t \\
+	v_A - v_{0B} &= v_{0B} + \frac{1}{2} a t  - v_{0B} \\
+	2 \left( v_A - v_{0B} \right) &= \frac{1}{2} a t \cdot 2 \\
+	t &= \frac{2 \left( v_A - v_{0B} \right)}{a} \\
+\end{align*}
+Looking at the graph we can estimate $a$ for car B to be $3\ \unit{\meter\per\second^2}$, then substituting our variables, we find that the cars meet again at;
+\[
+	\frac{2 \left( 8.00 - 0.00 \right)}{3.00} = \frac{16}{3}\ \unit{\second}
+\]
+or approximately 5.33 seconds. Then we use the time in one of our original equation for $\Delta x$ and find that the cars meet again at;
+
+\[
+	\left( 8 \right) \cdot \left(\frac{16}{3}\right) = \frac{128}{3}\ \unit{\meter}
+\]
+which is approximately 42.66 meters. Now, we already know that $v_A$ is constant so it will be 8, however, for car B we must use our acceleration estimate $a$ and $t$ to find the velocity.
+\begin{align*}
+	v_B &= v_{0b} + at \\
+	v_B &= 0 + \left( 3 \right) \cdot \left( \frac{16}{3} \right) \\
+	v_B &= 16\ \unit{\meter\per\second}
+\end{align*}
+
+\section*{Problem 3}
+A Honda Fit is initially with a speed of 115 km/h. Find its acceleration and the time taken
+to stop given that: (a) it brakes to a stop in 64.0 m; (b) it crashes head-on into a barrier and
+crumples by 1.00 m.
+
+\subsection*{Solution}
+Given that we are missing time, we can use the following equation to solve for acceleration in both circumstances and then use the acceleration to solve for time.
+\begin{align*}
+	v^2 &= 2a \Delta x + v_0^2 \\
+	v^2  - v_0^2 &= 2a \Delta x \\
+	a &= \frac{v^2  - v_0^2}{2\Delta x}
+\end{align*}
+We have a unit conversion from km/h to m/s so that we have consistent units for distance and so that the timescale matches the distance units.
+\[
+	115\ \unit{\kilo\meter\per\hour} \cdot 1000\ \unit{\meter\per\kilo\meter} \cdot \frac{1}{3600}\ \unit{\hour\per\second} = 31.944 \unit{\meter\per\second}
+\]
+Now we subsitute our values into the equation to find that aceleration when braking to a stop is;
+\[
+	\frac{0 - 31.944^2}{2\left(64.0\right)} = -8.0\ \unit{\meter\per\second^2}
+\]
+The time elapsed over that distance then is
+
+\[
+	t = \frac{2 \Delta x}{v + v_0}
+\]
+\[
+	\frac{2 (64.0)}{0 + 31.944} = 4.0 \unit{\second}
+\]
+
+\section*{Problem 4}
+An object moves with constant acceleration. At $t = 2.50$ s, the position of the object is
+$x = 2.00$ m and its velocity is $v = 4.50$ m/s. At $t = 7.00$ s, $v = -12.0$ m/s. Find: (a) the
+position and the velocity at $t = 0$; (b) the average speed from 2.50 s to 7.00 s, and (c) the
+average velocity from 2.50 s to 7.00 s.
+
+\section*{Problem 5}
+A ball thrown vertically up from the ground rises to height of 24.0 m. How high would it rise
+on the moon if given the same initial speed? The acceleration due to gravity on the moon is one-
+sixth that on earth.
+
+\section*{Problem 6}
+A ball is thrown up from the top of a building 55.0 m high. It rises to a maximum height
+of 20.0 m above the roof. (a) When does it land on the ground below? (b) At what velocity
+does it land? (c) When is it 20.0 m below the roof?
+
+\section*{Problem 7}
+From the $v$ versus $t$ graph below, plot the following graphs: (a) $a$ versus $t$; (b) $x$ versus $t$.
+(c) What is the average acceleration for the first 6.0 s? (d) What is the instantaneous
+acceleration at 2.0 s? Assume $x = 0$ at $t = 0$.
+
+\section*{Problem 8}
+The length of a train is 44.5 m. Its front is 100. m from a pole. It accelerates from rest at
+$0.500\ \unit{\meter\per\second^2}$. (a) How long does it take to go past the pole? (b) At what speeds do its front and
+rear pass the pole?
+
+\end{document}
