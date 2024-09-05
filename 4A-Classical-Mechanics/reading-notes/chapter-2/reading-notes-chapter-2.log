@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.19)  30 AUG 2024 10:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  4 SEP 2024 08:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -729,7 +729,7 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 29
 File: utxsyc.fd 2000/12/15 v3.1
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./reading-notes-chapter-2.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4] (./reading-notes-chapter-2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -738,18 +738,18 @@ Package rerunfilecheck Info: File `reading-notes-chapter-2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35364 strings out of 476076
- 850863 string characters out of 5793775
+ 35367 strings out of 476076
+ 850891 string characters out of 5793775
  1946187 words of memory out of 5000000
  56936 multiletter control sequences out of 15000+600000
  596831 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,9n,107p,739b,1988s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on reading-notes-chapter-2.pdf (3 pages, 60663 bytes).
+</usr/share/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on reading-notes-chapter-2.pdf (4 pages, 64292 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
+ 96 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

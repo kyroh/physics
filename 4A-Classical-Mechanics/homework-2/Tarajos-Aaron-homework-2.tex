@@ -32,11 +32,28 @@ In the graph below, is there any time, or time interval, for which the following
 $v = 0,\ a = 0$; (b) $v = 0,\ a \ne 0$; (c) $v \ne 0, a = 0$; (d) $v > 0,\ a > 0$; (e) $v > 0,\ a < 0$;
 (f) $v < 0,\ a < 0$; (g) $v < 0,\ a > 0$.
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{graph-1.png}
+\end{figure}
+
 \subsection*{Solution}
+(a) $v = 0,\ a = 0$. From $t = 3$ to $t = 4$, the slope of $x(t)$ is zero, so $v = 0$. The slope of $v(t)$ is also zero, so $a = 0$.\\
+(b) $v = 0,\ a \ne 0$. At $t = 7$, the slope of $x(t)$ is zero, so $v = 0$. However, $a \ne 0$ since $x(t)$ has positive slope before and negative slope after $t = 7$, meaning the velocity changes from positive to negative, and thus $a \ne 0$.\\
+(c) $v \ne 0,\ a = 0$. From $t = 1$ to $t = 2$ and $t = 5$ to $t = 6$, $v(t)$ is constant (negative from $1$ to $2$, positive from $5$ to $6$), so $v \ne 0$ and $a = 0$ in both intervals.\\
+(d) $v > 0,\ a > 0$. From $t = 4$ to $t = 5$, the slope of $x(t)$ is positive and increasing, so $v > 0$ and $a > 0$.\\
+(e) $v > 0,\ a < 0$. From $t = 6$ to $t = 7$, $x(t)$ has positive slope, so $v > 0$. The slope is decreasing, so $a < 0$.\\
+(f) $v < 0,\ a < 0$. From $t = 0$ to $t = 1$ and $t = 7$ to $t = 8$, $x(t)$ has negative slope and decreasing, so $v < 0$ and $a < 0$ in both intervals.\\
+(g) $v < 0,\ a > 0$. From $t = 2$ to $t = 3$, $x(t)$ has negative slope, so $v < 0$. The slope is increasing, so $a > 0$.\\
 
 \section*{Problem 2}
 The figure below shows the $v$ versus $t$ graphs for cars A and B. At $t = 0$ both are at $x = 0$.
 Estimate: (a) where and when they meet again; and (b) their velocities when they meet.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{graph-2.png}
+\end{figure}
 
 \subsection*{Solution}
 To find when and where the cars meet again after $t = 0$, we must find when $\Delta x$ is equal for both cars. Car A has constant velocity which means that $\Delta x$ is given by;
@@ -150,22 +167,17 @@ and the position at $t=0$ is;
 \end{align*}
 
 \subsubsection*{Part b:}
-We need to find the position at $t=7.00$ to find the position which we can use equation 2 for;
+Average speed is the total distance traveled over time which we can derive using our constant acceleration of $3.66$ m/s$^2$.
 \begin{align*}
-	t &= \frac{2(x-x_0)}{v+v_0} \\
-	t(v+v_0) &= 2(x-x_0) \\
-	\frac{t(v+v_0)}{2} &= x-x_0 \\
-	x &= \frac{t(v+v_0)}{2} + x_0 \\
-	\frac{4.50(-12.0+4.50)}{2} &+ 2.00 = -14.875\ \unit{\meter}
+	a &= 3.66\ \unit{\meter\per\second^2} \\
+	\int dv &= \int 3.66 \quad dt \\
+	v &= 3.66t \\
+	\int dx &= \int 3.66t \quad dt \\
+		&= \frac{3.66t^2}{2} + 13.66t - 20.7
 \end{align*}
-and then use position to solve for speed using the difference in position over time.
-\begin{align*}
-	s_{avg} = \Big|\frac{-14.875-2.00}{4.50}\Big| = 3.75\ \unit{{\meter\per\second}}
-\end{align*}
-The average velocity during that same duration is calculated using the same equation except for the fact that preserve the directionality.
-
+which gives us an area of $22.3754$ and therefore an average speed of;
 \[
-	v_{avg} = \frac{-14.875-2.00}{4.50} = -3.75\ \unit{{\meter\per\second}}
+	s_{avg} = \frac{22.3754}{4.5} = 4.97\ \unit{{\meter\per\second}}
 \]
 
 \section*{Problem 5}
@@ -196,23 +208,185 @@ of 20.0 m above the roof. (a) When does it land on the ground below? (b) At what
 does it land? (c) When is it 20.0 m below the roof?
 
 \subsection*{Solution}
-We start by finding the time it takes for the ball to reach its maximum height above the roof of 20.0 m.
-\begin{align*}
-	\Delta x &= vt - \frac{1}{2} at^2 \\
-	20.0 &= (0)t - \frac{1}{2}(-9.8)t^2 \\
-	\frac{20.0}{9.8/2} &= t^2 \\
-	\sqrt{\frac{40.0}{9.8}} &= t
-\end{align*}
-Now we
+\subsubsection*{Part a:}
+We start by finding $v_0$, given that the maximum height of the ball is 20.0 m above the roof. At maximum height, the velocity is zero, so we use the following equation:
+\[
+	v^2 = v_0^2 + 2a\Delta x
+\]
+At maximum height, $v = 0$, $a = -9.8\ \unit{\meter\per\second^2}$, and $\Delta x = 20.0\ \unit{\meter}$, so we solve for $v_0$:
+\[
+	0 = v_0^2 - 2(9.8)(20.0)
+\]
+\[
+	v_0^2 = 392.0
+\]
+\[
+	v_0 = \sqrt{392.0}\ \unit{{\meter\per\second}}
+\]
+Now that we have $v_0$, we substitute it into
+To find the time taken to hit the ground, we use:
+\[
+	\Delta x = v_0 t + \frac{1}{2} a t^2
+\]
+to find the time it takes for the ball to hit the ground. The total displacement is $-55.0\ \unit{\meter}$:
+\[
+	-55.0 = \sqrt{392.0}t + \frac{1}{2}(-9.8)t^2
+\]
+\[
+	-55.0 = \sqrt{392.0}t - 4.9t^2
+\]
+Using the quadratic formula:
+\[
+	t = \frac{-(-\sqrt{392.0}) \pm \sqrt{(-\sqrt{392.0})^2 - 4(4.9)(-55.0)}}{2(4.9)}
+\]
+\[
+	t = \frac{19.8 \pm \sqrt{392.0 + 1078.0}}{9.8}
+\]
+\[
+	t = \frac{19.8 \pm \sqrt{1470.0}}{9.8}
+\]
+\[
+	t = \frac{19.8 \pm 38.34}{9.8}
+\]
+\[
+	t = \frac{19.8 + 38.34}{9.8} = 5.93\ \unit{\second}
+\]
+\subsubsection*{Part b:}
+To find the velocity at the moment the ball hits the ground, we use the equation:
+\[
+	v = v_0 + at
+\]
+Substituting the known values:
+\[
+	v = 19.8 + (-9.8)(6.43)
+\]
+\[
+	v = 19.8 - 63.0
+\]
+\[
+	v = -43.2\ \unit{{\meter\per\second}}
+\]
+
+\subsubsection*{Part c:}
+To find when the ball is 20.0 m below the roof (i.e., at $55.0 - 20.0 = 35.0\ \unit{\meter}$ above the ground), we again use the kinematic equation:
+\[
+	\Delta x = v_0 t + \frac{1}{2} at^2
+\]
+where $\Delta x = -20.0\ \unit{\meter}$. Substituting the known values:
+\[
+	-20.0 = 19.8t + \frac{1}{2}(-9.8)t^2
+\]
+\[
+	-20.0 = 19.8t - 4.9t^2
+\]
+Using the quadratic formula:
+\[
+	t = \frac{-(-19.8) \pm \sqrt{(-19.8)^2 - 4(4.9)(-20.0)}}{2(4.9)}
+\]
+\[
+	t = \frac{19.8 \pm \sqrt{392.04 + 392.0}}{9.8}
+\]
+\[
+	t = \frac{19.8 \pm \sqrt{784.04}}{9.8}
+\]
+\[
+	t = \frac{19.8 \pm 28.0}{9.8}
+\]
+Taking the positive root:
+\[
+	t = \frac{19.8 + 28.0}{9.8} = \frac{47.8}{9.8} = 4.88\ \unit{\second}
+\]
+Therefore, the ball is 20.0 m below the roof at $t = 4.88\ \unit{\second}$.
+
 
 \section*{Problem 7}
 From the $v$ versus $t$ graph below, plot the following graphs: (a) $a$ versus $t$; (b) $x$ versus $t$.
 (c) What is the average acceleration for the first 6.0 s? (d) What is the instantaneous
 acceleration at 2.0 s? Assume $x = 0$ at $t = 0$.
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{graph-3.png}
+\end{figure}
+
+\pagebreak
+\subsection*{Solution}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.25]{solution-7.png}
+\end{figure}
+
+
 \section*{Problem 8}
-The length of a train is 44.5 m. Its front is 100. m from a pole. It accelerates from rest at
-$0.500\ \unit{\meter\per\second^2}$. (a) How long does it take to go past the pole? (b) At what speeds do its front and
-rear pass the pole?
+The length of a train is 44.5 m. Its front is 100.0 m from a pole. It accelerates from rest at $0.500\ \unit{\meter\per\second^2}$. (a) How long does it take to go past the pole? (b) At what speeds do its front and rear pass the pole?
+
+\subsection*{Solution}
+
+\subsubsection*{Part a:}
+To find the time it takes for the front of the train to reach the pole, we use the kinematic equation:
+\[
+    \Delta x = v_0 t + \frac{1}{2} a t^2
+\]
+where $\Delta x = 100.0\ \unit{\meter}$, $v_0 = 0$, and $a = 0.500\ \unit{\meter\per\second^2}$. Substituting the values:
+\[
+    100.0 = 0 + \frac{1}{2}(0.500)t^2
+\]
+\[
+    100.0 = 0.250 t^2
+\]
+\[
+    t^2 = \frac{100.0}{0.250} = 400.0
+\]
+\[
+    t = \sqrt{400.0} = 20.0\ \unit{\second}
+\]
+
+\subsubsection*{Part b:}
+To find the speed of the front of the train as it passes the pole, we use the equation:
+\[
+    v = v_0 + at
+\]
+Substituting $v_0 = 0$, $a = 0.500\ \unit{\meter\per\second^2}$, and $t = 20.0\ \unit{\second}$:
+\[
+	v = 0 + (0.500)(20.0) = 10.0\ \unit{{\meter\per\second}}
+\]
+To find the time when the rear of the train passes the pole, we need to calculate how long it takes for the rear to travel an additional 44.5 m (the length of the train).
+\[
+    \Delta x = v_0 t + \frac{1}{2} a t^2
+\]
+where $\Delta x = 44.5\ \unit{\meter}$, $v_0 = 10.0\ \unit{\meter\per\second}$, and $a = 0.500\ \unit{\meter\per\second^2}$. Substituting:
+\[
+    44.5 = (10.0)t + \frac{1}{2}(0.500)t^2
+\]
+\[
+    44.5 = 10.0t + 0.250t^2
+\]
+Using the quadratic formula:
+
+\[
+    t = \frac{-10.0 \pm \sqrt{(10.0)^2 - 4(0.250)(-44.5)}}{2(0.250)}
+\]
+\[
+    t = \frac{-10.0 \pm \sqrt{100.0 + 44.5}}{0.500}
+\]
+\[
+    t = \frac{-10.0 \pm \sqrt{144.5}}{0.500}
+\]
+\[
+    t = \frac{-10.0 \pm 12.02}{0.500}
+\]
+Taking the positive root:
+
+\[
+    t = \frac{-10.0 + 12.02}{0.500} = \frac{2.02}{0.500} = 4.04\ \unit{\second}
+\]
+Now, to find the speed of the rear of the train as it passes the pole, we use the equation:
+\[
+    v = v_0 + at
+\]
+\[
+v = 10.0 + (0.500)(4.04) = 10.0 + 2.02 = 12.02\ \unit{{\meter\per\second}}
+\]
+
 
 \end{document}

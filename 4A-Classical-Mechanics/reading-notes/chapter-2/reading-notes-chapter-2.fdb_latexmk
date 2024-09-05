@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725037714.58584 "reading-notes-chapter-2.tex" "reading-notes-chapter-2.pdf" "reading-notes-chapter-2" 1725037715.71335 0
+["pdflatex"] 1725464057.26371 "reading-notes-chapter-2.tex" "reading-notes-chapter-2.pdf" "reading-notes-chapter-2" 1725464057.7721 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1716849630 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtcxr.tfm" 1716849630 1368 7af309acf53bb727783600185f629f47 ""
@@ -25,6 +25,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb" 1716849630 14606 238072bd1ce11e3dff8451a5a2608194 ""
   "/usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb" 1716849630 13806 49b888f4605a088e66b9eb4fee320a6e ""
   "/usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb" 1716849630 6339 e2b78706efdc360ee6aec9b6e20211a7 ""
+  "/usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb" 1716849630 17531 c91f2d6943f51d7c46d6b7b9cedd50ba ""
   "/usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb" 1716849630 20336 69267d8a81bca8b24c9b42694a4a28f9 ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1716849630 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1716849630 46026 6dab18b61c907687b520c72847215a68 ""
@@ -206,11 +207,11 @@
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1716849630 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1716849630 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724110245.24702 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724110218 7112993 4235f54f76c8f50f4126b7b4640591a0 ""
-  "reading-notes-chapter-2.aux" 1725037715.62639 363 ca6c549e2cdd1586e7d405046c1fc99a "pdflatex"
-  "reading-notes-chapter-2.out" 1725037715.41972 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "reading-notes-chapter-2.tex" 1725037712.94637 7778 39f0bf9f664fa11d9c11193859afbc67 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724142091.24844 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724142056 7113008 2471b1ad2e45654500d1e1015bed409b ""
+  "reading-notes-chapter-2.aux" 1725464057.72674 363 f218536f58b66e5abd366f159b64a484 "pdflatex"
+  "reading-notes-chapter-2.out" 1725464057.62674 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "reading-notes-chapter-2.tex" 1725464054.79679 8647 0bf629e9a7b6822f94d3a2afcc1df2af ""
   (generated)
   "reading-notes-chapter-2.aux"
   "reading-notes-chapter-2.log"

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725510060.54746 "Tarajos-Aaron-homework-2.tex" "Tarajos-Aaron-homework-2.pdf" "Tarajos-Aaron-homework-2" 1725510061.52328 0
+["pdflatex"] 1725519406.70542 "Tarajos-Aaron-homework-2.tex" "Tarajos-Aaron-homework-2.pdf" "Tarajos-Aaron-homework-2" 1725519407.16438 2
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1716849630 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm" 1716849630 1020 c53143d3e3747b5c1149bd9a5ecd7b55 ""
@@ -182,10 +182,14 @@
   "/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1716849630 310 4b5d6fe830337242ef847b3bff48ba21 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1716849630 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724110245.24702 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724110218 7112993 4235f54f76c8f50f4126b7b4640591a0 ""
-  "Tarajos-Aaron-homework-2.aux" 1725510061.44779 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "Tarajos-Aaron-homework-2.tex" 1725510059.23785 7970 0988e3f944d76b50f7c9f54dfceae9b0 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724142091.24844 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724142056 7113008 2471b1ad2e45654500d1e1015bed409b ""
+  "Tarajos-Aaron-homework-2.aux" 1725519407.1217 32 f852561997c05a7d986acd1deeb530ec "pdflatex"
+  "Tarajos-Aaron-homework-2.tex" 1725519405.57173 12894 a53837c7e211e83635dd95b1c9dec221 ""
+  "graph-1.png" 1725513134.15017 44335 2dd2dbbc5933fb70415dc816a9c76143 ""
+  "graph-2.png" 1725513151.33651 23306 c26d670edae30727fed81e8a1f7543cb ""
+  "graph-3.png" 1725513166.16623 54427 194f77e785f92234a4b3430c04ebdee3 ""
+  "solution-7.png" 1725514100.8854 551157 ba632169e530378b6cba8f8811220958 ""
   (generated)
   "Tarajos-Aaron-homework-2.aux"
   "Tarajos-Aaron-homework-2.log"
