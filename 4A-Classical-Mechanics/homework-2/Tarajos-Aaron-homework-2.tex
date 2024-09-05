@@ -127,6 +127,7 @@ position and the velocity at $t = 0$; (b) the average speed from 2.50 s to 7.00 
 average velocity from 2.50 s to 7.00 s.
 
 \subsection*{Solution}
+\subsubsection*{Part a:}
 We start by finding the acceleration
 \begin{align*}
 	v &= at + v_0 \\
@@ -141,20 +142,68 @@ Then the velocity at $t=0$ is
 	v_0 &= 4.50 - \left(\frac{-16.50}{4.50}\right) 2.50 \\
 	v_0 &= 13.66\ \unit{{\meter\per\second}}
 \end{align*}
-Where position is
+and the position at $t=0$ is;
 \begin{align*}
-	t
+	x_0 = x - \frac{v + v_0}{2} t \\
+	x_0 = 2 - \frac{4.50 + 13.66}{2} 2.50 \\
+	x_0 = -20.7
 \end{align*}
+
+\subsubsection*{Part b:}
+We need to find the position at $t=7.00$ to find the position which we can use equation 2 for;
+\begin{align*}
+	t &= \frac{2(x-x_0)}{v+v_0} \\
+	t(v+v_0) &= 2(x-x_0) \\
+	\frac{t(v+v_0)}{2} &= x-x_0 \\
+	x &= \frac{t(v+v_0)}{2} + x_0 \\
+	\frac{4.50(-12.0+4.50)}{2} &+ 2.00 = -14.875\ \unit{\meter}
+\end{align*}
+and then use position to solve for speed using the difference in position over time.
+\begin{align*}
+	s_{avg} = \Big|\frac{-14.875-2.00}{4.50}\Big| = 3.75\ \unit{{\meter\per\second}}
+\end{align*}
+The average velocity during that same duration is calculated using the same equation except for the fact that preserve the directionality.
+
+\[
+	v_{avg} = \frac{-14.875-2.00}{4.50} = -3.75\ \unit{{\meter\per\second}}
+\]
 
 \section*{Problem 5}
 A ball thrown vertically up from the ground rises to height of 24.0 m. How high would it rise
 on the moon if given the same initial speed? The acceleration due to gravity on the moon is one-
 sixth that on earth.
 
+\subsection*{Solution}
+We need to solve for initial velocity given the information that we have and use it to find the change in position with a different free-fall acceleration.
+\begin{align*}
+	v^2 &= v_0^2 + 2a \Delta x \\
+	v_0^2 & = v^2 - 2a \Delta x \\
+	v_0^2 &= (0)^2 -2(-9.8)(24) \\
+	v_0 &= \sqrt{470.4}
+\end{align*}
+Now we substitute the initial velocity into the same equation with the new free-fall acceleration to solve for $\Delta x$.
+\begin{align*}
+	v^2 &= v_0^2 + 2a \Delta x \\
+	v^2 - v_0^2 &= 2a \Delta x \\
+	\Delta x &= \frac{v^2 - v_0^2}{2a} \\
+	\Delta x &= \frac{(0)^2 - \left( \sqrt{470.4} \right)^2}{2(-1.635)} \\
+	\Delta x &= 143.9\ \unit{\meter}
+\end{align*}
+
 \section*{Problem 6}
 A ball is thrown up from the top of a building 55.0 m high. It rises to a maximum height
 of 20.0 m above the roof. (a) When does it land on the ground below? (b) At what velocity
 does it land? (c) When is it 20.0 m below the roof?
+
+\subsection*{Solution}
+We start by finding the time it takes for the ball to reach its maximum height above the roof of 20.0 m.
+\begin{align*}
+	\Delta x &= vt - \frac{1}{2} at^2 \\
+	20.0 &= (0)t - \frac{1}{2}(-9.8)t^2 \\
+	\frac{20.0}{9.8/2} &= t^2 \\
+	\sqrt{\frac{40.0}{9.8}} &= t
+\end{align*}
+Now we
 
 \section*{Problem 7}
 From the $v$ versus $t$ graph below, plot the following graphs: (a) $a$ versus $t$; (b) $x$ versus $t$.
