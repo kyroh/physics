@@ -248,23 +248,29 @@ magnitude of their resultant is (a) 3.0 m; (b) 1.0 m. In each case use the law o
 your answer.
 
 \subsection*{Solution}
+We can start by drawing a line of edge length 3 and two lines of edge length 2 and then arrange them such that all the lines form a triangle. Upon doing that we measure the angle formed by the two edges of length 2 with a protractor and find the angle is approximately $95^\circ$. Doing the same for edge length 1, we find that the angle is apprixmately $28^\circ$.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.20]{drawing.png}
+\end{figure}
+
 Using the law of cosines we know that
 
 \[
-	\va C = \sqrt{\va A^2 + \va B^2 - 2\va A \va B \cos\theta}
+	C = \sqrt{A^2 + B^2 - 2AB \cos\theta}
 \]
 and so we can solve for both of the given resultants by isolating $\cos\theta$
 \begin{align*}
-	\va C^2 &=  \va A^2 + \va B^2 - 2\va A \va B \cos\theta \\
-	\cos\theta &= \frac{\va C^2 - \va A^2 + \va B^2}{-2 \va A \va B} \\
-	\theta &= \cos^{-1}\left( \frac{\va C^2 - \va A^2 + \va B^2}{-2 \va A \va B} \right)
+	C^2 &=  A^2 + B^2 - 2AB \cos\theta \\
+	\cos\theta &= \frac{A^2 + B^2 - C^2}{2AB} \\
+	\theta &= \cos^{-1}\left( \frac{A^2 + B^2 - C^2}{2AB} \right)
 \end{align*}
 plugging in our given values for the resultants;
 \[
-	\theta_1 = \cos^{-1}\left( \frac{3^2 - 2^2 - 2^2}{-2 (2) (2)} \right) = 97.181^\circ
+	\theta_1 = \cos^{-1}\left( \frac{2^2 + 2^2 - 3^2}{2 (2) (2)} \right) = 97.181^\circ
 \]
 \[
-	\theta_2 = \cos^{-1}\left( \frac{1^2 - 2^2 - 2^2}{-2 (2) (2)} \right) = 28.955^\circ
+	\theta_2 = \cos^{-1}\left( \frac{2^2 + 2^2 - 1^2}{2 (2) (2)} \right) = 28.955^\circ
 \]
 
 \section*{Problem 7}
@@ -302,5 +308,34 @@ the two systems are related by
     \centering
     \includegraphics[scale=0.5]{graph-3.png}
 \end{figure}
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+Let $\vb r$ be the vector in reference to the $x$ and $y$ coordinate system, and $\vb r^\prime$ be the vector in reference to the $x^\prime$ and $y^\prime$ system. Then,
+\[
+	\vb r^\prime = |\vb r| \cos (\phi - \theta) + |\vb r| \sin(\phi - \theta)
+\]
+and
+\[
+	\vb r = |\vb r| \cos \phi + |\vb r| \sin \phi
+\]
+\subsubsection*{Part b:}
+If the coordinates of $P$ are represented by $(x,y)$ and $(x^\prime,y^\prime)$ in their respective coordinate systems. The relationship between the point in these two coordinate systems are related by
+\[
+	x^\prime = x\cos(\theta) + y\sin(\theta)
+\]
+\[
+	y^\prime = -x\sin(\theta) + y\cos(\theta)
+\]
+Proof:\\
+Let $\vb r^\prime$ be the vector from the origin to the point $P$ in the $(x^\prime, y^\prime)$ coordinate system where;
+\begin{align*}
+	\vb r^\prime &= |\vb r| \cos (\phi - \theta) + |\vb r| \sin(\phi - \theta) \\
+		     &= |\vb r| \cos\phi \cos\theta + |\vb r| \sin\phi \sin\theta + |\vb r| \sin\phi \sin\theta - |\vb r| \cos\phi \cos\theta
+\end{align*}
+because we know the $x$ component and $y$ component of $\vb r$ are $|\vb r|\cos\phi$ and $|\vb r|\sin\phi$ respectively we can replace those terms in our vector $\vb r^\prime$ to obtain the result;
+\[
+	\vb r^\prime = \left( x\cos\theta + y\sin\theta \right) + \left( -x\sin\theta + y\cos\theta \right) \quad \blacksquare
+\]
 
 \end{document}
