@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  9 SEP 2024 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  10 SEP 2024 21:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -591,13 +591,13 @@ File: graph-2.png Graphic file (type png)
 <use graph-2.png>
 Package pdftex.def Info: graph-2.png  used on input line 149.
 (pdftex.def)             Requested size: 193.2214pt x 153.07149pt.
- [3 <./graph-2.png (PNG copy)>] [4]
-<graph-3.png, id=27, 491.8375pt x 361.35pt>
+ [3 <./graph-2.png (PNG copy)>] [4] [5]
+<graph-3.png, id=30, 491.8375pt x 361.35pt>
 File: graph-3.png Graphic file (type png)
 <use graph-3.png>
-Package pdftex.def Info: graph-3.png  used on input line 254.
+Package pdftex.def Info: graph-3.png  used on input line 303.
 (pdftex.def)             Requested size: 245.91814pt x 180.67456pt.
- [5 <./graph-3.png (PNG copy)>] (./Tarajos-Aaron-homework-3.aux)
+ [6 <./graph-3.png (PNG copy)>] (./Tarajos-Aaron-homework-3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -606,16 +606,16 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  25299 strings out of 476076
  629423 string characters out of 5793775
- 1940187 words of memory out of 5000000
+ 1939187 words of memory out of 5000000
  46999 multiletter control sequences out of 15000+600000
  586782 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,14n,107p,740b,715s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-3.pdf (5 pages, 211605 bytes).
+Output written on Tarajos-Aaron-homework-3.pdf (6 pages, 214915 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

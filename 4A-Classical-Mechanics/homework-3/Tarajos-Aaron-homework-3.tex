@@ -153,15 +153,15 @@ direction.
 \subsubsection*{Part a:}
 We need to convert each vector into unit vector notation and then take the sum. The magnitudes are given but we have to find $\theta$ for each vector from the given reference angles.
 \begin{align*}
-	\vb |A| = 2\ \text{km} &\quad \theta_A = 45^\circ \\
-	\vb |B| = 1.5\ \text{km} &\quad \theta_B = 45 - 30 = 15^\circ \\
-	\vb |C| = 1.5\ \text{km} &\quad \theta_C = 15 - 120 = -105^\circ \\
+	\vb |A| = 2\ \text{km} &\quad \theta_A = 90 - 45 = 45^\circ \\
+	\vb |B| = 1.5\ \text{km} &\quad \theta_B = 90 - 45 - 30 = 15^\circ \\
+	\vb |C| = 1.5\ \text{km} &\quad \theta_C = 90 - 45 - 30 - 120 = -105^\circ \\
 \end{align*}
 Finding sin and cos for each vector given the angles we obtain
 \begin{align*}
-	\vb A = 1.414 \vu i + 1.414 \vu j \\
-	\vb B = 1.449 \vu i + 0.388 \vu j \\
-	\vb C = -0.388 \vu i + -1.449 \vu j
+	\vb A = 2\cos (45) + 2\sin (45) &= 1.414 \vu i + 1.414 \vu j \\
+	\vb B = 1.5\cos (15) + 1.5\sin (15) &= 1.449 \vu i + 0.388 \vu j \\
+	\vb C = 1.5\cos (-105) + 1.5\cos (-105) &= -0.388 \vu i + -1.449 \vu j
 \end{align*}
 adding these unit vectors together we obtain the displacement in vector unit notation as;
 \[
@@ -182,7 +182,7 @@ Given two vectors, $\va A  = 5.00 \vu i + 2.00 \vu j$, and $\va B = -2.00 \vu i 
 (a) $\va A + \va B$
 (b) $\left|\va A + \va B\right|$
 (c) $\left|\va A - \va B\right|$
-(d) $\va A - \va B$
+(d) $A - B$
 
 \subsection*{solution}
 \subsubsection*{Part a:}
@@ -196,14 +196,28 @@ We find the magnitude as the length of the side connecting the two scaled unit v
 	\left|\va S\right| = \sqrt{(3.00)^2 + (-1.00)^2} = 3.162
 \]
 
-\subsubsection*{Part c and d:}
-We find the magnitude of subtracting $\va B$ from $\va A$ by first finding the solution to part d. We switch the direction of the unit vectors of $\va B$ and then take the sum of the respective unit vectors.
+\subsubsection*{Part c:}
+We find the magnitude of subtracting $\va B$ from $\va A$ by first switching the direction of the unit vectors of $\va B$ and then take the sum of the respective unit vectors.
 \[
 	\va S^\prime = 5.00 \vu i + 2.00 \vu i + 2.00 \vu j + 3.00 \vu j = 7.00 \vu i + 5.00 \vu j
 \]
 Then the magnitude is solved the same as before;
 \[
 	\left|\va S^\prime\right| = \sqrt{7^2 + 5^2} = 8.602
+\]
+
+\subsubsection*{Part d:}
+We find the difference in the magnitude of $\va A$ and $\va B$ by
+\[
+	A = \sqrt{5^2 + 2^2} = 5.385
+\]
+and
+\[
+	B = \sqrt{(-2)^2 + (-3)^2} = 3.606
+\]
+and the difference then is
+\[
+	5.385 - 3.605 = 1.78
 \]
 
 \section*{Problem 5}
@@ -233,9 +247,44 @@ Two vectors have equal magnitudes of 2.0 m. Find graphically the angle between t
 magnitude of their resultant is (a) 3.0 m; (b) 1.0 m. In each case use the law of cosines to confirm
 your answer.
 
+\subsection*{Solution}
+Using the law of cosines we know that
+
+\[
+	\va C = \sqrt{\va A^2 + \va B^2 - 2\va A \va B \cos\theta}
+\]
+and so we can solve for both of the given resultants by isolating $\cos\theta$
+\begin{align*}
+	\va C^2 &=  \va A^2 + \va B^2 - 2\va A \va B \cos\theta \\
+	\cos\theta &= \frac{\va C^2 - \va A^2 + \va B^2}{-2 \va A \va B} \\
+	\theta &= \cos^{-1}\left( \frac{\va C^2 - \va A^2 + \va B^2}{-2 \va A \va B} \right)
+\end{align*}
+plugging in our given values for the resultants;
+\[
+	\theta_1 = \cos^{-1}\left( \frac{3^2 - 2^2 - 2^2}{-2 (2) (2)} \right) = 97.181^\circ
+\]
+\[
+	\theta_2 = \cos^{-1}\left( \frac{1^2 - 2^2 - 2^2}{-2 (2) (2)} \right) = 28.955^\circ
+\]
+
 \section*{Problem 7}
 An airplane is flown in the direction $30^\circ$ W of N. If the magnitude of the westerly component
 of the displacement is 100. km, how far north does it travel?
+
+\subsection*{Solution}
+We are effectively given
+
+\[
+	l \cdot \cos(120) = 100\ \text{km}
+\]
+where $l$ is the scalar for the base vector given by $\cos (120)$. Therefore, we solve for $l$ and then use it to find the northern component.
+\[
+	l = \frac{100}{\cos(120)} = 200
+\]
+Then the northern component is given by
+\[
+	N = 200 \sin(120) = 173.205\ \text{km}
+\]
 
 \section*{Problem 8}
 A rectangular coordinate system with axes $x^\prime$ and $y^\prime$ is rotated by angle $\theta$ from axes $x$ and $y$

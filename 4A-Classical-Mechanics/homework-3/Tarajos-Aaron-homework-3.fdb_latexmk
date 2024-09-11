@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725945666.2234 "Tarajos-Aaron-homework-3.tex" "Tarajos-Aaron-homework-3.pdf" "Tarajos-Aaron-homework-3" 1725945666.61816 0
+["pdflatex"] 1726030303.04636 "Tarajos-Aaron-homework-3.tex" "Tarajos-Aaron-homework-3.pdf" "Tarajos-Aaron-homework-3" 1726030303.45704 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1716849630 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm" 1716849630 1020 c53143d3e3747b5c1149bd9a5ecd7b55 ""
@@ -177,8 +177,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724142091.24844 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724142056 7113008 2471b1ad2e45654500d1e1015bed409b ""
-  "Tarajos-Aaron-homework-3.aux" 1725945666.57414 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
-  "Tarajos-Aaron-homework-3.tex" 1725945665.96748 9129 41f56f25253442d5bf2a4cdeedb5aa42 ""
+  "Tarajos-Aaron-homework-3.aux" 1726030303.41429 32 77e0dffd05b653a64f0caf3eb9bb454a "pdflatex"
+  "Tarajos-Aaron-homework-3.tex" 1726030301.89765 10474 7283c73f4d072b03a80ecfd8e5ce2159 ""
   "graph-1.png" 1725937996.95479 42254 36b1b40017d6e0187ffd04a0c766b0b3 ""
   "graph-2.png" 1725941308.28879 41544 ed9bf85c58ff4e00e6099518635f392e ""
   "graph-3.png" 1725945645.01113 65909 939020bbf2f33fafd0b1ac559d1cd9d8 ""
