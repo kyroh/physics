@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Homework 3} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{Problem 1}
+Given the three vectors $\va A = 1.00 \vu i  -4.00 \vu j$, $\va B = 3.00 \vu i$, and $\va C = -2.00 \vu j$ evaluate the following expressions if they are allowed mathematically: (a) $\va C \cdot \left( \va A + \va B \right)$; (b) $\va C \cdot \left( \va A \cdot \va B \right)$; (c) $C + \va A \cdot \va B$.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+\begin{align*}
+	\va C \cdot \left( \va A + \va B \right) &= \va C \cdot \left((1.00 \vu i  -4.00 \vu j) + (3.00 \vu i)\right) \\
+	&= (0.00 \vu i -2.00 \vu j) \cdot \left( 4.00 \vu i -4.00 \vu j\right) \\
+	&= 0.00 + 8.00 \\
+	&= 8.00
+\end{align*}
+
+\subsubsection*{Part b:}
+The expression is not mathematicall valid because the dot product of $\va A$ and $\va B$ will always be a scalar and you cannot take the dot product of a scalar and a vector.
+
+\subsubsection*{Part c:}
+\begin{align*}
+	\va C + \va A \cdot \va B &= 2.00 + (1.00 \vu i  -4.00 \vu j) \cdot (3.00 \vu i + 0.00 \vu j) \\
+				  &= 2.00 + 3.00 + 0.00 \\
+				  &= 5.00
+\end{align*}
+
+\section*{Problem 2}
+Given three vectors, $\va A = 2.00 \vu i - 5.00 \vu j$, $\va B = 4.00 \vu j$, and $\va C = 3.00 \vu i$, evaluate the following expressions if they are mathematically allowed:
+(a) $C \left( \va A \cross \va B \right)$;
+(b) $\va C \cdot \left(\va A \cross \va B \right)$;
+(c) $\va C \cross \left(\va A \cdot \va B \right)$.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+\begin{align*}
+	C \left( \va A \cross \va B \right) &= 3.00 * \det \left( \mqty[\vu i & \vu j & \vu k \\ 2.00 & -5.00 & 0.00 \\ 0.00 & 4.00 & 0.00] \right) \\
+					    &= 3.00 \left( \mqty[-5.00 & 0.00 \\ 4.00 & 0.00]\ \vu i - \mqty[2.00 & 0.00 \\ 0.00 & 0.00]\ \vu j + \mqty[2.00 & -5.00 \\ 0.00 & 4.00]\ \vu k \right) \\
+					    &= 3.00 \left( 0.00 \vu i - 0.00 \vu j + 8.00 \vu k \right) \\
+					    &= 24.00 \vu k
+\end{align*}
+
+\subsubsection*{Part b:}
+We already know that $\va A \cross \va B$ is $\left( 0.00 \vu i - 0.00 \vu j + 8.00 \vu k \right)$, therefore;
+\begin{align*}
+	\va C \cdot \left(\va A \cross \va B \right) &= \left( 3.00 \vu i + 0.00 \vu j + 0.00 \vu k \right) \cdot \left( 0.00 \vu i - 0.00 \vu j + 8.00 \vu k \right) \\
+						     &= 0.00 + 0.00 + 0.00 \\
+						     &= 0.00
+\end{align*}
+
+\subsubsection*{Part c:}
+The expression is not mathematically valid  because $\va A \cdot \va B$ is a scalar and you cannot take the cross product of a vector and a scalar.
+
+\section*{Problem 3}
+Consider two vectors $\va A$ and $\va B$ where:
+\begin{align*}
+	\va A &= -6.00 \vu i + 3.00 \vu j + 3.00 \vu k \\
+	\va B &= 6.00 \vu i -8.00 \vu j + 4.00 \vu k
+\end{align*}
+If we want to find the angle between these two vectors, we have two possible options: we can use the magnitude of the dot product, or the magnitude of the cross product.
+\[
+	\va A \cdot \va B = AB \cos\theta
+\]
+\[
+	\left| \va A \cross \va B \right| = AB \sin\theta
+\]
+However, these approaches give conflicting answers for the value of $\theta$. \\
+(a) What is the correct value of theta? \\
+(b) Why does the other formula give the wrong answer?
+
+\subsection*{Solution}
+The dot product gives the correct value of theta;
+\begin{align*}
+	\va A \cdot \va B &= AB \cos\theta \\
+	\frac{\va A \cdot \va B}{AB} &= \cos\theta \\
+	\theta &= \arccos\left( \frac{\va A \cdot \va B}{AB} \right)
+\end{align*}
+Then we plugin our values,
+\[
+	\arccos\left( \frac{\left( -36.00 - 24.00 + 12.00  \right)}{\sqrt{-6.00^2 + 3.00^2 + 3.00^2} \sqrt{6.00^2 -8.00^2 + 4.00^2}} \right) = 127.34^\circ \quad .
+\]
+The reason that the cross product method is wrong in this situation is because the smaller angle between $\va A$ and $\va B$ is not theta relative to the origin so the actual angle for the cross product method should be $\sin(360 - \theta)$.
+
+\section*{Problem 4}
+The position of an object as a function of time is given by $r\left(t \right) = \left( 3.00t^2 - 2.00t \right)\vu i - 1.00t^3 \vu j$ m. Find (a) its velocity at $t=2.00$ s; (b) its acceleration at $t=4.00$ s; (c) its average acceleration between $t=1.00$ s and $t=3.00$ s.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+Velocity is the derivative of position with respect to time so we differentiate the position function and evaluate it at $t=2.00$;
+\begin{align*}
+	r^\prime \left( t \right) &= \left(6.00 t - 2.00 \right)\ \vu i - 3.00t^2\ \vu j \\
+	r^\prime \left( 2 \right) &= \left(6.00 (2.00) - 2.00 \right)\ \vu i - 3.00(2.00)^2\ \vu j \\
+				  &= 10.00\ \vu i - 12.00\ \vu j
+\end{align*}
+\subsubsection*{Part b:}
+Similarly, acceleration is the derivative of velocity with respect to time so we differentiate the velocity function and evaluate it at $t=4.00$
+\begin{align*}
+	r^{\prime\prime} \left( t \right) &= \left(6.00\right)\ \vu i - 6.00t\ \vu j \\
+	r^{\prime\prime} \left( 4 \right) &= \left(6.00\right)\ \vu i - 6.00(4.00)\ \vu j \\
+				  &= 6.00\ \vu i - 24.00\ \vu j
+\end{align*}
+
+\subsubsection*{Part c:}
+To find the average velocity we evaluate the velocity at the respective times and take the difference over change in time.
+\[
+	\va v_1 = (6.00(1.00) - 2.00)\ \vu i - 3.00(1.00^2)\ \vu j  = 4.00\ \vu i - 3.00\ \vu j
+\]
+\[
+	\va v_2 = (6.00(3.00) - 2.00)\ \vu i - 3.00(3.00^2)\ \vu j = 16.00\ \vu i - 27.00\ \vu j
+\]
+Then
+\[
+	\frac{\left( 16.00\ \vu i - 27.00\ \vu j \right) - \left( 4.00\ \vu i - 3.00\ \vu j \right)}{2.00} = 6.00\ \vu i -12.00\ \vu j
+\]
+
+\end{document}
