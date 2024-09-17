@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  4 SEP 2024 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.19)  15 SEP 2024 14:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -698,18 +698,18 @@ Package rerunfilecheck Info: File `reading-notes-chapter-3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31876 strings out of 476076
- 729465 string characters out of 5793775
+ 31878 strings out of 476076
+ 729487 string characters out of 5793775
  1944187 words of memory out of 5000000
  53468 multiletter control sequences out of 15000+600000
  587681 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,6n,107p,736b,684s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on reading-notes-chapter-3.pdf (2 pages, 58646 bytes).
+Output written on reading-notes-chapter-3.pdf (2 pages, 60549 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

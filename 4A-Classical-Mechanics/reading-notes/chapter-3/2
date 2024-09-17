@@ -120,15 +120,6 @@ a = \sqrt{a_x^2 + a_y^2} \quad \text{and} \quad \tan \theta = \frac{a_y}{a_x}
 In the more general three-dimensional case, we need a magnitude and two angles (say, $a$, $\theta$, and $\phi$) or three components ($a_x$, $a_y$, and $a_z$) to fully specify a vector.
 
 \section*{3.2 Unit Vectors, Adding Vectors By Components}
-\subsection*{key ideas}
-\begin{itemize}
-	\item Unit vectors $\vu i$, $\vu j$, and $\vu k$ are the base unit vectors with a magnitude of 1 and directed in the positive direction of the $x$, $y$, and $z$ axes respectively.
-	\item We write a vector $\va a$ as
 
-	\[
-		\va a = a_x \vu i + a_y \vu j + a_z \vu k
-	\]
-
-\end{itemize}
 
 \end{document}

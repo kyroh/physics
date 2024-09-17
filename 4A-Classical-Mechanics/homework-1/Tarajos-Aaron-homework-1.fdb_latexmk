@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1724833129.26593 "Tarajos-Aaron-homework-1.tex" "Tarajos-Aaron-homework-1.pdf" "Tarajos-Aaron-homework-1" 1724833129.70405 0
+["pdflatex"] 1726088830.27072 "Tarajos-Aaron-homework-1.tex" "Tarajos-Aaron-homework-1.pdf" "Tarajos-Aaron-homework-1" 1726088831.26591 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1716849630 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1716849630 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -164,11 +164,11 @@
   "/usr/share/texmf-dist/tex/latex/translations/translations.sty" 1716849630 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1716849630 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724142091.24844 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724142056 7113008 2471b1ad2e45654500d1e1015bed409b ""
-  "Tarajos-Aaron-homework-1.aux" 1724833129.65711 417 7e6531cd63018aac644a4a9652d60395 "pdflatex"
-  "Tarajos-Aaron-homework-1.tex" 1724832989.37957 8784 2b0b90c25fc38d9acf33ef271cdd2376 ""
-  "graph.png" 1724832924.28071 44715 a6497d4d14da2ca98b94b916c743dccc ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724110245.24702 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724110218 7112993 4235f54f76c8f50f4126b7b4640591a0 ""
+  "Tarajos-Aaron-homework-1.aux" 1726088831.17933 417 7e6531cd63018aac644a4a9652d60395 "pdflatex"
+  "Tarajos-Aaron-homework-1.tex" 1726088828.79946 8784 2b0b90c25fc38d9acf33ef271cdd2376 ""
+  "graph.png" 1724867353.86433 44715 a6497d4d14da2ca98b94b916c743dccc ""
   (generated)
   "Tarajos-Aaron-homework-1.aux"
   "Tarajos-Aaron-homework-1.log"
