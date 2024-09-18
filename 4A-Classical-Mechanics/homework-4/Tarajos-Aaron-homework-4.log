@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  16 SEP 2024 22:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.20)  18 SEP 2024 10:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -579,25 +579,31 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 33.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./Tarajos-Aaron-homework-4.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2]
+<drawing-1.png, id=20, 389.455pt x 348.30125pt>
+File: drawing-1.png Graphic file (type png)
+<use drawing-1.png>
+Package pdftex.def Info: drawing-1.png  used on input line 167.
+(pdftex.def)             Requested size: 194.72702pt x 174.15019pt.
+ [3] [4 <./drawing-1.png (PNG copy)>] [5] (./Tarajos-Aaron-homework-4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25251 strings out of 476076
- 628029 string characters out of 5793775
+ 25264 strings out of 476076
+ 628297 string characters out of 5793775
  1946187 words of memory out of 5000000
- 46944 multiletter control sequences out of 15000+600000
- 593668 words of font info for 120 fonts, out of 8000000 for 9000
+ 46955 multiletter control sequences out of 15000+600000
+ 595044 words of font info for 122 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,19n,107p,740b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txbsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-4.pdf (3 pages, 58943 bytes).
+Output written on Tarajos-Aaron-homework-4.pdf (5 pages, 129640 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

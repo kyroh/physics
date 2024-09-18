@@ -137,4 +137,98 @@ Then
 	\frac{\left( 16.00\ \vu i - 27.00\ \vu j \right) - \left( 4.00\ \vu i - 3.00\ \vu j \right)}{2.00} = 6.00\ \vu i -12.00\ \vu j
 \]
 
+\section*{Problem 5}
+At $t = 0$ a particle at the origin has a velocity of $15.1$ m/s at $36^\circ$ above the horizontal $x$ axis.
+At $t = 5.00$ s it is at $x = 21.0$ m and $y = 35.0$ m and its velocity is 30.0 m/s at $53^\circ$ above the horizontal.
+Find: (a) its average velocity; (b) its average acceleration.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+We know the components of the position vector for $t = 5$ and because we start at the origin the average velocity is simply the difference in the position over time.
+\begin{align*}
+	\va v_{avg} &= \frac{\left( 21.0\ \vu i + 35.0\ \vu j \right) - \left( 0\ \vu i + 0\ \vu j \right)}{5 - 0} \\
+		  &= 4.2 \vu i + 7 \vu j
+\end{align*}
+
+\subsubsection*{Part b:}
+To find the average acceleration we start by converting the respective velocities to unit vector notation and then take the difference over time.
+\begin{align*}
+	\va a_{avg} &= \frac{\left(30.0 \cos(53)\ \vu i + 30.0 \sin (53)\ \vu j \right) - \left(15.1 \cos(36)\ \vu i + 15.1 \sin (36)\ \vu j\right)}{5}\\
+		    &= \frac{\left( 18.0545\ \vu i + 23.9591\ \vu j\right) - \left(12.2162\ \vu i + 8.8756\ \vu j \right)}{5} \\
+		    &= 1.168\ \vu i + 3.017\ \vu j
+\end{align*}
+
+\section*{Problem 6}
+Personnel at an airport control tower track a UFO. At 11:02 a.m. it is located at a horizontal distance of 2.00 km in the direction $30^\circ$ N of E at an altitude of 1200 m.
+At 11:15a.m. the location is 1.00 km at $45^\circ$ S of E at an altitude of 800 m.
+What was the displacement of the UFO? Express your result in component notation.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{drawing-1.png}
+\end{figure}
+
+\subsection*{Solution}
+The $\vu k$ component of the initial position vector is given so we just need to find the $\vu i$ and $\vu j$ components.
+\begin{align*}
+	\va x_0 &= 2\cos(30)\ \vu i + 2\sin(30)\ \vu j + 1200\ \vu k \\
+		&= 1.7321\ \vu i + 1\ \vu j + 1200\ \vu k \quad \text{m}
+\end{align*}
+Then the final position vector is
+\begin{align*}
+	\va x &= \cos(-45)\ \vu i + \sin(-45)\ \vu j + 800\ \vu k \\
+	      &= 0.7071\ \vu i -0.7071\ \vu j + 800\ \vu k \quad \text{m}
+\end{align*}
+The displacement is the difference between final position and the initial position;
+\begin{align*}
+	\Delta \va x &= \left(0.7071\ \vu i -0.7071\ \vu j + 800\ \vu k \right) - \left( 1.7321\ \vu i + 1\ \vu j + 1200\ \vu k \right) \\
+		     &= -1.025\ \vu  i - 1.7071\ \vu j -400\ \vu k
+\end{align*}
+
+\section*{Problem 7}
+A fastball pitcher can throw a baseball at a speed of 90.0 mi/h.
+(a) Assuming the pitcher can release the ball 16.7 m from home plate so the ball is moving horizontally, how long does it take
+the ball to reach home plate?
+(b) How far does the ball drop between the pitcher’s hand and home plate?
+
+\subsection*{Solution}
+The speed of 90.0 mi/h is 40.2336 m/s so we find that the ball took;
+\[
+	\frac{16.7\ \text{m}}{40.2336 \text{m/s}} = 0.415\ \text{s} \quad .
+\]
+The drop of the ball is given by;
+
+\begin{equation}
+	\Delta x =  v_0 t + \frac{1}{2}gt^2
+\end{equation}
+where $g$ is the acceleration of gravity near the earth's surface. The initial downward velocity is zero, therefore the ball drops;
+\begin{align*}
+	\Delta x &= (0)(0.415) + \frac{1}{2}9.81(0.415)^2 \\
+		 &= \frac{1.6895}{2} \\
+		 &= 0.845\ \text{m}
+\end{align*}
+
+\section*{Problem 8}
+A soccer goal is 2.44 m high. A player kicks the ball at a distance 10.0 m from the goal at an angle of $25.0^\circ$.
+The ball hits the crossbar at the top of the goal.
+What is the initial speed of the soccer ball?
+
+\subsection*{Solution}
+The initial velocity $\va v_{0}$ is going to be
+\begin{align*}
+	\va v_0 &= v_{0x}\ \vu i + v_{0y}\ \vu j \\
+		&= v_0 \cos \theta\ \vu i + v_0 \sin\theta\ \vu j \\
+		&= v_0\cos(25)\ \vu i + v_0\sin(35)\ \vu j \\
+		&= 0.906 v_0\ \vu i + 0.423 v_0\ \vu j
+\end{align*}
+and so we have to solve for the magnitude of $\va v_0$. Using
+\begin{equation*}
+	\Delta x = v_{0x} t + \frac{1}{2}a_x t
+\end{equation*}
+we have
+\begin{align*}
+	10.00 &= 0.906 v_0t + \frac{1}{2}(0) t^2 \\
+	v_0t &= 11.0378 t
+\end{align*}
+Now that we solved for $v_0t$ we can use the vertical dispalcement with the same equation to find time;
+
 \end{document}

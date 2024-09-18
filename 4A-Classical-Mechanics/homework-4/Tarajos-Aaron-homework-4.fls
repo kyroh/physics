@@ -350,6 +350,14 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT ./drawing-1.png
+INPUT ./drawing-1.png
+INPUT ./drawing-1.png
+INPUT ./drawing-1.png
+INPUT ./drawing-1.png
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT Tarajos-Aaron-homework-4.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
