@@ -19,7 +19,7 @@ Physics 4A - Classical Mechanics \hfill Prof. Roger King
 \noindent\rule{\textwidth}{0.4pt}
 
 \begin{center}
-    \textbf{\LARGE Homework 3} \\
+    \textbf{\LARGE Homework 4} \\
     \vspace{12pt}
     \large Aaron W. Tarajos \\
     \textit{\today}
@@ -170,18 +170,18 @@ What was the displacement of the UFO? Express your result in component notation.
 \subsection*{Solution}
 The $\vu k$ component of the initial position vector is given so we just need to find the $\vu i$ and $\vu j$ components.
 \begin{align*}
-	\va x_0 &= 2\cos(30)\ \vu i + 2\sin(30)\ \vu j + 1200\ \vu k \\
-		&= 1.7321\ \vu i + 1\ \vu j + 1200\ \vu k \quad \text{m}
+	\va x_0 &= 2\cos(30)\ \vu i + 2\sin(30)\ \vu j + 1.200\ \vu k \\
+		&= 1.7321\ \vu i + 1\ \vu j + 1200\ \vu k \quad \text{km}
 \end{align*}
 Then the final position vector is
 \begin{align*}
-	\va x &= \cos(-45)\ \vu i + \sin(-45)\ \vu j + 800\ \vu k \\
-	      &= 0.7071\ \vu i -0.7071\ \vu j + 800\ \vu k \quad \text{m}
+	\va x &= \cos(-45)\ \vu i + \sin(-45)\ \vu j + 0.800\ \vu k \\
+	      &= 0.7071\ \vu i -0.7071\ \vu j + 800\ \vu k \quad \text{km}
 \end{align*}
 The displacement is the difference between final position and the initial position;
 \begin{align*}
-	\Delta \va x &= \left(0.7071\ \vu i -0.7071\ \vu j + 800\ \vu k \right) - \left( 1.7321\ \vu i + 1\ \vu j + 1200\ \vu k \right) \\
-		     &= -1.025\ \vu  i - 1.7071\ \vu j -400\ \vu k
+	\Delta \va x &= \left(0.7071\ \vu i -0.7071\ \vu j + 0.800\ \vu k \right) - \left( 1.7321\ \vu i + 1\ \vu j + 1.200\ \vu k \right) \\
+		     &= -1.025\ \vu  i - 1.7071\ \vu j -0.400\ \vu k \quad \text{km}
 \end{align*}
 
 \section*{Problem 7}
@@ -213,22 +213,36 @@ The ball hits the crossbar at the top of the goal.
 What is the initial speed of the soccer ball?
 
 \subsection*{Solution}
-The initial velocity $\va v_{0}$ is going to be
+Given that the displacement on the $x$ and $y$ plane are
+\[
+	\Delta x = v_{0x}t + \frac{a_xt^2}{2}
+\]
+and
+\[
+	\Delta y = v_{0y}t + \frac{a_xt^2}{2}
+\]
+we can derive an equation to solve for the trajectory of a projectile. Starting with
 \begin{align*}
-	\va v_0 &= v_{0x}\ \vu i + v_{0y}\ \vu j \\
-		&= v_0 \cos \theta\ \vu i + v_0 \sin\theta\ \vu j \\
-		&= v_0\cos(25)\ \vu i + v_0\sin(35)\ \vu j \\
-		&= 0.906 v_0\ \vu i + 0.423 v_0\ \vu j
+	\Delta x &= v_{0x}t + \frac{a_xt^2}{2} \\
+	\Delta x &= v_{0x}t + \frac{0t^2}{2} \\
+	\Delta x &= v_0 \cos\theta t \\
+	v_0 &= \frac{\Delta x}{\cos\theta t}
 \end{align*}
-and so we have to solve for the magnitude of $\va v_0$. Using
-\begin{equation*}
-	\Delta x = v_{0x} t + \frac{1}{2}a_x t
-\end{equation*}
-we have
+Then
 \begin{align*}
-	10.00 &= 0.906 v_0t + \frac{1}{2}(0) t^2 \\
-	v_0t &= 11.0378 t
+	\Delta y &= v_{0y}t + \frac{a_xt^2}{2} \\
+	\Delta y &= v_0\sin\theta t - \frac{gt^2}{2} \\
+	\Delta y &= \left[ \frac{\Delta x}{\cos\theta t} \cdot \sin\theta t \right] - \frac{g}{2}t^2 \\
+	\Delta y &= \Delta x \tan\theta - \frac{g}{2} \left( \frac{\Delta x}{v_0\cos\theta} \right)^2
 \end{align*}
-Now that we solved for $v_0t$ we can use the vertical dispalcement with the same equation to find time;
+Which we can use to solve for $v_0$;
+\begin{align*}
+	2.44 &= 10 \tan(25) - \frac{g}{2} \left( \frac{10}{v_0\cos(25)} \right)^2 \\
+	\frac{g}{2} \left( \frac{10}{v_0\cos(25)} \right)^2 &= 10 \tan(25) - 2.44 \\
+	\left( \frac{10}{v_0\cos(25)} \right)^2 &= \frac{20\tan(25) - 4.88}{g} \\
+	\frac{10}{v_0\cos(25)} &= \sqrt{\frac{20\tan(25) - 4.88}{g}} \\
+	v_0 &= \frac{10}{\cos(25) \sqrt{\frac{20\tan(25) - 4.88}{g}}} \\
+	v_0 &= 16.390 \text{m/s}
+\end{align*}
 
 \end{document}
