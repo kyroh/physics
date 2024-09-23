@@ -1,0 +1,187 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{txfonts}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Chapter 5 - Force and Motion—I} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{5.1 Newton's First and Second Laws}
+\subsection*{Key Ideas}
+\begin{itemize}
+    \item The velocity of an object can change (i.e., the object can accelerate) when acted upon by one or more forces (pushes or pulls) from other objects. Newtonian mechanics describes how accelerations and forces are related.
+
+    \item Forces are vector quantities. Their magnitudes are defined in terms of the acceleration they would impart to a standard object. A force that accelerates a standard object (1 kilogram) by exactly 1 m/s\(^2\) has a magnitude of 1 Newton (N). The direction of a force corresponds to the direction of the acceleration it produces.
+
+    \item Forces are combined using vector algebra. The net force acting on a body is the vector sum of all forces exerted on it.
+
+    \item If there is no net force on an object, it remains at rest if initially stationary or moves in a straight line at constant speed if it is already in motion.
+
+    \item Reference frames in which Newtonian mechanics is valid are called \textit{inertial reference frames}. In noninertial reference frames, Newton's laws do not hold.
+
+    \item The mass of an object is a scalar quantity that relates the object's acceleration to the net force causing the acceleration.
+
+    \item The net force (\(\vec{F}_{\text{net}}\)) acting on a body with mass (\(m\)) is related to the body's acceleration (\(\vec{a}\)) by:
+    \[
+    \vec{F}_{\text{net}} = m \vec{a}
+    \]
+    This can also be expressed in component form:
+    \[
+    F_{\text{net}, x} = m a_x, \quad F_{\text{net}, y} = m a_y, \quad F_{\text{net}, z} = m a_z
+    \]
+    In SI units, this results in 1 Newton being equal to 1 kg·m/s\(^2\).
+
+    \item A \textit{free-body diagram} is a simplified diagram in which only one object is considered. The object is depicted with all external forces acting on it, while a coordinate system is superimposed to aid in solving the problem.
+\end{itemize}
+
+\section*{Newton's First Law of Motion}
+Newton's First Law:
+\begin{quote}
+    \textit{If no net force acts on a body, the body’s velocity cannot change; that is, the body cannot accelerate.}
+\end{quote}
+Meaning an object at rest will remain at rest, and an object in motion will continue to move at a constant velocity unless acted upon by an external force. The law emphasizes that forces are required to change the velocity of an object, not to maintain its motion.
+
+\subsection*{Inertial Reference Frames}
+An important concept related to the First Law is the idea of inertial reference frames. Newton's laws only hold in reference frames where the observer is not accelerating. If we observe an object from a non-inertial reference frame (e.g., inside a car that is accelerating), we may incorrectly perceive fictitious forces acting on objects.
+
+\subsection*{Friction and Force}
+In everyday experience, we observe objects coming to rest due to forces such as friction. For instance, a puck sliding across a wooden floor slows down and stops because of friction. However, on a frictionless surface like ice, the puck would continue moving indefinitely, illustrating the idea that objects in motion stay in motion in the absence of net external forces.
+
+\section*{Newton's Second Law of Motion}
+Newton’s Second Law establishes a relationship between the net force acting on an object, its mass, and its acceleration:
+\begin{equation}
+    \mathbf{F}_{\text{net}} = m \mathbf{a}
+\end{equation}
+where:
+\begin{itemize}
+    \item $\mathbf{F}_{\text{net}}$ is the net force acting on the object (measured in Newtons),
+    \item $m$ is the mass of the object (measured in kilograms),
+    \item $\mathbf{a}$ is the acceleration of the object (measured in meters per second squared).
+\end{itemize}
+This law implies that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.
+
+\subsection*{Units of Force}
+In SI units, the force required to accelerate a 1-kilogram mass by 1 meter per second squared is defined as 1 Newton (N):
+\begin{equation}
+    1 \, \text{N} = 1 \, \text{kg} \cdot \text{m/s}^2
+\end{equation}
+
+\subsection*{Application of the Second Law}
+To apply Newton's Second Law, we must carefully consider the forces acting on an object. The net force is the vector sum of all the forces. When forces are applied in different directions, we must break them down into components and calculate the net force in each direction using vector addition. For example, if two horizontal forces act on a body, we calculate the net force by adding or subtracting these force components.
+
+\subsection*{Mass and Acceleration}
+The second law also explains the relationship between mass and acceleration. For example, if a standard 1-kilogram object experiences a force of 2 N, it will accelerate at 2 m/s². If a 4-kilogram object experiences the same force, it will accelerate at only 0.5 m/s². Thus, objects with greater mass require more force to achieve the same acceleration.
+
+\section*{5.2 Some Particular Forces}
+
+\subsection*{Key Ideas}
+\begin{itemize}
+    \item A gravitational force $\mathbf{F}_g$ on a body is a pull by another body. In most situations in this book, the other body is Earth or some other astronomical body. For Earth, the force is directed down toward the ground, which is assumed to be an inertial frame. With that assumption, the magnitude of $\mathbf{F}_g$ is:
+    \[
+    F_g = mg
+    \]
+    where $m$ is the body’s mass and $g$ is the magnitude of the free-fall acceleration.
+    \item The weight $W$ of a body is the magnitude of the upward force needed to balance the gravitational force on the body. A body’s weight is related to the body’s mass by:
+    \[
+    W = mg
+    \]
+    \item A normal force $\mathbf{F}_N$ is the force on a body from a surface against which the body presses. The normal force is always perpendicular to the surface.
+    \item A frictional force $f$ is the force on a body when the body slides or attempts to slide along a surface. The force is always parallel to the surface and directed so as to oppose the sliding. On a frictionless surface, the frictional force is negligible.
+    \item When a cord is under tension, each end of the cord pulls on a body. The pull is directed along the cord, away from the point of attachment to the body. For a massless cord (a cord with negligible mass), the pulls at both ends of the cord have the same magnitude $T$, even if the cord runs around a massless, frictionless pulley.
+\end{itemize}
+
+\subsection*{The Gravitational Force}
+The gravitational force $\mathbf{F}_g$ on a body is the pull that is directed toward another body. In most situations, this other body is Earth, and the gravitational force pulls directly toward the center of Earth, i.e., downwards.
+
+\subsubsection*{Free Fall}
+If a body of mass $m$ is in free fall with a free-fall acceleration $g$, the gravitational force is the only force acting on the body. Newton's second law gives us:
+\[
+\mathbf{F}_g = m \mathbf{g}
+\]
+Thus, the magnitude of the gravitational force is $F_g = mg$.
+
+\subsubsection*{Weight}
+The weight $W$ of a body is the magnitude of the upward force needed to balance the gravitational force. Therefore:
+\[
+W = mg
+\]
+The weight depends on the location since the free-fall acceleration $g$ varies with location, but the mass $m$ remains constant.
+
+\subsection*{The Normal Force}
+When a body presses against a surface, the surface exerts a force back on the body called the normal force $\mathbf{F}_N$. This force is always perpendicular to the surface.
+
+\subsubsection*{Example: A Block on a Table}
+Consider a block of mass $m$ resting on a table. The block experiences a gravitational force downward, and the table exerts an upward normal force to balance it. The forces acting on the block can be described by Newton's second law along the vertical axis:
+\[
+F_N - F_g = ma_y
+\]
+In the case where the block is not accelerating ($a_y = 0$), this simplifies to:
+\[
+F_N = F_g = mg
+\]
+
+\subsection*{Frictional Force}
+Friction is a force that opposes the relative motion between two surfaces. It acts parallel to the surface and opposes the motion. When an object moves or tries to move along a surface, friction resists this motion.
+
+\subsection*{Tension Force}
+When a cord (rope, cable, etc.) is taut, it exerts a tension force $\mathbf{T}$ along its length. The tension pulls on both ends of the cord with equal magnitude. The force is directed along the cord and away from the body being pulled.
+
+\section*{5.3 Applying Newton's Laws}
+\subsection*{Key Ideas}
+\begin{itemize}
+    \item The net force $\mathbf{F}_{\text{net}}$ on a body with mass $m$ is related to the body’s acceleration $\mathbf{a}$ by
+    \[
+    \mathbf{F}_{\text{net}} = m \mathbf{a}
+    \]
+    This can also be written in the component form:
+    \[
+    F_{\text{net},x} = m a_x \quad F_{\text{net},y} = m a_y \quad F_{\text{net},z} = m a_z
+    \]
+
+    \item If a force $\mathbf{F}_{BC}$ acts on body B due to body C, there is a force $\mathbf{F}_{CB}$ on body C due to body B:
+    \[
+    \mathbf{F}_{BC} = -\mathbf{F}_{CB}
+    \]
+    The forces are equal in magnitude but opposite in direction, representing Newton's Third Law.
+
+    \item A free-body diagram is a simplified diagram in which only one body is considered. That body is represented by a sketch or a dot, with the external forces drawn and a coordinate system superimposed to simplify solving the problem.
+\end{itemize}
+
+\subsection*{Force Diagrams and Newton’s Third Law}
+Newton’s Third Law states that for every action, there is an equal and opposite reaction. For example, if a book leans against a crate, there is a force $\mathbf{F}_{BC}$ from the crate on the book, and a corresponding force $\mathbf{F}_{CB}$ from the book on the crate. These forces are equal in magnitude but opposite in direction.
+
+\subsection*{Example: Block on Inclined Plane}
+Consider a block of mass $m$ on an inclined plane at an angle $\theta$. The gravitational force $mg$ acts downwards. The component of this force parallel to the plane is $mg \sin \theta$, and the normal force perpendicular to the plane is $mg \cos \theta$. Using Newton's Second Law, we can write the equation for the net force along the plane:
+\[
+F_{\text{net}} = m a = mg \sin \theta - T
+\]
+where $T$ is the tension in the string pulling the block.
+
+\subsection*{Forces in Equilibrium}
+When a body is in equilibrium, the net force on the body is zero, meaning the acceleration is also zero. For example, if a block is stationary on a frictionless surface with forces acting horizontally, the forces balance each other out:
+\[
+F_1 + F_2 = 0
+\]
+In such cases, the forces do not cancel each other but balance to result in no change in motion.
+
+\end{document}
+
+
