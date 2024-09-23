@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{txfonts}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Chapter 6 - Force and Motion—II} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{6.1 Friction}
+
+\subsection*{Key Ideas}
+\begin{itemize}
+    \item When a force $\mathbf{F}$ tends to slide a body along a surface, a frictional force from the surface acts on the body. The frictional force is parallel to the surface and directed so as to oppose the sliding. It is due to bonding between the body and the surface.
+    \item If a body does not move, the static frictional force $f_s$ and the component of $\mathbf{F}$ parallel to the surface are equal in magnitude, and $f_s$ is directed opposite that component. If the component increases, $f_s$ also increases, up to a maximum value:
+    \[
+    f_s \leq \mu_s F_N
+    \]
+    where $\mu_s$ is the coefficient of static friction and $F_N$ is the normal force.
+    \item If the body begins to slide, the frictional force decreases to a constant value:
+    \[
+    f_k = \mu_k F_N
+    \]
+    where $\mu_k$ is the coefficient of kinetic friction.
+\end{itemize}
+
+\subsection*{Static and Kinetic Friction}
+When a body is at rest, static friction opposes the applied force trying to move the object. As the applied force increases, so does the static friction, up to a maximum limit where the object begins to move. Once the object is in motion, kinetic friction takes over, which is typically smaller than static friction.
+
+\subsection*{Example: Block on a Table}
+Consider a block on a horizontal surface. The block is subjected to a force $F$, which attempts to slide the block. If $F$ is less than $f_s$, the block does not move. If $F$ exceeds $f_s$, the block slides, and $f_k$ opposes the motion.
+
+\section*{6.2 The Drag Force and Terminal Speed}
+
+\subsection*{Key Ideas}
+\begin{itemize}
+    \item When there is relative motion between air (or another fluid) and a body, the body experiences a drag force $\mathbf{D}$, which opposes the motion. The magnitude of the drag force is given by:
+    \[
+    D = \frac{1}{2}C \rho A v^2
+    \]
+    where $C$ is the drag coefficient, $\rho$ is the fluid density, $A$ is the cross-sectional area, and $v$ is the relative velocity.
+    \item When the drag force becomes equal to the gravitational force acting on a falling object, the object reaches terminal speed, given by:
+    \[
+    v_t = \sqrt{\frac{2F_g}{C \rho A}}
+    \]
+\end{itemize}
+
+\subsection*{Example: Skydiver Reaching Terminal Speed}
+A skydiver experiences an increasing drag force as they fall, which eventually balances the gravitational force, leading to a constant terminal speed. The drag force depends on the shape, surface area, and velocity of the skydiver.
+
+\section*{6.3 Uniform Circular Motion}
+
+\subsection*{Key Ideas}
+\begin{itemize}
+    \item In uniform circular motion, a particle moves with constant speed in a circle. The particle experiences a centripetal acceleration directed toward the center of the circle, with magnitude:
+    \[
+    a_c = \frac{v^2}{R}
+    \]
+    \item The centripetal force required to maintain circular motion is given by:
+    \[
+    F_c = \frac{mv^2}{R}
+    \]
+    where $m$ is the mass, $v$ is the speed, and $R$ is the radius of the circle.
+\end{itemize}
+
+\subsection*{Example: Car on a Banked Curve}
+For a car moving on a banked curve, the horizontal component of the normal force provides the centripetal force needed to keep the car in its circular path. Friction between the tires and the road also contributes to the centripetal force.
+
+\end{document}
+
+
