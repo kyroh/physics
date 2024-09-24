@@ -19,7 +19,7 @@ Physics 4A - Classical Mechanics \hfill Prof. Roger King
 \noindent\rule{\textwidth}{0.4pt}
 
 \begin{center}
-    \textbf{\LARGE Homework 4} \\
+    \textbf{\LARGE Homework 5} \\
     \vspace{12pt}
     \large Aaron W. Tarajos \\
     \textit{\today}
@@ -30,20 +30,85 @@ Physics 4A - Classical Mechanics \hfill Prof. Roger King
 \section*{Problem 1}
 A ball thrown at 20.0 m/s at angle $\theta$ below the horizontal from a cliff of height $H$ lands 69.0 m from the base 4.00 s later. Find $\theta$ and $H$.
 
+\subsection*{Solution}
+We can solve for $\theta$ using
+\begin{align*}
+	\Delta x &= \left(v_0\cos\theta\right)t \\
+	\frac{\Delta x}{v_0 t} &= \cos\theta \\
+	\theta &= \arccos\left(\frac{\Delta x}{v_0 t}\right)
+\end{align*}
+and because the angle is negative we have
+\[
+	\theta = -\left( \arccos\left(\frac{69.0}{20.0 \cdot 4.00} \right)\right) = \boxed{-30.402^\circ}
+\]
+Then using
+
+\begin{equation}
+	\Delta y = x \tan\theta - \frac{gx^2}{2\left(v_0 \cos\theta\right)^2}
+\end{equation}
+we find that the height of the cliff is
+\[
+	\Delta y = 69 \tan\left( -30.402 \right) - \frac{9.81 \left( 69.0 \right)^2 }{2 \left(20 \cos\left( -30.402 \right) \right)^2 } = \boxed{118.966\ \text{m}}
+\]
+
 \section*{Problem 2}
 A ball is thrown at 14.0 m/s at 45$^\circ$ above the horizontal. Someone located 30.0 m away along line of the path starts to run just as the ball is thrown. How fast, and in which direction, must the person run to catch the ball at the level from which it was thrown?
+
+\subsection*{Solution}
+The range of the ball is given by
+
+\begin{equation}
+	R = \frac{v_0^2}{g}\sin2\theta
+\end{equation}
+We find the time they need to be there by
+\begin{equation}
+	t = \frac{R}{v_0 \cos\theta}
+\end{equation}
+If the catcher is at some position $p$, their velocity (direction and speed) to get to location $R$ at time $t$ is given by
+\begin{equation}
+	v = \frac{R-p}{t}
+\end{equation}
+\begin{align*}
+	v &= \left(\frac{14.0^2}{9.81}\sin(90) - 30\right) \cdot \left(\frac{14.0 \cos(45)}{\frac{14.0^2}{9.81}\sin(90)}\right) \\
+	  &= \boxed{-4.965\ \text{m/s}}
+\end{align*}
 
 \section*{Problem 3}
 If a baseball player can throw a ball at 45$^\circ$ to a point 100 m away horizontally to the initial
 vertical level, how high could he throw it vertically upward?
 
+\subsection*{Solution}
+We solve for initial velocity using
+\begin{align*}
+	R &= \frac{v_0^2}{g}\sin 2\theta \\
+	v_0 &= \sqrt{\frac{Rg}{\sin 2\theta}}
+\end{align*}
+and then the maximum height of ball thrown vertically at this velocity is given by
+\begin{align*}
+	v^2 &= v_0^2  + 2a\Delta y \\
+	\Delta y &= \frac{v^2-v_0^2}{2a}
+\end{align*}
+The final velocity is zero so we have
+
+\[
+	\Delta y = \frac{-\left( \frac{Rg}{\sin 2\theta} \right)}{(2)(a)} = \frac{-\left( \frac{100 \cdot 9.81}{\sin(90)} \right)}{(2)(-9.81)} = \boxed{50\ \text{m}}
+\]
+
 \section*{Problem 4}
 A motorcyclist plans to jump across a gorge width 32.0 m. He takes off on an 18.0$^\circ$ ramp.
 What minimum speed does he require if he lands at the initial level?
 
+\subsection*{Solution}
+We can use the velocity equation from Problem 3 to solve for the minimum speed
+\[
+	v_0 = \sqrt{\frac{Rg}{\sin 2\theta}} = \sqrt{\frac{32\cdot 9.81}{\sin 2(18)}} = \boxed{23.110\ \text{m/s}}
+\]
 
 \section*{Problem 5}
 A projectile fired from the ground has a velocity $\vec{v} = 24.0 \hat i - 8.00 \hat j$ m/s at a height of
 9.10 m. Find: (a) the initial velocity; (b) the maximum height
+
+\subsection*{Solution}
+
 
 \end{document}
