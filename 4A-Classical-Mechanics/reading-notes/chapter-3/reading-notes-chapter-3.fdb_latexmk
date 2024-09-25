@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726437414.79962 "reading-notes-chapter-3.tex" "reading-notes-chapter-3.pdf" "reading-notes-chapter-3" 1726437415.38752 0
+["pdflatex"] 1726812936.68594 "reading-notes-chapter-3.tex" "reading-notes-chapter-3.pdf" "reading-notes-chapter-3" 1726812937.14246 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1716849630 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtcxr.tfm" 1716849630 1368 7af309acf53bb727783600185f629f47 ""
@@ -205,11 +205,11 @@
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1716849630 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1716849630 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724110245.24702 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724110218 7112993 4235f54f76c8f50f4126b7b4640591a0 ""
-  "reading-notes-chapter-3.aux" 1726437415.33748 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "reading-notes-chapter-3.out" 1726437415.25415 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "reading-notes-chapter-3.tex" 1726437414.74414 6365 3edf86fbca5d86cab9c6ffaae918d606 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1726809036.29891 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726808983 7112988 d2be7d2c6e85ab48de65d9558c3f665e ""
+  "reading-notes-chapter-3.aux" 1726812937.09295 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
+  "reading-notes-chapter-3.out" 1726812937.02295 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "reading-notes-chapter-3.tex" 1726812936.0363 10095 369d64050f0904f625b9c271088338b8 ""
   (generated)
   "reading-notes-chapter-3.aux"
   "reading-notes-chapter-3.log"

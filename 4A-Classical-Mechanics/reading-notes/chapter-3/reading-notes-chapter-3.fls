@@ -1,4 +1,4 @@
-PWD /home/aaron/University/physics/4A-Classical-Mechanics/reading-notes/chapter-3
+PWD /home/kyroh/University/physics/4A-Classical-Mechanics/reading-notes/chapter-3
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT reading-notes-chapter-3.tex
@@ -354,8 +354,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
@@ -381,15 +379,17 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtcxr.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txb.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmb.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txb.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txi.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT reading-notes-chapter-3.aux

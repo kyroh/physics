@@ -29,11 +29,11 @@ Physics 4A - Classical Mechanics \hfill Prof. Roger King
 \begin{itemize}
 	\item Scalars consist of only magnitude and are subject to the ordinary rules of algebra.
 	Vectors consist of magnitude and direction and are subject to the rules of vector algebra.
-	\item Two vectors $\va{a}$ and $\va{b}$ can be added geometrically by drawing them at common scales and place them head to tail.
-	The vector $\va{s}$ that connects the head and the tail is the summed vector.
+	\item Two vectors $\vec{a}$ and $\vec{b}$ can be added geometrically by drawing them at common scales and place them head to tail.
+	The vector $\vec{s}$ that connects the head and the tail is the summed vector.
 	To subtract a vector switch the direction of the one you are subtracting and then proceed as if you were adding them.
-	\item The scalar components, $(a_x, a_y, a_z, \dots)$, of a vector $\va{a}$ are found by dropping perpendicular lines from the ends of
-	$\va{a}$ onto the coordinate axes. In two dimensions, the components are given by;
+	\item The scalar components, $(a_x, a_y, a_z, \dots)$, of a vector $\vec{a}$ are found by dropping perpendicular lines from the ends of
+	$\vec{a}$ onto the coordinate axes. In two dimensions, the components are given by;
 	\[
 		a_x = a \cos{\theta} \quad \text{and} \quad a_y = a \sin{\theta}
 	\]
@@ -85,11 +85,11 @@ The net displacement is the \textbf{vector sum} AC.
 \end{center}
 The order of the addition does not matter. This is the commutative law;
 \[
-	\va{a} + \va{b} = \va{b} + \va{a}
+	\vec{a} + \vec{b} = \vec{b} + \vec{a}
 \]
 While adding two vectors works the way someone may intuitively guess, subtracting is a little different than scalar subtraction.
 \[
-	\va{d} = \va{a} - \va{b} = \va{a} + (-\va{b})
+	\vec{d} = \vec{a} - \vec{b} = \vec{a} + (-\vec{b})
 \]
 The vector being subtracted is changed to the opposite direction and then added.
 
@@ -122,13 +122,78 @@ In the more general three-dimensional case, we need a magnitude and two angles (
 \section*{3.2 Unit Vectors, Adding Vectors By Components}
 \subsection*{key ideas}
 \begin{itemize}
-	\item Unit vectors $\vu i$, $\vu j$, and $\vu k$ are the base unit vectors with a magnitude of 1 and directed in the positive direction of the $x$, $y$, and $z$ axes respectively.
-	\item We write a vector $\va a$ as
+	\item Unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$ are the base unit vectors with a magnitude of 1 and directed in the positive direction of the $x$, $y$, and $z$ axes respectively.
+	\item We write a vector $\vec{a}$ as
 
 	\[
-		\va a = a_x \vu i + a_y \vu j + a_z \vu k
+		\vec{a} = a_x \hat{i} + a_y \hat{j} + a_z \hat{k}
 	\]
-
+	\item $a_x$, $a_y$, $a_z$, are the scalar components that multiply the unit vectors to create $\vec{a}$
 \end{itemize}
+The unit vectors are used as base vectors to point in a particular direction.
+The standard unit vectors are $\hat{i}$, $\hat{j}$, and $\hat{k}$ for the $x$, $y$, and $z$ axes respectively.
+These vectors are orthogonal to eachother.
+These are the most common unit vectors but others may be defined for some specific purpose. Sometimes $\hat{r}$ is used as a general case unit vector.\vspace{12pt} \\
+Unit vector notation is particularly useful for vector algebra because we simply perform algebraic operations on the respective scalar components.
+For example, with two vectors $\vec{a}$ and $\vec{b}$ that sum to create $\vec{r}$ we have;
+\[
+	\va r = \left(a_x b_x\right)\hat{i} + \left(a_y b_y\right)\hat{j}
+\]
+
+\section*{3.3 Multiplying Vectors}
+\section*{Key Ideas}
+\begin{itemize}
+    \item \textbf{Scalar (Dot) Product}: The scalar product of two vectors $\vec{a}$ and $\vec{b}$ gives a scalar value and is calculated as:
+    \[
+    \vec{a} \cdot \vec{b} = ab \cos \theta
+    \]
+    where $a$ and $b$ are the magnitudes of the vectors and $\theta$ is the angle between them.
+    \item \textbf{Vector (Cross) Product}: The vector product of two vectors $\vec{a}$ and $\vec{b}$ results in a vector that is perpendicular to both and is given by:
+    \[
+    \vec{a} \times \vec{b} = ab \sin \theta \hat{n}
+    \]
+    where $\hat{n}$ is a unit vector perpendicular to both $\vec{a}$ and $\vec{b}$.
+    \item \textbf{Applications}: The dot product is used in finding the work done by a force, while the cross product is essential in calculating torque and angular momentum.
+\end{itemize}
+
+\subsection*{Scalar (Dot) Product}
+The scalar product (or dot product) of two vectors results in a scalar quantity. For two vectors $\vec{a}$ and $\vec{b}$, the dot product is defined as:
+\[
+\vec{a} \cdot \vec{b} = ab \cos \theta
+\]
+where $a$ and $b$ are the magnitudes of the vectors, and $\theta$ is the angle between them. The scalar product can also be expressed in terms of components:
+\[
+\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z
+\]
+This product is useful in calculating physical quantities like work, which is given by the product of force and displacement along the same direction:
+\[
+W = \vec{F} \cdot \vec{d}
+\]
+
+\subsection*{Vector (Cross) Product}
+The vector product (or cross product) of two vectors results in a vector. The cross product of vectors $\vec{a}$ and $\vec{b}$ is defined as:
+\[
+\vec{a} \times \vec{b} = ab \sin \theta \hat{n}
+\]
+where $\hat{n}$ is a unit vector perpendicular to both $\vec{a}$ and $\vec{b}$, and $\theta$ is the angle between them. The direction of $\hat{n}$ is determined by the right-hand rule. In component form, the vector product is:
+\[
+\vec{a} \times \vec{b} = (a_y b_z - a_z b_y) \hat{i} + (a_z b_x - a_x b_z) \hat{j} + (a_x b_y - a_y b_x) \hat{k}
+\]
+The vector product is used in calculating torque, which is the product of a force and the perpendicular distance from the point of rotation:
+\[
+\vec{\tau} = \vec{r} \times \vec{F}
+\]
+
+\subsection*{Applications in Physics}
+The scalar product finds its applications in work, where the projection of force in the direction of motion is essential. The vector product is crucial in angular mechanics, especially in calculating quantities like torque and angular momentum. For example, torque is the vector product of the position vector $\vec{r}$ and force $\vec{F}$, given by:
+\[
+\vec{\tau} = \vec{r} \times \vec{F}
+\]
+The angular momentum $\vec{L}$ of a particle is similarly the vector product of the position vector $\vec{r}$ and linear momentum $\vec{p}$:
+\[
+\vec{L} = \vec{r} \times \vec{p}
+\]
+
+
 
 \end{document}
