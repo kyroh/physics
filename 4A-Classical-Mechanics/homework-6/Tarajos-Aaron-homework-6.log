@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.27)  1 OCT 2024 22:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.26)  2 OCT 2024 09:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -594,24 +594,24 @@ Package pdftex.def Info: drawing-2.png  used on input line 103.
 <drawing-3.png, id=21, 234.8775pt x 436.63126pt>
 File: drawing-3.png Graphic file (type png)
 <use drawing-3.png>
-Package pdftex.def Info: drawing-3.png  used on input line 142.
+Package pdftex.def Info: drawing-3.png  used on input line 144.
 (pdftex.def)             Requested size: 93.94933pt x 174.6494pt.
  [3 <./drawing-3.png (PNG copy)>]
 <drawing-4.png, id=25, 397.485pt x 326.21875pt>
 File: drawing-4.png Graphic file (type png)
 <use drawing-4.png>
-Package pdftex.def Info: drawing-4.png  used on input line 183.
+Package pdftex.def Info: drawing-4.png  used on input line 186.
 (pdftex.def)             Requested size: 158.99118pt x 130.48518pt.
  [4 <./drawing-4.png (PNG copy)>]
 <drawing-5.png, id=29, 481.8pt x 172.645pt>
 File: drawing-5.png Graphic file (type png)
 <use drawing-5.png>
-Package pdftex.def Info: drawing-5.png  used on input line 220.
+Package pdftex.def Info: drawing-5.png  used on input line 224.
 (pdftex.def)             Requested size: 192.71658pt x 69.05676pt.
 <drawing-6.png, id=30, 632.3625pt x 359.3425pt>
 File: drawing-6.png Graphic file (type png)
 <use drawing-6.png>
-Package pdftex.def Info: drawing-6.png  used on input line 228.
+Package pdftex.def Info: drawing-6.png  used on input line 235.
 (pdftex.def)             Requested size: 252.94052pt x 143.73445pt.
  [5 <./drawing-5.png (PNG copy)> <./drawing-6.png (PNG copy)>] (./Tarajos-Aaron-homework-6.aux)
  ***********
@@ -628,7 +628,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  99i,13n,107p,740b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-6.pdf (5 pages, 370404 bytes).
+Output written on Tarajos-Aaron-homework-6.pdf (5 pages, 370291 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
