@@ -227,26 +227,43 @@ and slide over a frictionless horizontal surface. A force of 20.0 N acts on B as
 \subsection*{Solution}
 \subsubsection*{Part a:}
 \[
-	\vec{a} = \frac{\vec{F}}{m_B+m_A} = \frac{20}{3.10 + 1.95} = \boxed{3.960\ \text{m}/\text{s}^2}
+	\vec{a} = \frac{\vec{F}_x}{m_B+m_A} = \frac{20}{3.10 + 1.95} = \boxed{3.960\ \text{m}/\text{s}^2}
 \]
 
 \subsubsection*{Part b:}
-Using Newton's third law we know that the force of $m_A$ on $m_B$ is equal to the force of $m_B$ on $m_A$;
+Using Newton's second law
+
 \[
-	\vec{F}_{AB} = \vec{F}_{BA}
+	\left| \vec{F}_{AB} \right| = \left|\vec{F}_{BA} \right|
 \]
 and
-\begin{align*}
-	\vec{F}_{AB} &= m \vec{a} \cdot \vec{a} \\
-	       &= \left( m_B + m_A \right)\vec{a} \cdot \vec{a} \\
-	       &= \left( 3.10 + 1.95 \right)\frac{20}{3.10 + 1.95} \cdot \frac{20}{3.10 + 1.95} \\
-	       &= \boxed{79.208\ \text{N}}
-\end{align*}
+
+\[
+	\vec{F}_{AB} = m_A \vec{a}
+\]
+therefore
+\[
+	\vec{F}_{BA} = 1.95 \cdot \frac{20}{3.10 + 1.95} = \boxed{7.723\ \text{N}}
+\]
 
 \subsubsection*{Part c:}
+The net force on $m_B$, $\vec{F}_B$ is;
+
 \[
-	\vec{F}_{\text{net}} = \vec{F} -
+	\vec{F}_B = \vec{F}_x - \vec{F}_{AB}
 \]
+because the force of $m_A$ on $m_B$ is in the opposite direction of $\vec{F_x}$.
+
+\[
+	\vec{F}_B = 20 - 7.723 = \boxed{12.277\ \text{N}}
+\]
+
+\subsubsection*{Part d:}
+We solve the forces the same way but with the mass of $m_B$ instead of $m_A$;
+\begin{align*}
+	\vec{F}_{AB} &= 3.10 \cdot \frac{20}{3.10 + 1.95} = \boxed{12.277\ \text{N}}
+\end{align*}
+
 
 \section*{Problem 8}
 Two blocks of masses $m_1 = 4.85$ kg and $m_2 = 5.75$ kg kg are on either side of the wedge as shown in
@@ -261,7 +278,7 @@ We have two blocks to consider the forces for. $m_1$ and $m_2$. For $m_1$ we hav
 \[
 	\vec{F}_{m1} = T - m_1 g \sin(30)
 \]
-and for $m_2$ we also have gravity less Tension;
+and for $m_2$ we also have gravity and Tension but the directions are the opposite direction of $m_1$;
 \[
 	\vec{F}_{m2} = m_2 g \sin(60) - T
 \]
