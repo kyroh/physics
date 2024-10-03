@@ -73,26 +73,26 @@ blocks has a mass of 5.00 kg
 There are two forces at work, the tension force from the spring and the downward acceleration from gravity. These must sum to zero because the block is at rest;
 
 \[
-	\vec{F}_N-mg = 0
+	T-mg = 0
 \]
 For the 5.00 kg block, that is
 
 \[
-	\vec{F}_N = mg = 5.00 \cdot 9.81 = 49.05\ \text{N}
+	T = mg \implies 5.00 \cdot 9.81 = 49.05\ \text{N}
 \]
 
 \subsubsection*{Part b:}
-We have the same two forces as part a but one set on each side of the spring so the reading on the scale is
+The tension force from the block on a given side is the same as in part a therefore we have;
 
 \[
-	\vec{F}_N = 2(mg) = 2(5.00 \cdot 9.81) = 98.1\ \text{N}
+	2T - 2(mg) = 0 \implies 5.00 \cdot 9.81 = 49.05\ \text{N}
 \]
 
 \subsubsection*{Part c:}
-This is no different than part a in terms of net force, therefore, the reading is;
+This is no different than part a in terms of the forces, therefore, the reading is;
 
 \[
-	\vec{F}_N = mg = 5.00 \cdot 9.81 = 49.05\ \text{N}
+	T = mg = 5.00 \cdot 9.81 = 49.05\ \text{N}
 \]
 
 
@@ -225,7 +225,28 @@ and slide over a frictionless horizontal surface. A force of 20.0 N acts on B as
 \end{figure}
 
 \subsection*{Solution}
+\subsubsection*{Part a:}
+\[
+	\vec{a} = \frac{\vec{F}}{m_B+m_A} = \frac{20}{3.10 + 1.95} = \boxed{3.960\ \text{m}/\text{s}^2}
+\]
 
+\subsubsection*{Part b:}
+Using Newton's third law we know that the force of $m_A$ on $m_B$ is equal to the force of $m_B$ on $m_A$;
+\[
+	\vec{F}_{AB} = \vec{F}_{BA}
+\]
+and
+\begin{align*}
+	\vec{F}_{AB} &= m \vec{a} \cdot \vec{a} \\
+	       &= \left( m_B + m_A \right)\vec{a} \cdot \vec{a} \\
+	       &= \left( 3.10 + 1.95 \right)\frac{20}{3.10 + 1.95} \cdot \frac{20}{3.10 + 1.95} \\
+	       &= \boxed{79.208\ \text{N}}
+\end{align*}
+
+\subsubsection*{Part c:}
+\[
+	\vec{F}_{\text{net}} = \vec{F} -
+\]
 
 \section*{Problem 8}
 Two blocks of masses $m_1 = 4.85$ kg and $m_2 = 5.75$ kg kg are on either side of the wedge as shown in
@@ -234,5 +255,31 @@ the figure below. Find their acceleration and the tension in the rope. Ignore fr
     \centering
     \includegraphics[scale=.4]{drawing-6.png}
 \end{figure}
+
+\subsection*{Solution}
+We have two blocks to consider the forces for. $m_1$ and $m_2$. For $m_1$ we have Tension less gravity given by;
+\[
+	\vec{F}_{m1} = T - m_1 g \sin(30)
+\]
+and for $m_2$ we also have gravity less Tension;
+\[
+	\vec{F}_{m2} = m_2 g \sin(60) - T
+\]
+Setting up this problem as a system of equations we have
+\begin{align*}
+	m_1 \vec{a} &= T - m_1 g \sin(30) \\
+	+ \quad m_2 \vec{a} &= m_2 g \sin(60) - T\\
+			    \\
+	\vec{a}\left(m_1 + m_2\right) &= m_2 g \sin(60) - m_1 g \sin(30) \\
+	\vec{a} &= \frac{m_2 g \sin(60) - m_1 g \sin(30)}{(m_1 + m_2)}
+\end{align*}
+plugging in our values we obtain
+\[
+	\vec{a} = \frac{5.75 (9.81) \sin(60) - 4.85 (9.81) \sin(30)}{(4.85 + 5.75)} =  \boxed{2.364\ \text{m}/\text{s}^2}
+\]
+Now we just plugin acceleration to find the Tension
+\[
+	T = (4.85) (2.364) + (4.85) (9.81) \sin(30) = \boxed{37.432\ \text{N}}
+\]
 
 \end{document}
