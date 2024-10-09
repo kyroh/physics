@@ -161,15 +161,98 @@ A car travels at speed $v$ around a frictionless curve of radius $r$ that is ban
 x-axis as the horizontal direction, and the y-axis as the vertical direction. This is because the centripetal force is horizontal.)
 
 \subsection*{Solution}
+Consider the cross section of the banked curve, the forces acting on the car are.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.40]
+    % Points
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (10,5);
+    \coordinate (C) at (10,0);
+
+    % Vectors
+    \draw[-] (A) -- (B);
+    \draw[-,dashed] (A) -- (C);
+
+    \draw[fill=gray!30, rotate around={26.57:(5,2.5)}] (4.5,2.5) rectangle (6.5,4.5);
+
+    \draw[->, thick] (5.0,3.5) -- ++(-1.5,3.0) node[pos=0.75, right] {$F_n$};
+    \draw[->, thick] (5.0,3.5) -- ++(-1.5,0) node[left, below] {$F_{c}$};
+    \draw[->, thick] (3.3,3.5) -- ++(0,2.75) node[pos=0.5, left] {$F_{ny}$};
+
+    % Angle
+    \draw [thick] (1.5,0) arc[start angle=0, end angle=26.57, radius=1.5];
+    \node at (2.3,0.5) {\(\theta\)};
+
+\end{tikzpicture}
+\end{center}
+Notice that
+\begin{align*}
+	\cos \theta &= \frac{F_{ny}}{F_n} \\
+	F_n \cos \theta &= F_{ny} \\
+	F_n \cos \theta &= mg \\
+	F_n &= \frac{mg}{\cos\theta}
+\end{align*}
+and
+
+\[
+	F_c = F_n \sin\theta
+\]
+combining these two equations and using the equation for centripital force;
+\begin{align*}
+	F_c &= \left(\frac{mg}{\cos\theta}\right)\sin\theta \\
+	m\frac{v^2}{r} &= \left(\frac{mg}{\cos\theta}\right)\sin\theta \\
+	m\frac{v^2}{r} &= mg \tan \theta \\
+	\tan\theta &= \frac{v^2}{rg}
+\end{align*}
 
 \section*{Problem 5}
 A button is at the rim of a turntable of radius 15.0 cm rotating at 45.0 rpm. What is the
 minimum coefficient of friction needed for it to stay on?
 
+\subsection*{Solution}
+The velocity is given by
+
+\[
+	v = \frac{2\pi r}{T}
+\]
+where $T$ is the period of revolution. Then the minimum friction coefficient is given by the equation derived in problem 3
+\begin{align*}
+	\mu_s &= \frac{v^2}{gr} \\
+	      &= \left(\frac{2\pi r}{T}\right)^2 \cdot \frac{1}{gr}
+\end{align*}
+solving for the given variables;
+
+\[
+	\mu_s = \left(\frac{90\pi(0.15)}{60}\right)^{2}\cdot\frac{1}{(9.81)(0.15)} = \boxed{0.340}
+\]
+
 \section*{Problem 6}
 A box is dropped onto a conveyor belt moving at 3.40 m/s. If the coefficient of friction
 between the box and the belt is 0.270, how long will it take before the box moves without
 slipping?
+
+\subsection*{Solution}
+We know that the force of static friction is given by
+
+\[
+	F_s = \mu_s mg
+\]
+and using Newton'n second law
+
+\[
+	m\vec{a} = \mu_s mg \implies \vec{a} = \mu_s g
+\]
+Then,
+
+\[
+	v = v_0 + at \implies t = \frac{v - v_0}{a}
+\]
+giving us the equation
+
+\[
+	t = \frac{v - v_0}{\mu_s g} = \frac{3.40 - 0}{(0.27)(9.81)} = \boxed{1.287\ \text{s}}
+\]
 
 \section*{Problem 7}
 Two blocks are stacked as shown below, and rest on a frictionless surface. There is friction
@@ -199,7 +282,10 @@ Therefore the maximum force of $F$ is
 	F\frac{cos\theta}{\mu_s} &= m_1g + F\sin\theta \\
 	F\frac{\cos\theta}{\mu_s} - F\sin\theta &= m_1g \\
 	F &= \frac{m_1g}{\frac{\cos\theta}{\mu_s} - \sin\theta} \\
-	F &= m_1 \left(\frac{\mu_s}{\cos\theta} - \frac{1}{\sin\theta}\right)
 \end{align*}
+\[
+	\boxed{F = m_1g \left(\frac{\mu_s}{\cos\theta} - \frac{1}{\sin\theta}\right)}
+\]
+
 
 \end{document}
