@@ -1,4 +1,4 @@
-PWD /home/kyroh/University/physics/4A-Classical-Mechanics/homework-8
+PWD /home/aaron/University/physics/4A-Classical-Mechanics/homework-8
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT Tarajos-Aaron-homework-8.tex
@@ -334,6 +334,14 @@ INPUT ./drawing-1.png
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT ./drawing-2.png
+INPUT ./drawing-2.png
+INPUT ./drawing-2.png
+INPUT ./drawing-2.png
+INPUT ./drawing-2.png
+INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
 INPUT Tarajos-Aaron-homework-8.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
