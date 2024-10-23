@@ -1,0 +1,145 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Homework 9} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{Problem 1}
+A spring gun with k = 90.0 N/m is compressed by 5 cm. What is the exit speed of a 2.10-g projectile?
+
+\subsection*{Solution}
+Let $U$ be potential energy, then;
+\[
+	U = \frac{1}{2} kx^2
+\]
+and $K$ be kinetic energy, then we have;
+\begin{align*}
+	U &= K \\
+	\frac{1}{2}kx^2 &= \frac{1}{2}mv^2 \\
+	v^2 &= \frac{kx^2}{m} \\
+	v &= \sqrt{\frac{kx^2}{m}}
+\end{align*}
+For the given values;
+\[
+	v = \sqrt{\frac{(90.0)(0.05^2)}{0.00210}} = \boxed{10.351\ \text{m}/\text{s}}
+\]
+
+\section*{Problem 2}
+The United States, with a population of $2.2 \times 10^8$ people, consumes $5 \times 10^{19}$ J per year. \\
+(a)What is the per capita consumption in watts? \\
+(b) The sun's radiation provides the earth with 1000 W/m$^2$.
+Assuming solar energy can be converted to electrical energy with a 20\% efficiency,
+how much area is needed to serve the energy needs of each U.S. citizen?
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+Let $E_T$ be the total power consumed in the U.S. in Joules
+\[
+	E_T = 5 \times 10^{19} \cdot \frac{1}{365} \cdot \frac{1}{24} \cdot \frac{1}{3600} = 1.585 \times 10^{12}\ \text{W}
+\]
+then the per capita energy consumption is $E_C$;
+\[
+	E_C = \frac{E_T}{2.2 \times 10^8} = \boxed{7206.771\ \text{W}}
+\]
+
+\subsubsection*{Part b:}
+Let $A$ be the area needed to serve the energy needs of each citizen;
+\[
+	A = \frac{E_C}{1000 \cdot 0.2} = \boxed{36.034\ \text{m}^2}
+\]
+
+
+\section*{Problem 3}
+A 0.595-kg object is released from a height of 3.60 m and lands on the ground. Find: \\
+(a) the work done by gravity; \\
+(b) the change in kinetic energy of the ball; \\
+(c) the speed just before it lands using energy methods. Ignore air resistance.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+\[
+	W = mgd = (0.595)(9.81)(3.60) = \boxed{21.013\ \text{J}}
+\]
+
+\subsubsection*{Part b:}
+\[
+	\Delta K = W = \boxed{21.013\ \text{J}}
+\]
+
+\subsubsection*{Part c:}
+\begin{align*}
+	W &= \Delta K \\
+	W &= \frac{1}{2}mv^2 - \frac{1}{2}mv_0^2 \\
+	W &= \frac{1}{2}mv^2 - \frac{1}{2}m(0)^2 \\
+	mgd &= \frac{1}{2}mv^2 \\
+	v^2 &= 2gd \\
+	v &= \sqrt{2gd} = \boxed{8.404\ \text{m}/\text{s}}
+\end{align*}
+
+
+
+\section*{Problem 4}
+Two horses pull a barge along a canal at a steady 5.00 km/h, as shown in the figure. The tension in each rope
+is 420 N and each is at 30$^\circ$ to the direction of motion. What is the horsepower provided by the horses?
+
+\subsection*{Solution}
+The horses are walking at constant velocity which means that the net force in the $x$ direction is zero. Therefore
+\begin{align*}
+	F_T \cos \theta - F_x &= 0 \\
+	F_T \cos \theta &= F_x \\
+	F_x &= 420 \cos 30 = 363.730\ \text{N}
+\end{align*}
+There are two horses so the force is 2 times that, then power is given by
+\[
+	P = F_x v = \frac{2 \left(420 \cos 30 \right) \cdot 1.3889}{745.7} = \boxed{1.355\ \text{HP}}
+\]
+
+\section*{Problem 5}
+A pendulum bob of mass 0.710 kg is suspended by a string of length 1.50 m. The bob is released from rest
+when the string is at 30$^\circ$ to the vertical. The swing is interrupted by a peg 1.00 m vertically below the support
+as shown below. What is the maximum angle to the vertical made by the string after it hits the peg?
+
+\section*{Problem 6}
+A 2.00-kg block slides on a frictionless horizontal surface and is connected on one side to a spring with a
+spring constant of 45.0 N/m) as shown the figure. The other side is connected to a 4.00-kg block that hangs
+vertically. The system starts from rest with the spring unextended. \\
+(a) What is the maximum extension of the spring? \\
+(b) What is the speed of the 4.00-kg block when the extension is 50 cm?
+
+\section*{Problem 7}
+A cart with a mass of 3.20 kg, an initial speed of 5.15 m/s and an initial height of 4.00 m is moving
+towards a hill of height 5.00 m, as shown in the figure. On the other side of the hill is a spring with a spring
+constant of 125 N/m and a height of 2.00 m. \\
+(a) Does the trolley reach the spring? \\
+(b) If so, what is the maximum compression? Ignore frictional losses and the rotational energy of the wheels.
+
+\section*{Problem 8}
+A projectile is fired at 27.0 m/s in a direction 65$^\circ$ above the horizonal from a rooftop of height 40.0 m. Use
+energy considerations to find: \\
+(a) the speed with which it lands on the ground; \\
+(b) the height at which its speed is 15.0 m/s.
+
+\end{document}
