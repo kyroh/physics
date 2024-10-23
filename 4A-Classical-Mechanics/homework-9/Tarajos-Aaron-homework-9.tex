@@ -122,12 +122,59 @@ A pendulum bob of mass 0.710 kg is suspended by a string of length 1.50 m. The b
 when the string is at 30$^\circ$ to the vertical. The swing is interrupted by a peg 1.00 m vertically below the support
 as shown below. What is the maximum angle to the vertical made by the string after it hits the peg?
 
+\subsection*{Solution}
+The potential energy before the pendulum is dropped is given by
+\[
+	U_1 = mgh_1
+\]
+where $h_1$ is the vertical distance that the pendulum falls before the string hits the peg;
+\[
+	h_1 = r_1 - r_1\cos\theta
+\]
+giving the equation;
+
+\[
+	U_1 = mg\left(r_1 - r_1\cos\theta\right)
+\]
+similarly, the potential energy when the pendulum is at its maximum height on the other side of the peg is given by;
+\[
+	U_2 = mg \left(r_2 - r_2 \cos\phi \right)
+\]
+and the potential energy in both cases must be equal, therefore;
+\begin{align*}
+	U_1 &= U_2 \\
+	mg\left(r_1 - r_1\cos\theta\right) &= mg \left(r_2 - r_2 \cos\phi \right) \\
+	r_2 \cos \phi &= r_1\cos\theta - r_1 + r_2 \\
+	\cos\phi &= \frac{r_1\cos\theta - r_1 + r_2}{r_2} \\
+	\phi &= \arccos \left( \frac{r_1\cos\theta - r_1 + r_2}{r_2} \right) \\
+	\phi &= \arccos \left( \frac{1.5\cos(30) - 1.5 + 0.5}{0.5} \right) = \boxed{53.268^\circ}
+\end{align*}
+
+
 \section*{Problem 6}
 A 2.00-kg block slides on a frictionless horizontal surface and is connected on one side to a spring with a
 spring constant of 45.0 N/m) as shown the figure. The other side is connected to a 4.00-kg block that hangs
 vertically. The system starts from rest with the spring unextended. \\
 (a) What is the maximum extension of the spring? \\
 (b) What is the speed of the 4.00-kg block when the extension is 50 cm?
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+The maximum extension of the spring occurs when the downward force of gravity on the blocks is equal to the force of the spring acting on the blocks;
+\begin{align*}
+	\frac{1}{2}kd^2 &= m_2gd \\
+\end{align*}
+
+\subsubsection*{Part b:}
+The speed of the block when the spring is extended 50 cm is;
+\begin{align*}
+	F &= kd \\
+	(m_1 + m_2)a &= kd \\
+	a &= \frac{kd}{m_1 + m_2} \\
+	\int a &= \int \frac{kd}{m_1 + m_2} \\
+	v &= \frac{kd^2}{2\left( m_1 + m_2 \right)} \\
+	v &= \frac{45.0 \cdot 0.5^2}{2 \cdot 6.00} = \boxed{0.938\ \text{m}/\text{s}}
+\end{align*}
 
 \section*{Problem 7}
 A cart with a mass of 3.20 kg, an initial speed of 5.15 m/s and an initial height of 4.00 m is moving
