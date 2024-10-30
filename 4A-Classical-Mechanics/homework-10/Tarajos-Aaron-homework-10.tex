@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Homework 10} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{Problem 1}
+A 1.95-kg particle is projected with an initial speed of 4.00 m/s along a surface for which $\mu_k = 0.600$.
+Find the distance it travels given that: (a) the surface is horizontal; (b) the particle moves up a 30$^\circ$ incline;
+(c) the particle moves down a 30$^\circ$ incline.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+The force of friction is given by
+\[
+	F_k = \mu_k mg
+\]
+therefore the work done by friction is given by
+\[
+	W_k = \mu_k mg x
+\]
+the work done by friction is also given by the change in kinetic energy so we have
+\begin{align*}
+	W_k &= \Delta k \\
+	\mu_k mg x \cos \theta &= K_f - K_i \\
+	\mu_k mg x \cos \theta &= 0 - \frac{1}{2}mv^2 \\
+	x &= - \frac{v^2}{2 \mu_k g \cos \theta}
+\end{align*}
+For the given values;
+\[
+	x = - \frac{4.00^2}{2 \cdot 0.600 \cdot 9.81 \cos(180)} = \boxed{1.359\ \text{m}}
+\]
+
+\subsubsection*{Part b:}
+The frictional force changes because the normal force changes, in addition some of the kinetic energy becomes potential energy from the force of gravity as the block travels up the incline.
+
+\[
+	F_n = mg\cos\theta
+\]
+and
+
+\[
+	F_g = mg\sin\theta
+\]
+
+Then we use
+\begin{align*}
+	W_k + K_i + U_i &= U_f + K_f \\
+	\\
+	x \left( \mu_k mg \cos \theta - mg \sin \theta \right) &= - \frac{1}{2}mv^2 \\
+	x &= \frac{v^2}{g \left( \sin \theta + \mu_k \cos \theta \right)}
+\end{align*}
+Which gives us
+\[
+	x = -\frac{4.00^2}{(2)(9.81) \left((0.600) \cos (30) - \sin (30) \right)} =
+\]
+
+\section*{Problem 2}
+Use the potential energy function U(x) shown in figure below to sketch the corresponding $F_x$ versus x
+graph.
+
+\section*{Problem 3}
+A 1.75-kg block starts from rest at an initial height of 40.0 cm and slides down a frictionless circular ramp,
+as shown in the figure below. It slides for 79.0 cm on the horizontal surface before coming to a stop. What is
+the coefficient of kinetic friction? Assume that only the horizontal stretch has friction, and the curved portion
+is frictionless.
+
+\section*{Problem 4}
+The potential energy shared by two atoms separated by a distance r in a diatomic molecule is given by the
+Lennard-Jones function ($U_0$ and $r_0$ are constants):
+
+\[
+	U(r) = U_0 \left[ \left( \frac{r_0}{3} \right)^{12} - 2 \left( \frac{r_0}{r}\right)^6 \right]
+\]
+(a) Where is $U(r)=0$ ? (b) Show that the minimum potential energy is $-U_0$ and that it occurs at $r_0$. (c)
+Where is $F_r = 0$ ? (d) Sketch $U(r)$.
+
+\section*{Problem 5}
+In the figure below, a 3.50 kg block is accelerated from rest by a compressed spring of spring constant 640
+N/m. The block leaves the spring at the spring’s relaxed length and then travels over a horizontal floor with a
+coefficient of kinetic friction $\mu_k$ = 0.25. The frictional force stops the block in distance $D$ = 7.80 m. What are
+(a) the increase in the thermal energy of the block–floor system, (b) the maximum kinetic energy of the block,
+and (c) the original compression distance of the spring?
+
+\section*{Problem 6}
+The masses and positions of three particles in the $xy$ plane are as follows: 2.05 kg at (-2.00, 3.00) m; 3.00 kg
+at (-3.00, 4.00) m, and; and 5.00 kg at (3.00, -1.00) m. What is the position of the CM?
+
+\section*{Problem 7}
+A block of mass $m_1$ = 2.00 kg has velocity $\va{u}_1 = 5.00 \vu{i} - 3.00 \vu{j} + 4.00 \vu{k}$ m/s and another block of mass
+$m_2$ = 6.00 kg has a velocity $\va{u}_2 = -3.00 \vu{i} + 2.00 \vu{j} - 1.00 \vu{k}$ m/s. (a) What is the velocity of the CM? (b)
+What is the total momentum of the system of two blocks?
+
+\section*{Problem 8}
+Use integration to locate the CM of the triangular plate of base $b$ and height $h$ shown in the figure below.
+The plate has a uniform areal mass density $\sigma$ (mass per unit area).
+
+\end{document}
