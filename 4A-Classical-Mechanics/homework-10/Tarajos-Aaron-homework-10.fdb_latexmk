@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730273523.90042 "Tarajos-Aaron-homework-10.tex" "Tarajos-Aaron-homework-10.pdf" "Tarajos-Aaron-homework-10" 1730273524.27956 0
+["pdflatex"] 1730348774.1197 "Tarajos-Aaron-homework-10.tex" "Tarajos-Aaron-homework-10.pdf" "Tarajos-Aaron-homework-10" 1730348774.64898 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1727349926 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm" 1727349926 1020 c53143d3e3747b5c1149bd9a5ecd7b55 ""
@@ -176,14 +176,16 @@
   "/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1727349926 310 4b5d6fe830337242ef847b3bff48ba21 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727349926 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1727406831.93538 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1727406819 7112993 05f43c26bb3dc802232094677986b196 ""
-  "Tarajos-Aaron-homework-10.aux" 1730273524.24017 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "Tarajos-Aaron-homework-10.tex" 1730273523.87684 7346 e386a1bff20675b709c33cc1efb67e97 ""
-  "drawing-1.png" 1730265863.79702 31398 4a4ef911928d660896e301c46ef95558 ""
-  "drawing-2.png" 1730265863.79702 10108 d7dfae643a0aca776af58343539a7ed2 ""
-  "drawing-3.png" 1730265863.79702 16866 25b7a3fc5fbcca7c727f849a46784b47 ""
-  "drawing-4.png" 1730265863.79702 24230 ca729abef1d6c655084c307ead68b281 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1727474744.77747 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1727474734 7112990 ea49d2707d8b96c63fa402a6291dd7f2 ""
+  "Tarajos-Aaron-homework-10.aux" 1730348774.60209 32 77e0dffd05b653a64f0caf3eb9bb454a "pdflatex"
+  "Tarajos-Aaron-homework-10.tex" 1730348773.05207 10193 1f49c2ddb955244a34ff91fc6240c5f8 ""
+  "drawing-1.png" 1730339767.90763 31398 4a4ef911928d660896e301c46ef95558 ""
+  "drawing-2.png" 1730339767.90763 10108 d7dfae643a0aca776af58343539a7ed2 ""
+  "drawing-3.png" 1730339767.90763 16866 25b7a3fc5fbcca7c727f849a46784b47 ""
+  "drawing-4.png" 1730339767.90763 24230 ca729abef1d6c655084c307ead68b281 ""
+  "graph-1.png" 1730348593.17396 169568 6a7b812b12b99ff9df1cc2c7c10fda0d ""
+  "graph-2.png" 1730348760.66531 120388 efc9a71b4cd2a446c71d58784dc40c6e ""
   (generated)
   "Tarajos-Aaron-homework-10.aux"
   "Tarajos-Aaron-homework-10.log"

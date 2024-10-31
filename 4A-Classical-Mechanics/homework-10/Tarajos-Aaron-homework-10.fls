@@ -1,4 +1,4 @@
-PWD /home/kyroh/University/physics/4A-Classical-Mechanics/homework-10
+PWD /home/aaron/University/physics/4A-Classical-Mechanics/homework-10
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT Tarajos-Aaron-homework-10.tex
@@ -329,6 +329,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT ./graph-1.png
+INPUT ./graph-1.png
+INPUT ./graph-1.png
+INPUT ./graph-1.png
+INPUT ./graph-1.png
 INPUT ./drawing-2.png
 INPUT ./drawing-2.png
 INPUT ./drawing-2.png
@@ -337,6 +342,11 @@ INPUT ./drawing-2.png
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT ./graph-2.png
+INPUT ./graph-2.png
+INPUT ./graph-2.png
+INPUT ./graph-2.png
+INPUT ./graph-2.png
 INPUT ./drawing-3.png
 INPUT ./drawing-3.png
 INPUT ./drawing-3.png
