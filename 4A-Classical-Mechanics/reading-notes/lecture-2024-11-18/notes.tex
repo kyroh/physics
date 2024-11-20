@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\title{Lecture Notes}
+\author{Aaron W. Tarajos}
+
+\begin{document}
+
+\maketitle
+
+\section{Angular Kinematics Review}
+Angular position
+\[
+	\theta(t) = \frac{S}{r}
+\]
+Angular velocity
+\[
+	\omega(t) = \frac{d \theta(t)}{dt}
+\]
+units are just s$^{-1}$ and angular acceleration is;
+\[
+	\alpha(t) = \frac{d \omega(t)}{dt} = \frac{d^2 \theta(t)}{dt^2}
+\]
+then tangential velocity is
+\[
+	\boxed{v_t = r \omega}
+\]
+and centripetal/radial acceleration is
+\[
+	a_r = r \alpha \quad \text{or} \quad a_r = \frac{v^2}{r} = r \omega^2
+\]
+
+\section{Rotational Interia}
+Imagine a rod rotating counter clockwise; $\omega$ then would be positive, in reality $\vec{\omega}$, and the direction would be out of the page. Because we want to model with constant velocity we need a unique direction, therefore we define the direction of angular velocity as a cross product. Some notation
+\begin{itemize}
+	\item Out of the page $\rightarrow \odot$
+	\item Into the page $\rightarrow \otimes$
+\end{itemize}
+
+\subsection*{Rotational Kinetic Energy}
+In linear motion
+\[
+	K = \frac{1}{2}mv^2
+\]
+For some infinitesimal section of the rod, the velocity would be
+\[
+	v_i = r_i \omega
+\]
+so then the infinitesimal kinetic energy is;
+\[
+	K_i  = \frac{1}{2}m_i v_i^2 = \frac{1}{2}m_i r_i^2 \omega_i^2
+\]
+or
+\[
+	\sum_i K_i = \frac{1}{2} \omega^2 \sum_i m_i r_i^2
+\]
+so we define rotational intertia;
+\begin{equation}
+	I \coloneqq \sum_i m_i r_i^2
+\end{equation}
+Therefore rotational kinetric energy is given by
+\[
+	K = \frac{1}{2}I \omega^2
+\]
+rotational inertia is how hard it is to get something rotating and if it is rotating how hard it is to get it to stop. Time to integrate;
+\begin{align*}
+	I &= \sum_i m_i r)i^2 \\
+	  &= \int r(m)^2\ dm
+\end{align*}
+Some variables
+\begin{align*}
+	\rho &= \frac{m}{V} \\
+	\sigma &= \frac{m}{A} \\
+	\lambda &= \frac{m}{L}
+\end{align*}
+so we have
+\[
+	\frac{M}{L} = \frac{dm}{dx} \implies dm = \frac{M}{L}dx
+\]
+then we use that to construct
+
+\[
+	I = \frac{M}{L} \int_{-L/2}^{L/2} x^2 dx
+\]
+basically use density to substitute $dm$ in the integral and then integrate.
+
+\end{document}

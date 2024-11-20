@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.27)  30 OCT 2024 23:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.8)  14 NOV 2024 18:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Tarajos-Aaron-homework-10.tex
-(./Tarajos-Aaron-homework-10.tex
+**exam-notes.tex
+(./exam-notes.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -442,6 +442,75 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 591.
 LaTeX Info: Redefining \not on input line 1043.
+) (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count305
+\mult@box=\box67
+\multicol@leftmargin=\dimen273
+\c@unbalance=\count306
+\c@collectmore=\count307
+\doublecol@number=\count308
+\multicoltolerance=\count309
+\multicolpretolerance=\count310
+\full@width=\dimen274
+\page@free=\dimen275
+\premulticols=\dimen276
+\postmulticols=\dimen277
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box68
+\last@line=\box69
+\mc@boxedresult=\box70
+\maxbalancingoverflow=\dimen278
+\mult@rightbox=\box71
+\mult@grightbox=\box72
+\mult@firstbox=\box73
+\mult@gfirstbox=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\c@minrows=\count311
+\c@columnbadness=\count312
+\c@finalcolumnbadness=\count313
+\last@try=\dimen279
+\multicolovershoot=\dimen280
+\multicolundershoot=\dimen281
+\mult@nat@firstbox=\box111
+\colbreak@box=\box112
+\mc@col@check@num=\count314
 ) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -449,67 +518,67 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count305
-\Gm@cntv=\count306
-\c@Gm@tempcnt=\count307
-\Gm@bindingoffset=\dimen273
-\Gm@wd@mp=\dimen274
-\Gm@odd@mp=\dimen275
-\Gm@even@mp=\dimen276
-\Gm@layoutwidth=\dimen277
-\Gm@layoutheight=\dimen278
-\Gm@layouthoffset=\dimen279
-\Gm@layoutvoffset=\dimen280
+\Gm@cnth=\count315
+\Gm@cntv=\count316
+\c@Gm@tempcnt=\count317
+\Gm@bindingoffset=\dimen282
+\Gm@wd@mp=\dimen283
+\Gm@odd@mp=\dimen284
+\Gm@even@mp=\dimen285
+\Gm@layoutwidth=\dimen286
+\Gm@layoutheight=\dimen287
+\Gm@layouthoffset=\dimen288
+\Gm@layoutvoffset=\dimen289
 \Gm@dimlist=\toks43
 )
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 16.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 15.
  (/usr/share/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./Tarajos-Aaron-homework-10.aux)
-\openout1 = `Tarajos-Aaron-homework-10.aux'.
+) (./exam-notes.aux)
+\openout1 = `exam-notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 16.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 16.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 15.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 15.
  (/usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 16.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 16.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 15.
  (/usr/share/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 16.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 16.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 15.
  (/usr/share/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 16.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 16.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 15.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen281
-\scratchbox=\box67
-\nofMPsegments=\count309
-\nofMParguments=\count310
+\scratchcounter=\count318
+\scratchdimen=\dimen290
+\scratchbox=\box113
+\nofMPsegments=\count319
+\nofMParguments=\count320
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen282
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen291
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -527,14 +596,14 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(28.45274pt, 759.6886pt, 56.9055pt)
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=692.6886pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \textwidth=540.60239pt
+* \textheight=721.14136pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-43.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -554,83 +623,49 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 32.
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 33.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 26.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 28.
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 28.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 28.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 28.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 37.
-<drawing-1.png, id=4, 413.545pt x 315.1775pt>
-File: drawing-1.png Graphic file (type png)
-<use drawing-1.png>
-Package pdftex.def Info: drawing-1.png  used on input line 84.
-(pdftex.def)             Requested size: 206.77199pt x 157.58836pt.
- [1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-<graph-1.png, id=16, 1104.125pt x 661.47125pt>
-File: graph-1.png Graphic file (type png)
-<use graph-1.png>
-Package pdftex.def Info: graph-1.png  used on input line 89.
-(pdftex.def)             Requested size: 220.82109pt x 132.2919pt.
-<drawing-2.png, id=17, 246.9225pt x 129.48375pt>
-File: drawing-2.png Graphic file (type png)
-<use drawing-2.png>
-Package pdftex.def Info: drawing-2.png  used on input line 100.
-(pdftex.def)             Requested size: 123.46094pt x 64.7417pt.
- [2 <./drawing-1.png (PNG copy)> <./graph-1.png (PNG copy)> <./drawing-2.png (PNG copy)>] [3]
-<graph-2.png, id=25, 830.10126pt x 732.7375pt>
-File: graph-2.png Graphic file (type png)
-<use graph-2.png>
-Package pdftex.def Info: graph-2.png  used on input line 173.
-(pdftex.def)             Requested size: 166.0173pt x 146.5449pt.
-<drawing-3.png, id=26, 246.9225pt x 131.49126pt>
-File: drawing-3.png Graphic file (type png)
-<use drawing-3.png>
-Package pdftex.def Info: drawing-3.png  used on input line 185.
-(pdftex.def)             Requested size: 123.46094pt x 65.74545pt.
- [4 <./graph-2.png (PNG copy)> <./drawing-3.png (PNG copy)>] [5]
-<drawing-4.png, id=34, 272.01625pt x 206.7725pt>
-File: drawing-4.png Graphic file (type png)
-<use drawing-4.png>
-Package pdftex.def Info: drawing-4.png  used on input line 265.
-(pdftex.def)             Requested size: 136.00778pt x 103.38599pt.
- [6 <./drawing-4.png (PNG copy)>] (./Tarajos-Aaron-homework-10.aux)
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 206.
+ (/usr/share/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+) [2] (./exam-notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25262 strings out of 476076
- 628418 string characters out of 5793775
- 1944187 words of memory out of 5000000
- 46960 multiletter control sequences out of 15000+600000
- 588098 words of font info for 97 fonts, out of 8000000 for 9000
+ 25379 strings out of 476076
+ 630083 string characters out of 5793775
+ 1946187 words of memory out of 5000000
+ 47076 multiletter control sequences out of 15000+600000
+ 579813 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,15n,107p,741b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-10.pdf (6 pages, 445698 bytes).
+ 99i,10n,107p,726b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on exam-notes.pdf (2 pages, 60671 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

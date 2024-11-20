@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.27)  30 OCT 2024 23:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.9.27)  6 NOV 2024 21:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Tarajos-Aaron-homework-10.tex
-(./Tarajos-Aaron-homework-10.tex
+**Tarajos-Aaron-homework-11.tex
+(./Tarajos-Aaron-homework-11.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -465,8 +465,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 16.
  (/usr/share/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./Tarajos-Aaron-homework-10.aux)
-\openout1 = `Tarajos-Aaron-homework-10.aux'.
+) (./Tarajos-Aaron-homework-11.aux)
+\openout1 = `Tarajos-Aaron-homework-11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 16.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 16.
@@ -559,78 +559,67 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 32.
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 34.
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 34.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 34.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 33.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 34.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 37.
-<drawing-1.png, id=4, 413.545pt x 315.1775pt>
+<drawing-1.png, id=4, 261.97874pt x 140.525pt>
 File: drawing-1.png Graphic file (type png)
 <use drawing-1.png>
-Package pdftex.def Info: drawing-1.png  used on input line 84.
-(pdftex.def)             Requested size: 206.77199pt x 157.58836pt.
+Package pdftex.def Info: drawing-1.png  used on input line 56.
+(pdftex.def)             Requested size: 130.98904pt x 70.26231pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-<graph-1.png, id=16, 1104.125pt x 661.47125pt>
-File: graph-1.png Graphic file (type png)
-<use graph-1.png>
-Package pdftex.def Info: graph-1.png  used on input line 89.
-(pdftex.def)             Requested size: 220.82109pt x 132.2919pt.
-<drawing-2.png, id=17, 246.9225pt x 129.48375pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./drawing-1.png (PNG copy)>] [2]
+<drawing-2.png, id=20, 333.245pt x 115.43124pt>
 File: drawing-2.png Graphic file (type png)
 <use drawing-2.png>
-Package pdftex.def Info: drawing-2.png  used on input line 100.
-(pdftex.def)             Requested size: 123.46094pt x 64.7417pt.
- [2 <./drawing-1.png (PNG copy)> <./graph-1.png (PNG copy)> <./drawing-2.png (PNG copy)>] [3]
-<graph-2.png, id=25, 830.10126pt x 732.7375pt>
-File: graph-2.png Graphic file (type png)
-<use graph-2.png>
-Package pdftex.def Info: graph-2.png  used on input line 173.
-(pdftex.def)             Requested size: 166.0173pt x 146.5449pt.
-<drawing-3.png, id=26, 246.9225pt x 131.49126pt>
+Package pdftex.def Info: drawing-2.png  used on input line 145.
+(pdftex.def)             Requested size: 166.62209pt x 57.71547pt.
+<drawing-3.png, id=21, 394.47375pt x 229.85875pt>
 File: drawing-3.png Graphic file (type png)
 <use drawing-3.png>
-Package pdftex.def Info: drawing-3.png  used on input line 185.
-(pdftex.def)             Requested size: 123.46094pt x 65.74545pt.
- [4 <./graph-2.png (PNG copy)> <./drawing-3.png (PNG copy)>] [5]
-<drawing-4.png, id=34, 272.01625pt x 206.7725pt>
+Package pdftex.def Info: drawing-3.png  used on input line 167.
+(pdftex.def)             Requested size: 197.23639pt x 114.92908pt.
+ [3 <./drawing-2.png (PNG copy)>] [4 <./drawing-3.png (PNG copy)>]
+<drawing-4.png, id=28, 227.85126pt x 149.55875pt>
 File: drawing-4.png Graphic file (type png)
 <use drawing-4.png>
-Package pdftex.def Info: drawing-4.png  used on input line 265.
-(pdftex.def)             Requested size: 136.00778pt x 103.38599pt.
- [6 <./drawing-4.png (PNG copy)>] (./Tarajos-Aaron-homework-10.aux)
+Package pdftex.def Info: drawing-4.png  used on input line 231.
+(pdftex.def)             Requested size: 113.92534pt x 74.77919pt.
+ [5 <./drawing-4.png (PNG copy)>] (./Tarajos-Aaron-homework-11.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25262 strings out of 476076
- 628418 string characters out of 5793775
- 1944187 words of memory out of 5000000
- 46960 multiletter control sequences out of 15000+600000
- 588098 words of font info for 97 fonts, out of 8000000 for 9000
+ 25250 strings out of 476076
+ 628181 string characters out of 5793775
+ 1941187 words of memory out of 5000000
+ 46946 multiletter control sequences out of 15000+600000
+ 589474 words of font info for 99 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,15n,107p,741b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-10.pdf (6 pages, 445698 bytes).
+ 99i,14n,107p,741b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tarajos-Aaron-homework-11.pdf (5 pages, 141847 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,187 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\title{Fundamental Symmetries in Classical Field Theories}
+\author{Aaron W. Tarajos}
+
+\begin{document}
+
+\maketitle
+
+\section{Theorem}
+We will formally show that invariance of action implies covariance of the field equations by two proofs using functional derivatives of the action, including; a finite proof for discrete and continuous quasi-symmetry and infinitesimal proof for a continouous quasi-symmetry from the infinitesimal transformation%\footnote{These proofs are sourced from \href{https://physics.stackexchange.com/questions/144389/invariance-of-action-rightarrow-covariance-of-field-equations}{Physics Stack Exchange} and have been re-written and explained here as an excercise for my own personal use.}.
+In addition, we will explore a proof of the infinitesimal transfromation without functional derivatives using higher order partial field derivatives. Theorem;
+If a local action functional $S_V\left[\phi\right]$ has a quasi-symmetry transformation
+\begin{equation}
+	\phi^\alpha (x) \to \phi^{\prime\alpha}(x^\prime), \quad x^\mu \to x^{\prime\mu},
+\end{equation}
+then the equations of motion
+\begin{equation}
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x)~:=~\frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)}~\approx~0
+\end{equation}
+must have a symmetry with respect to the same transformation;
+\begin{equation}
+	e_{\alpha}(\phi^{\prime}(x^{\prime}),\partial^{\prime}\phi^{\prime}(x^{\prime}),\ldots ; x^{\prime})~\approx~e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x).
+\end{equation}
+
+\subsection{Invariance and Covariance}
+An object is said to be invariant if under some transformation the object remains unchanged. That is for an arbitrary transformation of a field $\phi$;
+\[
+	\phi^{\prime x}  = \phi^x
+\]
+Similarly, an object is covariant if its form is preserved when the fields and coordinates are transformed.
+
+\subsection{Quasi-symmetry}
+We define an action functional $S_V\left[\phi\right]$ as the integral of the $n$-form Lagrangian $\mathbb{L}$ over a region of spacetime $V$;
+\begin{equation}
+	S_V\left[ \phi \right] \coloneqq \int_V \mathbb{L}, \quad \mathbb{L} \coloneqq \mathcal{L}\ d^nx\ .
+\end{equation}
+Where $\mathcal{L}$ is the Lagrangian density in $n$-dimensional space. Then, the action functional $S_V\left[\phi\right]$ has a quasi-symmetry if it changes by a boundary integral such that the transformed action functional is equal to the original action functional plus the same boundary integral over the transformed spacetime region $V^\prime$:
+\begin{equation}
+	S_V^\prime \left[\phi^\prime\right] + \int_{\partial V^\prime} d^{n-1} (\dots) = S_V \left[\phi\right] + \int_{\partial V} d^{n-1} (\dots)
+\end{equation}
+
+\section{Equations of Motion}
+We have defined the action functional to be invariant under infinitesimal variations in the field $\delta \phi^\alpha(x)$ and therefore;
+\[
+	\frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)} = 0 \ ,
+\]
+giving us the equations of motion;
+
+\begin{equation}
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x) \coloneqq \frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)} \approx 0 \ .
+\end{equation}
+
+\section{Formal Finite Proof}
+Starting with the equations of motion;
+
+\[
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x) = \frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)}
+\]
+by (5) we can say that
+
+\[
+	\delta S_{V^\prime} \left[\phi^\prime\right] = \delta S_{V} \left[\phi\right]
+\]
+and therefore
+
+\[
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x) = \frac{\delta S_{V^\prime} \left[\phi^\prime\right]}{\delta \phi^{\alpha}(x)}
+\]
+by the chain rule;
+
+\begin{align*}
+	\frac{\delta S_{V^\prime} \left[\phi^\prime\right]}{\delta \phi^{\alpha}(x)} &= \int_{V^\prime}d^nx^\prime \frac{\delta S_{V^\prime} \left[\phi^\prime\right]}{\delta \phi^{\prime \alpha}(x^\prime)} \frac{\delta \phi^{\prime \alpha}(x^\prime)}{\delta \phi^{\alpha}(x)} \\
+	\frac{\delta S_{V^\prime} \left[\phi^\prime\right]}{\delta \phi^{\alpha}(x)} &= \int_{V^\prime}d^nx^\prime e_\alpha\left(\phi^\prime(x^\prime),\partial^\prime \phi^\prime(x^\prime), \dots ; x^\prime \right) \frac{\delta \phi^{\prime \alpha}(x^\prime)}{\delta \phi^{\alpha}(x)} \\
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x) &= \int_{V^\prime}d^nx^\prime e_\alpha\left(\phi^\prime(x^\prime),\partial^\prime \phi^\prime(x^\prime), \dots ; x^\prime \right) \frac{\delta \phi^{\prime \alpha}(x^\prime)}{\delta \phi^{\alpha}(x)} \\
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x) &= e_\alpha\left(\phi^\prime(x^\prime),\partial^\prime \phi^\prime(x^\prime), \dots ; x^\prime \right) \quad \blacksquare
+\end{align*}
+The final step is justified because for the integral to equal zero for arbitrary variations--satifying the equations of motion--the integrand must vanish pointwise.
+
+\section{Formal Infinitesimal Proof}
+From (3) we can say
+
+\begin{align*}
+	\delta \phi^\alpha(x) &\coloneqq \phi^{\prime \alpha}(x^\prime) - \phi^\alpha (x)\ , \\
+	\delta x^\mu & \coloneqq x^{\prime \mu} - x^\mu \ ,
+\end{align*}
+which we use to define a vertical transformation%\footnote{I believe the author is defining this vertical transformation along the fiber because because he is taking a comparison of two fields related via a symmetry at the same point.};
+\begin{align}
+	\delta_0 \phi^{\alpha}(x)~:=~&\phi^{\prime \alpha}(x)-\phi^{\alpha}(x)\cr
+~=~&\delta \phi^{\alpha}(x)-\delta x^{\mu} ~d_{\mu}\phi^{\alpha}(x),\cr
+d_{\mu}~:=~&\frac{d}{dx^{\mu}}.
+\end{align}
+Then the change in the Lagrangian density is;
+\[
+	\delta \mathbb{L} = d_\mu f^\mu d^nx
+\]
+\[
+	\delta_0 \mathbb{L} = d_\mu \left(f^\mu - \mathcal{L}\delta x^\mu\right)\ d^nx
+\]
+where $d_\mu f^\mu$ is a boundary term which represents the total derivative of $f^\mu$ and $\delta_0 \mathbb{L}$ is the vertical variation of the Lagrangian. We use these to construct the infinitesimal transformation of the equations of motion which are assumed to be of second order;
+\begin{align*}
+	\delta e_\alpha(x) = \delta_0 e_\alpha(x) + \delta x^\mu d_\mu e_\alpha(x)
+\end{align*}
+where $d_\mu e_\alpha(x) \to 0$ because the equations of motion are on-shell. We expand $\delta_0 e_\alpha(x)$ in terms of field variations;
+\begin{align*}
+	\delta e_\alpha(x) &\approx \delta_0 e_\alpha(x) \\
+	&= \frac{\partial e_{\alpha}(x)}{\partial\phi^{\beta}(x)}\delta_0\phi^{\beta}(x) +\sum_{\mu}\frac{\partial e_{\alpha}(x)}{\partial(\partial_{\mu}\phi^{\beta}(x))}d_{\mu}\delta_0\phi^{\beta}(x) +\sum_{\mu\leq \nu }\frac{\partial e_{\alpha}(x)}{\partial(\partial_{\mu}\partial_{\nu}\phi^{\beta}(x))}d_{\mu}d_{\nu}\delta_0\phi^{\beta}(x)
+\end{align*}
+and then re-write the field variations as functional derivatives;
+\[
+	\delta e_\alpha(x) = \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta e_{\alpha}(x)}{\delta \phi^{\beta}(y)}
+\]
+because $e_\alpha(x) = \frac{\delta S_V\left[\phi\right]}{\delta \phi^\alpha(x)}$ we obtain;
+\[
+	\delta e_\alpha(x) = \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta^2 S_V[\phi]}{\delta \phi^{\beta}(y)\delta \phi^{\alpha}(x)}
+\]
+Using the fact that funcational derivatives can be interchanged meaning;
+\[
+	\frac{\delta^2 S_V[\phi]}{\delta \phi^{\beta}(y)\delta \phi^{\alpha}(x)} = \frac{\delta^2 S_V[\phi]}{\delta \phi^{\alpha}(x)\delta \phi^{\beta}(y)}
+\]
+we can write
+\begin{align*}
+	\int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta^2 S_V[\phi]}{\delta \phi^{\beta}(y)\delta \phi^{\alpha}(x)} &= \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta^2 S_V[\phi]}{\delta \phi^{\alpha}(x)\delta \phi^{\beta}(y)} \\
+														        &= \frac{\delta}{\delta \phi^{\alpha}(x)} \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta S_V[\phi]}{\delta \phi^{\beta}(y)} -\int_V\! d^ny~ \frac{\delta(\delta_0\phi^{\beta}(y))}{\delta \phi^{\alpha}(x)} \frac{\delta S[\phi]}{\delta \phi^{\beta}(y)} \\
+	&= \frac{\delta(\delta_0 S_V[\phi]) }{\delta \phi^{\alpha}(x)} -\int_V\! d^ny~ \frac{\delta(\delta_0\phi^{\beta}(y))}{\delta \phi^{\alpha}(x)} e_{\beta}(y)
+\end{align*}
+Recognizing that the second term includes the equations of motion which must be satisfied and therefore equal zero, we obtain;
+\[
+	\delta e_\alpha(x) = \frac{\delta(\delta_0 S_V[\phi]) }{\delta \phi^{\alpha}(x)}
+\]
+In the last step, we see that because the variation of the action under the vertical transformation is a boundary term;
+\begin{align*}  \delta_0 S_V[\phi]+\int_V\! d^nx~d_{\mu} \left({\cal L}~\delta x^{\mu} \right)  ~=~&\delta S_V[\phi]\cr
+~=~&\int_{\partial V} \!d^{n-1}x~(\ldots)\end{align*}
+
+\section{Formal Infinitesimal Proof for x-locally}
+Using the same infinitesimal transformation of the equations of motion;
+\[
+	\delta e_\alpha(x) = \delta_0 e_\alpha(x) + \delta x^\mu d_\mu e_\alpha(x)
+\]
+we can prove it $x$-locally
+\[
+\delta_0 e_{\alpha}(x) = \underbrace{E_{\alpha(0)} d_{\mu}}_{=0}\left(f^{\mu}(x)-{\cal L}(x)~\delta x^{\mu}\right) - \sum_{k\geq 0} d^k\left( \underbrace{e_{\beta}(x)}_{\approx 0} \cdot P_{\alpha(k)}\delta_0\phi^{\beta}(x) \right) \approx 0
+\]
+where $P_{\alpha(k)}$ are higher order partial field derivatives;
+\[
+P_{\alpha(k)} \coloneqq \frac{\partial}{\partial \phi^{\alpha(k)}}, \quad k \in \mathbb{N}_0^n,
+\]
+and $E_{\alpha(k)}$ is an Euler operator;
+\[
+	E_{\alpha(k)} \coloneqq \sum_{m \ge k}\binom{m}{k} (-d)^m P_{\alpha(m)}
+\]
+Starting with a variation in the field $\delta \phi^\beta(y)$. The corresponding variation in the equations of motion are;
+\[
+	\delta e_\alpha(x) = \int d^ny \frac{\delta e_\alpha(x)}{\delta \phi^\beta(x)}\delta \phi^\beta(x)
+\]
+using the chain rule,
+\begin{align*}
+	\delta e_\alpha(x) &= \int d^ny \frac{\delta e_\alpha(x)}{\delta \phi^\beta(x)}\delta \phi^\beta(x) \\
+			   &= \int d^ny \sum_{|k|=0}^N \frac{\partial e_{\alpha}(x)}{\partial \phi^{\beta(k)}(x)} \delta \phi^{\beta(k)}(x)\delta(x-y) \\
+\end{align*}
+Where the variation of the $k$-th derivative of the field at $x$ is related to $\delta_0 \phi^\beta(y)$ by
+\[
+	\delta \phi^{\beta(k)}(x)=D_{k}\delta_0 \phi^\beta(x)
+\]
+
+
+
+\end{document}
+

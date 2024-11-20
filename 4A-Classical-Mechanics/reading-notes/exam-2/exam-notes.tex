@@ -1,0 +1,216 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+\usepackage{multicol}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=1cm, left=1cm, right=1cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4A - Classical Mechanics \hfill Aaron W. Tarajos
+\begin{center}
+	\textbf{Exam 2 Notes}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{multicols}{2}
+\subsection*{Friction}
+Static friction is equal to the opposing force, up to a maximum given by;
+\[
+	F_{s,\text{max}} = \mu_s F_n
+\]
+after the force exceeds the maximum force of static friction the object slips where kinetic friction acts on the object such that
+\[
+	F_k = \mu_k F_n
+\]
+
+\subsection*{Uniform circular motion}
+\begin{align*}
+	a &= \frac{v^2}{r} \\
+	F_c &= \frac{mv^2}{r}
+\end{align*}
+
+\subsection*{Work and energy}
+Kinetic energy;
+\[
+	K = \frac{1}{2}mv^2
+\]
+Work;
+\[
+	W = Fd \cos \phi \quad \text{Or} \quad W = \Delta K
+\]
+work is defined as the dot product of Force and Distance. Work done by gravity;
+\[
+	W_g = mgd \cos \phi
+\]
+Work done by a spring;
+\[
+	W_s = -\frac{1}{2}kx^2
+\]
+Hooke's law;
+\[
+	F_s = -kx
+\]
+Potential energy;
+\[
+	\Delta U = -W
+\]
+gravitational potential energy;
+\[
+	U = mgy
+\]
+spring potential energy;
+\[
+	U = \frac{1}{2}kx^2
+\]
+For non-linear forces;
+\[
+	W = \int_{x_1}^{x_2} F(x)\ dx
+\]
+
+\subsection*{Power}
+\[
+	P = \frac{dW}{dt} \quad \text{or} \quad P = \vec{F} \cdot \vec{v} = Fv \cos \phi
+\]
+
+\subsection*{Mechanical Energy}
+\[
+	E_\text{mech} = K + U
+\]
+Unless energy enters the system energy is conserved;
+\[
+	\Delta E_\text{mech} = \Delta K + \Delta U = 0
+\]
+kinetic energy can become potential energy or the other way around. Kinetic energy is never negative.\\
+Therma energy is
+\[
+	E_\text{th} = F_k \cdot d
+\]
+
+\subsection*{Work from external forces}
+Work can be done by external forces influencing the system;
+\[
+	W = \Delta K + \Delta U \quad \text{Or} \quad W = \Delta E
+\]
+
+\subsection*{Center of Mass}
+For many particle system;
+\[
+	x_{CM} = \frac{1}{M}\sum_{i=1}^n m_i x_i
+\]
+where $M$ is the total mass of all the particles. (Average location $x$ weighted by mass $m$, i.e. expected value).
+For solid bodies;
+\[
+	x_cm = \frac{1}{V} \int x w(x) \ dx
+\]
+where $w$ is width as a function of $x$ and $V$ is volume. Just add an integral for each dimension.
+
+\subsection*{Momentum}
+Linear momentum;
+\[
+	p = m \vec{v}
+\]
+for a system of object total momentum is just the sum of $p_i$.
+Impulse;
+\[
+	\vec{J} = \Delta \vec{p}
+\]
+\[
+	\frac{d\vec{p}}{dt} = \vec{F}
+\]
+Momentum is conserved (one of the fundamental conservation laws.
+
+\end{multicols}
+
+\pagebreak
+
+\begin{multicols}{2}
+\subsection*{Collisions}
+Perfectly elastic $\implies$ kinetic energy is conserved \\
+Inelastic $\implies$ kinetic energy is not conserved \\
+Perfectly inelastic $\implies$ kinetic energy is not conserved\\
+Conservation of momentum;
+\[
+	m_1v_{1,i} + m_2v_{2,i} = m_1v_{1,f} + m_2v_{2,f}
+\]
+One-dimensional inelastic collisions;
+\[
+	V= \frac{m_1}{m_1 + m_2}v_{1,i}
+\]
+where $V$ is the final velocity of the total system.\\
+One-dimensional elastic collisions;
+\[
+	\frac{1}{2}m_1v_{1,i} = \frac{1}{2}m_1v_{1,f} + \frac{1}{2}m_2v_{2,f}
+\]
+Then we can solve for various quantities using;
+\[
+	v_{1,f} = \frac{m_1 - m_2}{m_1 + m_2}v_{1,i}
+\]
+\[
+	v_{2,f} = \frac{2m_1}{m_1 + m_2}v_{1,i}
+\]
+
+\subsection*{Angular kinematics}
+It works the same as linear motion but with different variables. Position is defined by $\theta$ in radians;
+\[
+	\theta = \frac{S}{r}
+\]
+angular velocity is
+\[
+	\omega = \frac{d\theta}{dt}
+\]
+angular acceleration is
+\[
+	\alpha = \frac{d^2\theta^2}{dt^2}
+\]
+kinematic equations
+\begin{align*}
+	\Delta \theta &= \omega_0 t + \frac{1}{2}\alpha t^2 \\
+	\omega &= \omega_0 + \alpha t \\
+	\omega^2 &= \omega_0^2 + 2 \alpha \Delta \theta \\
+	\omega_\text{avg} &= \frac{\omega + \omega_0}{2}
+\end{align*}
+other useful stuff;
+\begin{align*}
+	v_t &= \omega r \\
+	a_t &= \alpha r
+\end{align*}
+for tangential acceleration and velocity. \\
+Centripetal acceleration;
+\[
+	a_c = \omega^2 r
+\]
+Period of revolution;
+\[
+	T = \frac{2 \pi r}{\omega}
+\]
+
+\subsection*{Useful units}
+Work: J $\rightarrow$ kg m$^2$/s$^2$ \\
+Impulse: N$\cdot$s $\rightarrow$ kg m/s \\
+Force: N $\rightarrow$ kg m/s$^2$
+
+
+\subsection*{Check your algebra you fucking idiot}
+\subsection*{Potential tricks}
+\begin{itemize}
+	\item Gravitational work require change in height i.e. satelite orbiting earth has no gravitational work.
+	\item The location of a pendulum matters for tension because of gravity. $\frac{mv^2}{r} = F_t + mg\cos \phi$
+	\item Double check angles for work, may need to add or subtract 180$\circ$ depending on orientation
+	\item When in doubt use calculus and see if the result makes physical sense.
+	\item if Velocity is constant
+\end{itemize}
+
+\end{multicols}
+
+
+\end{document}
