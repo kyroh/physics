@@ -26,7 +26,7 @@
 \maketitle
 
 \section{Theorem}
-We will formally show that invariance of action implies covariance of the field equations by two proofs using functional derivatives of the action, including; a finite proof for discrete and continuous quasi-symmetry and infinitesimal proof for a continouous quasi-symmetry from the infinitesimal transformation%\footnote{These proofs are sourced from \href{https://physics.stackexchange.com/questions/144389/invariance-of-action-rightarrow-covariance-of-field-equations}{Physics Stack Exchange} and have been re-written and explained here as an excercise for my own personal use.}.
+We will formally show that invariance of action implies covariance of the field equations by two proofs using functional derivatives of the action, including; a finite proof for discrete and continuous quasi-symmetry and infinitesimal proof for a continouous quasi-symmetry from the infinitesimal transformation\footnote{These proofs are sourced from \href{https://physics.stackexchange.com/questions/144389/invariance-of-action-rightarrow-covariance-of-field-equations}{Physics Stack Exchange} and have been re-written and explained here as an excercise for my own personal use.}.
 In addition, we will explore a proof of the infinitesimal transfromation without functional derivatives using higher order partial field derivatives. Theorem;
 If a local action functional $S_V\left[\phi\right]$ has a quasi-symmetry transformation
 \begin{equation}
@@ -102,7 +102,7 @@ From (3) we can say
 	\delta \phi^\alpha(x) &\coloneqq \phi^{\prime \alpha}(x^\prime) - \phi^\alpha (x)\ , \\
 	\delta x^\mu & \coloneqq x^{\prime \mu} - x^\mu \ ,
 \end{align*}
-which we use to define a vertical transformation%\footnote{I believe the author is defining this vertical transformation along the fiber because because he is taking a comparison of two fields related via a symmetry at the same point.};
+which we use to define a vertical transformation\footnote{I believe the author is defining this vertical transformation along the fiber because because he is taking a comparison of two fields related via a symmetry at the same point.};
 \begin{align}
 	\delta_0 \phi^{\alpha}(x)~:=~&\phi^{\prime \alpha}(x)-\phi^{\alpha}(x)\cr
 ~=~&\delta \phi^{\alpha}(x)-\delta x^{\mu} ~d_{\mu}\phi^{\alpha}(x),\cr
@@ -124,7 +124,7 @@ where $d_\mu e_\alpha(x) \to 0$ because the equations of motion are on-shell. We
 	\delta e_\alpha(x) &\approx \delta_0 e_\alpha(x) \\
 	&= \frac{\partial e_{\alpha}(x)}{\partial\phi^{\beta}(x)}\delta_0\phi^{\beta}(x) +\sum_{\mu}\frac{\partial e_{\alpha}(x)}{\partial(\partial_{\mu}\phi^{\beta}(x))}d_{\mu}\delta_0\phi^{\beta}(x) +\sum_{\mu\leq \nu }\frac{\partial e_{\alpha}(x)}{\partial(\partial_{\mu}\partial_{\nu}\phi^{\beta}(x))}d_{\mu}d_{\nu}\delta_0\phi^{\beta}(x)
 \end{align*}
-and then re-write the field variations as functional derivatives;
+and then we take the first order term and re-write the field variation as a functional derivative;
 \[
 	\delta e_\alpha(x) = \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta e_{\alpha}(x)}{\delta \phi^{\beta}(y)}
 \]
@@ -155,7 +155,7 @@ Using the same infinitesimal transformation of the equations of motion;
 \[
 	\delta e_\alpha(x) = \delta_0 e_\alpha(x) + \delta x^\mu d_\mu e_\alpha(x)
 \]
-we can prove it $x$-locally
+we can prove the symmetry $x$-locally
 \[
 \delta_0 e_{\alpha}(x) = \underbrace{E_{\alpha(0)} d_{\mu}}_{=0}\left(f^{\mu}(x)-{\cal L}(x)~\delta x^{\mu}\right) - \sum_{k\geq 0} d^k\left( \underbrace{e_{\beta}(x)}_{\approx 0} \cdot P_{\alpha(k)}\delta_0\phi^{\beta}(x) \right) \approx 0
 \]
@@ -167,19 +167,8 @@ and $E_{\alpha(k)}$ is an Euler operator;
 \[
 	E_{\alpha(k)} \coloneqq \sum_{m \ge k}\binom{m}{k} (-d)^m P_{\alpha(m)}
 \]
-Starting with a variation in the field $\delta \phi^\beta(y)$. The corresponding variation in the equations of motion are;
-\[
-	\delta e_\alpha(x) = \int d^ny \frac{\delta e_\alpha(x)}{\delta \phi^\beta(x)}\delta \phi^\beta(x)
-\]
-using the chain rule,
-\begin{align*}
-	\delta e_\alpha(x) &= \int d^ny \frac{\delta e_\alpha(x)}{\delta \phi^\beta(x)}\delta \phi^\beta(x) \\
-			   &= \int d^ny \sum_{|k|=0}^N \frac{\partial e_{\alpha}(x)}{\partial \phi^{\beta(k)}(x)} \delta \phi^{\beta(k)}(x)\delta(x-y) \\
-\end{align*}
-Where the variation of the $k$-th derivative of the field at $x$ is related to $\delta_0 \phi^\beta(y)$ by
-\[
-	\delta \phi^{\beta(k)}(x)=D_{k}\delta_0 \phi^\beta(x)
-\]
+
+
 
 
 

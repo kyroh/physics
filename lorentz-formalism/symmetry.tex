@@ -1,0 +1,240 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{enumitem}
+\usepackage{txfonts}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{./symmetry.bib}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\title{Fundamental Symmetries in Classical Field Theories}
+\author{Aaron W. Tarajos}
+
+\begin{document}
+
+\maketitle
+
+\section{The Action Functional for Fields}
+In classical mechanics, the action functional \( S \) is a fundamental quantity defined as the integral over time of the Lagrangian \( L \), which encapsulates the dynamics of a system.
+For a system described by generalized coordinates \( q_i(t) \) and their time derivatives \( \dot{q}_i(t) \), the action is given by:
+
+\begin{equation}
+S[q_i(t)] = \int_{t_1}^{t_2} L(q_i, \dot{q}_i, t) \, dt.
+\end{equation}
+The Lagrangian \( L \) represents the difference between the kinetic and potential energies of the system, \( L = T - V \).
+The principle of stationary action tells us that the actual path taken by the system between times \( t_1 \) and \( t_2 \) is the one that makes the action \( S \) stationary (usually a minimum), we can also call this the \textit{equations of motion}.
+
+Now we will construct the action functional for classical field theories by extending the concept of discrete particles to continuous fields that permeate space and time.
+In field theory, the dynamical variables are fields \( \phi(x^\mu) \) that depend on spacetime coordinates \( x^\mu = (t, \mathbf{x}) \).
+These fields represent an infinite number of degrees of freedom, as they assign values to every point in spacetime.
+First we generalize the Lagrangian \( L \) to a Lagrangian density \( \mathcal{L} \), which depends on the fields \( \phi \), their spacetime derivatives \( \partial_\mu \phi \), and the coordinates \( x^\mu \) themselves:
+
+\[
+\mathcal{L} = \mathcal{L}(\phi, \partial_\mu \phi, x^\mu).
+\]
+The action functional \( S \) in classical field theory is then defined as the integral of the Lagrangian density over the entire spacetime manifold:
+
+\[
+S[\phi(x^\mu)] = \int \mathcal{L}(\phi, \partial_\mu \phi, x^\mu) \, d^nx,
+\]
+where $d^nx$ represents $n$-dimensional spacetime. As an example, in Einsteins model of gravity we have 3 spacial dimensions and one time dimension; \( d^4x = dt \, d^3x \).
+The dynamics of the fields are determined by the requirement that the action \( S \) is stationary under variations of the fields \( \delta \phi \) that vanish at the boundaries of the integration domain.
+To derive this, we perform a variation of the action with respect to the fields \( \phi \):
+
+\[
+\delta S = \int \left( \frac{\partial \mathcal{L}}{\partial \phi} \delta \phi + \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta (\partial_\mu \phi) \right) d^nx.
+\]
+Using integration by parts on the second term and assuming that the variations \( \delta \phi \) vanish at the boundaries, we can rewrite \( \delta S \) as:
+
+\[
+\delta S = \int \left[ \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \right] \delta \phi \, d^4x.
+\]
+For the action to be stationary (\( \delta S = 0 \)) for arbitrary variations \( \delta \phi \), the integrand must vanish:
+
+\[
+\frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) = 0.
+\]
+These are the Euler-Lagrange equations for fields, which are the equations of motion in classical field theory.
+They result from setting the functional derivative of the action with respect to the fields to zero in precisely the same way we do in Lagrangian mechanics:
+
+\begin{equation}
+\frac{\delta S}{\delta \phi} = 0.
+\end{equation}
+
+\section{Invariance and Covariance}
+An action $S\left[\phi\right]$ is said to be invariant under a transformation if the value of the action remains unchanged when the fields $\phi(x)$ are transformed according to the transformation group.
+That is for transformations $x^\mu \rightarrow x^{\prime \mu}$ and $\phi(x) \rightarrow \phi^\prime(x^\prime)$;
+\[
+	S\left[\phi\right] = S^\prime\left[\phi^\prime\right]
+\]
+Then the field equations are covariant if their form remains unchanged with respect to the same transformation group.
+
+\section{Noether's Theorem and Quasi-Symmetry}
+Recall that Noether's theorem is fundamentally a connection between continuous symmetries and conservation laws.
+In the classical sense, every differentiable symmetry of the action of a system corresponds to a conserved quantity.
+For example; symmetry of time transformations implies conservation of energy, symmetry of spatial transformations implies conservation of momentum, and so on.
+It is often the case in classical field theories that transformations are not strictly invariant but rather changes by a boundary term.
+If the boundary term vanishes the conservation laws derived from Noether's theorem remains valid and if the boundary term does not vanish the conserved quantity is modified to include the boundary term from the total derivative.
+A quasi-symmetry then is an adaptation of a classical continuous symmetry that we use to account for the boundary terms that arise from a given transformation. We define the quasi-symmetry as;
+\begin{equation}
+	S_{V^{\prime}}[\phi^{\prime}]
++\int_{\partial V^{\prime}} \!d^{n-1}x~(\ldots)
+~=~S_V[\phi]+ \int_{\partial V} \!d^{n-1}x~(\ldots)\ ,
+\end{equation}
+where the added subscript $V$ for the action functional denotes an arbitrary spacetime integration region.
+
+\section{Theorem}
+We will formally show that invariance of action implies covariance of the corresponding field equations by two proofs presented in \cite{144417}; including a finite proof for discrete and continuous quasi-symmetry and an infinitesimal proof for continuous quasi-symmetry. Finally we will show an alternative infinitesimal proof for the local spacetime point $x$ to avoid the unse of functional derivatives that assume neglibile boundary contributions. If a local action functional $S_V\left[\phi\right]$ has a quasi-symmetry transformation;
+
+\begin{equation}
+	\phi^\alpha(x) \rightarrow \phi^{\prime \alpha}(x^\prime), \quad x^\mu \rightarrow x^{\prime \mu}
+\end{equation}
+the the equations of motion
+
+\begin{equation}
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x)~:=~\frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)}~\approx~0
+\end{equation}
+must have a symmetry with respect to the same transformation
+\begin{equation}
+	e_{\alpha}(\phi^{\prime}(x^{\prime}),\partial^{\prime}\phi^{\prime}(x^{\prime}),\ldots ; x^{\prime})~\approx~e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x).
+\end{equation}
+We use $\alpha$ to index the components of the field differentiating it from a scalar field and similarly $\mu$ indexes the dimensions of the spacetime coordinates meaning that all coordinates are subject to the same transformation.
+
+\section{Formal Finite Proof}
+Recall that by Eq.(2) the equations of motion are given by setting the functional derivative to zero;
+\[
+	e_{\alpha}(\phi(x),\partial\phi(x),\ldots ; x) := \frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)}
+\]
+then by Eq.(3)
+
+\[
+	S_{V^\prime}\left[\phi^\prime\right] = S_V\left[\phi\right]
+\]
+so we have
+
+\[
+	\frac{\delta S_V[\phi]}{\delta \phi^{\alpha}(x)} = \frac{S_{V^\prime}\left[\phi^\prime\right]}{\delta \phi^{\alpha}(x)}
+\]
+by the chain rule;
+\begin{align*}
+	\frac{S_{V^\prime}\left[\phi^\prime\right]}{\delta \phi^{\alpha}(x)} &= \int_{V'} d^n x' \left( \frac{\delta S_{V'}[\phi']}{\delta \phi'^\alpha(x')} \frac{\delta \phi'^\alpha(x')}{\delta \phi^\alpha(x)} + \frac{\delta S_{V'}[\phi']}{\delta x'^\mu} \frac{\delta x'^\mu}{\delta \phi^\alpha(x)} \right) \\
+									     &= \int_{V^{\prime}}\!d^nx^{\prime}~\frac{\delta S_{V^{\prime}}[\phi^{\prime}]}{\delta \phi^{\prime\alpha}(x^{\prime})} \frac{\delta \phi^{\prime\alpha}(x^{\prime})}{\delta \phi^{\alpha}(x)} \\
+									     &=\int_{V^{\prime}}\!d^nx^{\prime}~e_{\alpha}(\phi^{\prime}(x^{\prime}),\partial^{\prime}\phi^{\prime}(x^{\prime}),\ldots ; x^{\prime}) \frac{\delta \phi^{\prime\alpha}(x^{\prime})}{\delta \phi^{\alpha}(x)}
+\end{align*}
+After using the chain rule on the functional derivative, we only take the first term which is the main limitation of this proof; the boundary conrtibutions are not always negligible as discussed in Section 3.
+
+\section{Formal Infinitesimal Proof}
+From the infinitesimal transformation;
+\begin{align}  \delta \phi^{\alpha}(x)~:=~&\phi^{\prime \alpha}(x^{\prime})-\phi^{\alpha}(x), \cr
+\delta x^{\mu}~:=~&x^{\prime \mu}-x^{\mu},\end{align}
+we define a vertical transformation
+\begin{align}  \delta_0 \phi^{\alpha}(x)~:=~&\phi^{\prime \alpha}(x)-\phi^{\alpha}(x)\cr
+~=~&\delta \phi^{\alpha}(x)-\delta x^{\mu} ~d_{\mu}\phi^{\alpha}(x),\cr
+d_{\mu}~:=~&\frac{d}{dx^{\mu}},\end{align}
+which transforms the fields without transforming the spacetime points $x^\mu$. This is important because we want to isolate the field dynamics, if we transformed the spacetime points then we would introduce other variational terms like additional derivatives and the metric tensor. The quasi-symmetry implies that the Lagrangian density transforms with a total spacetime derivative;
+\begin{align}  \delta \mathbb{L}~=~&d_{\mu} f^{\mu}~d^nx, \cr
+\delta_0 \mathbb{L}~=~&d_{\mu}(f^{\mu}-{\cal L}~\delta x^{\mu})~d^nx.\end{align}
+	where $\mathbb{L} = \mathcal{L}\ d^nx$. Then the infinitesimal transformation of the equations of motion is;
+\[
+	\delta e_{\alpha}(x)~=~\delta_0 e_{\alpha}(x) + \delta x^{\mu}
+\]
+because the equations of motion are satisfied $e_\alpha(x) = 0 \implies d_\mu e_\alpha(x) \approx 0$. This step again assumes that the spacetime derivative of the equations of motion has terms that vanish on the boundary, so we have;
+\[
+	\delta e_{\alpha}(x)\approx~\delta_0 e_{\alpha}(x)
+\]
+We expand $\delta_0 e_\alpha(x)$ in terms of field variations;
+\begin{align*}
+	\delta e_\alpha(x) &\approx \delta_0 e_\alpha(x) \\
+	&= \frac{\partial e_{\alpha}(x)}{\partial\phi^{\beta}(x)}\delta_0\phi^{\beta}(x) +\sum_{\mu}\frac{\partial e_{\alpha}(x)}{\partial(\partial_{\mu}\phi^{\beta}(x))}d_{\mu}\delta_0\phi^{\beta}(x) +\sum_{\mu\leq \nu }\frac{\partial e_{\alpha}(x)}{\partial(\partial_{\mu}\partial_{\nu}\phi^{\beta}(x))}d_{\mu}d_{\nu}\delta_0\phi^{\beta}(x)
+\end{align*}
+and then we take the first order term and re-write the field variation as a functional derivative(integration by parts);
+\[
+	\delta e_\alpha(x) = \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta e_{\alpha}(x)}{\delta \phi^{\beta}(y)}
+\]
+because $e_\alpha(x) = \frac{\delta S_V\left[\phi\right]}{\delta \phi^\alpha(x)}$ we obtain;
+\[
+	\delta e_\alpha(x) = \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta^2 S_V[\phi]}{\delta \phi^{\beta}(y)\delta \phi^{\alpha}(x)}
+\]
+Using the fact that funcational derivatives can be interchanged meaning;
+\[
+	\frac{\delta^2 S_V[\phi]}{\delta \phi^{\beta}(y)\delta \phi^{\alpha}(x)} = \frac{\delta^2 S_V[\phi]}{\delta \phi^{\alpha}(x)\delta \phi^{\beta}(y)}
+\]
+we can write
+\begin{align*}
+	\int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta^2 S_V[\phi]}{\delta \phi^{\beta}(y)\delta \phi^{\alpha}(x)} &= \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta^2 S_V[\phi]}{\delta \phi^{\alpha}(x)\delta \phi^{\beta}(y)} \\
+														        &= \frac{\delta}{\delta \phi^{\alpha}(x)} \int_V\! d^ny~ \delta_0\phi^{\beta}(y)\frac{\delta S_V[\phi]}{\delta \phi^{\beta}(y)} -\int_V\! d^ny~ \frac{\delta(\delta_0\phi^{\beta}(y))}{\delta \phi^{\alpha}(x)} \frac{\delta S[\phi]}{\delta \phi^{\beta}(y)} \\
+	&= \frac{\delta(\delta_0 S_V[\phi]) }{\delta \phi^{\alpha}(x)} -\int_V\! d^ny~ \frac{\delta(\delta_0\phi^{\beta}(y))}{\delta \phi^{\alpha}(x)} e_{\beta}(y)
+\end{align*}
+For the second term we have $e_\beta(y) = 0$ becuase the equations of motion are satisfied, therefore;
+\[
+	\delta e_\alpha(x) = \frac{\delta(\delta_0 S_V[\phi]) }{\delta \phi^{\alpha}(x)} = 0
+\]
+In the last step, we see that because the variation of the action under the vertical transformation is a boundary term;
+\begin{align*}  \delta_0 S_V[\phi]+\int_V\! d^nx~d_{\mu} \left({\cal L}~\delta x^{\mu} \right)  ~=~&\delta S_V[\phi]\cr
+~=~&\int_{\partial V} \!d^{n-1}x~(\ldots)\end{align*}
+
+\section{Local Infinitesimal Proof}
+We can also prove the infinitesimal transformation symmetry for $x$-locally;
+	\begin{align}  \delta_0 e_{\alpha}(x)~&= E_{\alpha(0)} d_{\mu}\left(f^{\mu}(x)-{\cal L}(x)~\delta x^{\mu}\right) - \sum_{k\geq 0} d^k\left( e_{\beta}(x) \cdot P_{\alpha(k)}\delta_0\phi^{\beta}(x) \right)\cr
+~&\approx~ 0  \end{align}
+where $P_{\alpha(k)}$ are higher order partial field derivatives;
+\[
+	P_{\alpha(k)} ~:=~\frac{\partial  }{\partial \phi^{\alpha(k)}}, \qquad k~\in~\mathbb{N}_0^n,
+\]
+and $E_{\alpha(k)}$ are Euler operators;
+\[
+E_{\alpha(k)} ~:=~\sum_{m\geq k}
+\begin{pmatrix} m \cr k\end{pmatrix}
+(-d)^m P_{\alpha(m)},
+\]
+The variation \( \delta_0 e_\alpha(x) \) can be expressed using the chain rule:
+\begin{align*}
+\delta_0 e_\alpha(x) &= \frac{\partial e_\alpha(x)}{\partial \phi^\beta(x)} \delta_0 \phi^\beta(x) + \frac{\partial e_\alpha(x)}{\partial (\partial_\mu \phi^\beta(x))} \partial_\mu \delta_0 \phi^\beta(x) + \cdots \nonumber \\
+&= E_{\alpha(0)} \delta_0 \mathcal{L}(x),
+\end{align*}
+where \( E_{\alpha(0)} \) is the Euler operator, and \( \delta_0 \mathcal{L}(x) \) is the vertical variation of the Lagrangian density. Applying the Euler operator to \( \delta_0 \mathcal{L}(x) \) defined by Eq.(9):
+\begin{align*}
+\delta_0 e_\alpha(x) &= E_{\alpha(0)} \delta_0 \mathcal{L}(x) \nonumber \\
+&= E_{\alpha(0)} \partial_\mu \left( f^\mu(x) - \mathcal{L}(x) \delta x^\mu \right).
+\end{align*}
+The Euler operator \( E_{\alpha(0)} \) acting on a total derivative can be expanded as:
+\begin{align*}
+E_{\alpha(0)} \partial_\mu (\cdots) &= \partial_\mu E_{\alpha(0)} (\cdots) - \sum_{k \geq 0} \partial^k \left( e_\beta(x) \cdot P_{\alpha(k)} \delta_0 \phi^\beta(x) \right),
+\end{align*}
+where:
+\begin{align*}
+P_{\alpha(k)} &= \frac{\partial}{\partial \phi^{\alpha(k)}(x)}, \quad k \in \mathbb{N}_0^n, \\
+\phi^{\alpha(k)}(x) &= \partial_{k_1} \partial_{k_2} \cdots \partial_{k_n} \phi^\alpha(x), \quad \text{with} \quad k = (k_1, k_2, \ldots, k_n).
+\end{align*}
+Since \( e_\beta(x) = 0 \), the second term vanishes:
+\[
+\sum_{k \geq 0} \partial^k \left( e_\beta(x) \cdot P_{\alpha(k)} \delta_0 \phi^\beta(x) \right) = 0.
+\]
+Therefore, we have:
+\[
+\delta_0 e_\alpha(x) = \partial_\mu E_{\alpha(0)} \left( f^\mu(x) - \mathcal{L}(x) \delta x^\mu \right).
+\]
+Since \( \delta_0 e_\alpha(x) \) reduces to a total derivative, and given that the Euler operator acting on a function yields zero when evaluated on-shell, we find:
+\[
+\delta_0 e_\alpha(x) \approx 0.
+\]
+
+
+\printbibliography
+
+
+\end{document}
