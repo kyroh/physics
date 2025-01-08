@@ -1,0 +1,304 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+
+\pgfplotsset{compat=1.18}
+
+\newcommand{\Eth}{E_{\text{th}}}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4A - Classical Mechanics \hfill Prof. Roger King
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Homework 15} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{Problem 1}
+
+1) In unit-vector notation, what is the torque about the origin on a particle located at coordinates (0, -4.0 m, 3.0 m) if that torque is due to (a) force $\vec{F}_1$ with components $\vec{F}_{1x} = 2.0$ N, $\vec{F}_{1y} = \vec{F}_{1z} = 0$, and (b) force $\vec{F}_2$ with components $\vec{F}_{2x} = 0,\ \vec{F}_{2y} = 2.0\ N,\ \vec{F}_{2z} = 4.0$ N?
+
+\subsection*{Solution}
+Torque is given by $\tau = \vec r \cross \vec F$, for $\vec F_1$
+\begin{align*}
+	\vec \tau_1 &= \begin{vmatrix}
+		\vu i & \vu j & \vu k \\
+		0.0 & -4.0 & 3.0 \\
+		2.0 & 0.0 & 0.0
+		\end{vmatrix} \\
+		    &= (0.0-0.0)\ \vu i - (0.0-6.0)\ \vu j + (0.0+8.0)\ \vu k \\
+		    &= \boxed{\left(6.0\ \vu j + 8.0\ \vu k \right) \text{N}\cdot\text{m}}
+\end{align*}
+and for $\vec F_2$
+\begin{align*}
+	\vec \tau_1 &= \begin{vmatrix}
+		\vu i & \vu j & \vu k \\
+		0.0 & -4.0 & 3.0 \\
+		0.0 & 2.0 & 4.0
+		\end{vmatrix} \\
+		    &= (-16.0-6.0)\ \vu i - (0.0-0.0)\ \vu j + (0.0-0.0)\ \vu k \\
+		    &= \boxed{\left(-22.0\ \vu i\right) \text{N}\cdot\text{m}}
+\end{align*}
+
+\section*{Problem 2}
+At one instant, force $\vec{F} = 4.0\ \vu{j}$ N acts on a 0.25 kg object that has position vector
+\[
+	\vec r = \left( 2.0\ \vu i - 2.0\ \vu k \right)\ \text{m}
+\]
+and velocity vector
+\[
+	\vec v = \left( -5.0\ \vu i + 5.0\ \vu k \right)\ \text{m}/\text{s}
+\]
+about the origin in unit-vector notation. What are (a) the object's angular momentum and (b) the torque acting on the object?
+
+\subsection*{Solution}
+The angular momentum is $\vec \ell = m\ \vec \omega = m \left( \vec r \cross \vec v \right)$ so we have;
+\begin{align*}
+	\vec \omega &= \begin{vmatrix}
+		\vu i & \vu j & \vu k \\
+		2.0 & 0.0 & -2.0 \\
+		-5.0 & 0.0 & 5.0
+		\end{vmatrix} \\
+		    &= (0.0-0.0)\ \vu i - (10.0-10.0)\ \vu j + (0.0-0.0)\ \vu k \\
+		    &= \boxed{0\ \text{kg}\cdot\text{m}^2/\text{s}}
+\end{align*}
+then the torque is $\vec \tau = \vec r \cross \vec F$;
+\begin{align*}
+	\vec \tau &= \begin{vmatrix}
+		\vu i & \vu j & \vu k \\
+		2.0 & 0.0 & -2.0 \\
+		0.0 & 4.0 & 0.0
+		\end{vmatrix} \\
+		    &= (0.0+8.0)\ \vu i - (0.0-0.0)\ \vu j + (8.0-0.0)\ \vu k \\
+		    &= \boxed{\left( 8.0\ \vu i\ + 8.0\ \vu k\right) \text{N}\cdot\text{m}}
+\end{align*}
+
+\section*{Problem 3}
+At the instant the displacement of a 2.00 kg object relative to the origin is
+\[
+	\vec d = \left( 2.00\ \vu i + 4.00\ \vu j - 3.00\ \vu k \right)\ \text{m}
+\]
+its velocity is
+\[
+	\vec v = \left( -6.00\ \vu i + 3.00\ \vu j + 3.00\ \vu k \right)\ \text{m}/\text{s}
+\]
+and it is subject to a force
+\[
+	\vec F = \left(6.00\ \vu i - 8.00\ \vu j + 4.00\ \vu k \right)\ \text{N}
+\]
+Find (a) the acceleration of the object, (b) the angular momentum of the object about the origin, (c) the torque about the origin acting on the object, and (d) the angle between the velocity of the object and the force acting on the object.
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+Using Netwon's second law $F = ma$;
+\[
+	\vec a = \frac{\vec F}{m} = \boxed{\left(3.00\ \vu i - 4.00\ \vu j + 2.00\ \vu k \right)\ \text{m}/\text{s}^2}
+\]
+\subsubsection*{Part b:}
+First we find $\vec p$ by
+\[
+	\vec p = m\ \vec v = -12.0\ \vu i + 6.0\ \vu j + 6.0\ \vu k
+\]
+then
+\begin{align*}
+	\vec \ell &= \begin{vmatrix}
+		\vu i & \vu j & \vu k \\
+		2.0 & 4.0 & -3.0 \\
+		-12.0 & 6.0 & 6.0
+		\end{vmatrix} \\
+		    &= (24.0 + 18.0)\ \vu i - (12.0-36.0)\ \vu j + (12.0+48.0)\ \vu k \\
+		    &= \boxed{\left( 42.0\ \vu i\ + 24.0\ \vu j + 60.0\ \vu k\right) \text{kg}\cdot\text{m}^2/\text{s}}
+\end{align*}
+
+\subsubsection*{Part c:}
+\begin{align*}
+	\vec \ell &= \begin{vmatrix}
+		\vu i & \vu j & \vu k \\
+		2.0 & 4.0 & -3.0 \\
+		6.0 & -8.0 & 4.0
+		\end{vmatrix} \\
+		    &= (16.0 + 24.0)\ \vu i - (8.0+18.0)\ \vu j + (-16.0+24.0)\ \vu k \\
+		    &= \boxed{\left( -8.0\ \vu i\ - 26.0\ \vu j - 40.0\ \vu k\right) \text{N}\cdot\text{m}}
+\end{align*}
+
+\subsubsection*{Part d:}
+\[
+	\cos \theta = \frac{\vec F \cdot \vec v}{F v} = \arccos \left( \frac{-36 -24 + 12}{\sqrt{116} \sqrt{54}}\right) = \boxed{127.3^\circ}
+\]
+
+\section*{Problem 4}
+The angular momentum of a flywheel having a rotational inertia of 0.140 kg$\cdot$m$^2$ about its central axis decreases from 3.00 to 0.800 kg$\cdot$m$^2$/s in 1.50 s. (a) What is the magnitude of the average torque acting on the flywheel about its central axis during this period? (b) Assuming a constant angular acceleration, through what angle does the flywheel turn? (c) How much work is done on the wheel? (d) What is the average power of the flywheel?
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+The torque $\tau$ is related to the rate of change of angular momentum by:
+\[
+\tau = \frac{\Delta L}{\Delta t}
+\]
+where $\Delta L = L_f - L_i$ and $\Delta t = 1.50\ \text{s}$. Substituting:
+\[
+\tau = \frac{0.800 - 3.00}{1.50} = -1.47\ \text{N}\cdot\text{m}
+\]
+The magnitude of the torque is:
+\[
+\tau = \boxed{1.47\ \text{N}\cdot\text{m}}
+\]
+
+\subsubsection*{Part b:}
+Assuming constant angular acceleration $\alpha$, the angular displacement $\theta$ is given by:
+\[
+\theta = \frac{1}{2} \left( \omega_i + \omega_f \right) t
+\]
+The initial and final angular velocities are:
+\[
+\omega_i = \frac{L_i}{I},\quad \omega_f = \frac{L_f}{I}
+\]
+Substituting $I = 0.140$, $L_i = 3.00$, $L_f = 0.800$:
+\[
+\omega_i = \frac{3.00}{0.140} = 21.43\ \text{rad/s}, \quad \omega_f = \frac{0.800}{0.140} = 5.71\ \text{rad/s}
+\]
+\[
+\theta = \frac{1}{2} \left( 21.43 + 5.71 \right) (1.50) = 20.57\ \text{rad}
+\]
+\[
+\theta = \boxed{20.6\ \text{rad}}
+\]
+
+\subsubsection*{Part c:}
+The work done $W$ on the wheel is the change in rotational kinetic energy:
+\[
+W = \Delta K = \frac{1}{2} I \omega_f^2 - \frac{1}{2} I \omega_i^2
+\]
+Substituting:
+\[
+W = \frac{1}{2} (0.140) (5.71^2) - \frac{1}{2} (0.140) (21.43^2)
+\]
+\[
+W = 2.28 - 32.14 = -29.86\ \text{J}
+\]
+\[
+W = \boxed{-29.9\ \text{J}}
+\]
+
+\subsubsection*{Part d:}
+The average power $P$ is:
+\[
+P = \frac{W}{\Delta t} = \frac{-29.86}{1.50} = -19.91\ \text{W}
+\]
+The magnitude of the average power is:
+\[
+P = \boxed{19.9\ \text{W}}
+\]
+
+\section*{Problem 5}
+Force $\vec F = \left( -8.00\ \vu i + 6.00\ \vu j \right)\ \text{N}$ acts on a particle with position vector $\vec r = \left( 3.00\ \vu i + 4.00\ \vu j \right)\ \text{m}$. What are (a) the torque on the particle about the origin, in unit-vector notation, and (b) the angle between the directions of $\vec r$ and $\vec F$?
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+The torque is:
+\[
+\vec \tau = \vec r \cross \vec F
+\]
+\[
+\vec \tau = \begin{vmatrix}
+\vu i & \vu j & \vu k \\
+3.00 & 4.00 & 0.00 \\
+-8.00 & 6.00 & 0.00
+\end{vmatrix}
+\]
+\[
+\vec \tau = \left(0.0 - 0.0\right)\ \vu i - \left(0.0 - 0.0\right)\ \vu j + \left(18.0 - (-32.0)\right)\ \vu k
+\]
+\[
+\vec \tau = \boxed{50.0\ \vu k\ \text{N}\cdot\text{m}}
+\]
+
+\subsubsection*{Part b:}
+The angle $\theta$ between $\vec r$ and $\vec F$ is:
+\[
+\cos \theta = \frac{\vec r \cdot \vec F}{r F}
+\]
+\[
+\vec r \cdot \vec F = (3.00)(-8.00) + (4.00)(6.00) = -24.0 + 24.0 = 0.0
+\]
+\[
+\cos \theta = \frac{0.0}{r F} = 0,\quad \theta = \boxed{90.0^\circ}
+\]
+
+
+\section*{Problem 6}
+At time $t$, the vector $\vec r = 4.0t^2\ \vu i - \left( 2.0t + 6.0t^2\right)\ \vu j$ gives the position of a 3.0 kg particle relative to the origin of an $xy$ coordinate system ($\vec r$ is in meters and $t$ is in seconds). (a) Find an expression for the torque acting on the particle relative to the origin. (b) Is the magnitude of the particle's angular momentum relative to the origin increasing, decreasing, or unchanging?
+
+\subsection*{Solution}
+\subsubsection*{Part a:}
+The torque is given by:
+\[
+\vec \tau = \vec r \cross \vec F,\quad \vec F = m \vec a
+\]
+First, calculate velocity $\vec v$ and acceleration $\vec a$:
+\[
+\vec v = \frac{d\vec r}{dt} = 8.0t\ \vu i - \left( 2.0 + 12.0t \right)\ \vu j
+\]
+\[
+\vec a = \frac{d\vec v}{dt} = 8.0\ \vu i - 12.0\ \vu j
+\]
+\[
+\vec F = 3.0 (8.0\ \vu i - 12.0\ \vu j) = (24.0\ \vu i - 36.0\ \vu j)\ \text{N}
+\]
+Torque:
+\[
+\vec \tau = \begin{vmatrix}
+\vu i & \vu j & \vu k \\
+4.0t^2 & -(2.0t + 6.0t^2) & 0.0 \\
+24.0 & -36.0 & 0.0
+\end{vmatrix}
+\]
+\[
+\vec \tau = \left(0.0 - 0.0\right)\ \vu i - \left(0.0 - 0.0\right)\ \vu j + \left((-36.0)(4.0t^2) - (24.0)(-2.0t - 6.0t^2)\right)\ \vu k
+\]
+\[
+\vec \tau = \left(-144.0t^2 + 48.0t + 144.0t^2\right)\ \vu k = 48.0t\ \vu k
+\]
+\[
+\vec \tau = \boxed{48.0t\ \vu k\ \text{N}\cdot\text{m}}
+\]
+
+\subsubsection*{Part b:}
+The angular momentum $\vec \ell$ increases because $\vec \tau$ is nonzero and acts on the particle, causing $\frac{d\vec \ell}{dt} = \vec \tau$ to be nonzero.
+
+\section*{Problem 7}
+A rigid body rotates with constant angular velocity about a fixed axis. Show that its kinetic energy $K$ and angular momentum $L$ are related according to $K = \frac{L^2}{2I}$, where $I$ is the rotational intertia.
+
+\subsection*{Solution}
+The kinetic energy is:
+\[
+K = \frac{1}{2} I \omega^2
+\]
+The angular momentum is:
+\[
+L = I \omega,\quad \omega = \frac{L}{I}
+\]
+Substituting $\omega$ in $K$:
+\[
+K = \frac{1}{2} I \left(\frac{L}{I}\right)^2 = \frac{L^2}{2I}
+\]
+\[
+\boxed{K = \frac{L^2}{2I}}
+\]
+
+\end{document}

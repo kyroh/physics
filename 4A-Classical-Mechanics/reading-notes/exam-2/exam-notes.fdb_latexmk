@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731637967.51461 "exam-notes.tex" "exam-notes.pdf" "exam-notes" 1731637968.02833 0
+["pdflatex"] 1734487667.91058 "exam-notes.tex" "exam-notes.pdf" "exam-notes" 1734487668.42683 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1727349926 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtcxr.tfm" 1727349926 1368 7af309acf53bb727783600185f629f47 ""
@@ -179,10 +179,10 @@
   "/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1727349926 310 4b5d6fe830337242ef847b3bff48ba21 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727349926 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731102615.8087 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731102560 7112995 9ce3729888dcf529e0d1af720f317f8a ""
-  "exam-notes.aux" 1731637967.9817 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "exam-notes.tex" 1731637966.9117 4880 d579fe59335869dbf8350233d332c399 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1733172773.28378 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1733172729 7112988 e7577bdc4b2b640f7c0a9ed445ef96eb ""
+  "exam-notes.aux" 1734487668.38155 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "exam-notes.tex" 1734487666.52487 6377 3b8c17675e754b9e9c28805e23b676b2 ""
   (generated)
   "exam-notes.aux"
   "exam-notes.log"

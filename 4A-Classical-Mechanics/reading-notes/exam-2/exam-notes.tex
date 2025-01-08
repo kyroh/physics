@@ -23,6 +23,9 @@ Physics 4A - Classical Mechanics \hfill Aaron W. Tarajos
 \noindent\rule{\textwidth}{0.4pt}
 
 \begin{multicols}{2}
+\flushleft
+polar $\to$ component: $a_x = a\cos\theta \quad \text{and} \quad a_y = a\sin\theta$\\
+component $\to$ polar: $a = \sqrt{a_x^2 + a_y^2} \quad \text{and} \quad \tan\theta = \frac{a_y}{a_x}$
 \subsection*{Friction}
 Static friction is equal to the opposing force, up to a maximum given by;
 \[
@@ -131,8 +134,6 @@ Momentum is conserved (one of the fundamental conservation laws.
 
 \end{multicols}
 
-\pagebreak
-
 \begin{multicols}{2}
 \subsection*{Collisions}
 Perfectly elastic $\implies$ kinetic energy is conserved \\
@@ -172,13 +173,18 @@ angular acceleration is
 \[
 	\alpha = \frac{d^2\theta^2}{dt^2}
 \]
-kinematic equations
-\begin{align*}
-	\Delta \theta &= \omega_0 t + \frac{1}{2}\alpha t^2 \\
-	\omega &= \omega_0 + \alpha t \\
-	\omega^2 &= \omega_0^2 + 2 \alpha \Delta \theta \\
-	\omega_\text{avg} &= \frac{\omega + \omega_0}{2}
-\end{align*}
+kinematic equations \\
+    \begin{tabular}{|l|l|}
+        \hline
+        Variable & Equation \\
+        \hline
+        Velocity & $v = at + v_0$ \\
+        Position & $\Delta x = v_0t + \frac{1}{2}at^2$ \\
+        Missing $t$ & $v^2 = 2a\Delta x + v_0^2$ \\
+        Missing $a$ & $\Delta x = \frac{v +v_0}{2}t$ \\
+        Missing $v_0$ & $\Delta x = vt - \frac{1}{2}at^2$ \\
+        \hline
+    \end{tabular}\\
 other useful stuff;
 \begin{align*}
 	v_t &= \omega r \\
@@ -191,7 +197,56 @@ Centripetal acceleration;
 \]
 Period of revolution;
 \[
-	T = \frac{2 \pi r}{\omega}
+	T = \frac{2 \pi r}{v} = \frac{2 \pi}{\omega}
+\]
+
+\begin{tabular}{|l|l|}
+	\hline
+	Variable & Equation \\
+	\hline
+	Horizontal displacement & $\Delta x = v_0 \cos \theta t$ \\
+	Vertical displacement & $\Delta y = v_0 \sin \theta t - \frac{1}{2}gt^2$ \\
+	Vertical velocity & $v_y = v_0 \sin \theta - gt$ \\
+	Trajectory & $\Delta y = \tan \theta \Delta x - \frac{g \Delta x^2}{2(v_0\cos \theta)^2}$ \\
+	Range & $R = \frac{v_0^2 \sin 2\theta}{g}$ \\
+	Rolling ball incline & $a = -\frac{g \sin \theta}{1 + I_\text{com} / MR^2}$ \\
+	\hline
+\end{tabular}
+
+\subsection*{Oscillations}
+\[
+	x = x_m \cos(\omega t + \phi)
+\]
+\[
+	\omega = \sqrt{\frac{k}{m}}
+\]
+\[
+	T = 2 \pi \sqrt{\frac{m}{k}} \quad \text{and} \quad T = \frac{1}{f}
+\]
+
+\subsection*{Harmonic motion}
+\[
+	\tau = - \kappa \theta \implies I \alpha = - \kappa \theta
+\]
+for a simple pendulum
+\[
+	\omega = \sqrt{\frac{g}{L}}
+\]
+physical pendulum
+\[
+	\omega = \sqrt{\frac{mgL}{I}}
+\]
+and
+\[
+	I = I_\text{com} + mR^2
+\]
+dampening force
+\[
+	F_d = -bv \quad \text{and} \quad x(t) = e^\frac{-bt}{2m} \cos (\omega^\prime)t + \phi
+\]
+where
+\[
+	\omega^\prime = \sqrt{\frac{k}{m}-\frac{b^2}{4m^2}}
 \]
 
 \subsection*{Useful units}
