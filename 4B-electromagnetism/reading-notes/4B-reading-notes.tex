@@ -1,0 +1,287 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{txfonts}
+\usepackage{physics}
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\noindent
+Physics 4B - Electromagnetism \hfill Prof. Alfred Cauthen
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Reading Notes} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{21-1 Coulomb's Law}
+
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item Coulomb's Law describes the force $F$ between two point charges $q_1$ and $q_2$ separated by a distance $r$:
+    \[
+    F = k \frac{|q_1 q_2|}{r^2}, \quad \text{where } k = \frac{1}{4\pi\varepsilon_0} \approx 8.99 \times 10^9 \text{ N}\cdot\text{m}^2/\text{C}^2.
+    \]
+    \item Charges with the same sign repel, while charges with opposite signs attract.
+    \item Conductors allow free movement of electrons, enabling charge to distribute across the surface or flow to other objects when connected. Examples include metals like copper and aluminum.
+    \item Insulators prevent the free movement of charge. Charge remains localized where it is applied. Examples include rubber, glass, and plastic.
+    \item Induced charge: A nearby charged object can cause charge redistribution in a conductor, creating areas of positive or negative charge without transferring actual charge.
+    \item Shell Theorems:
+    \begin{itemize}
+        \item A charged particle outside a uniformly charged shell is attracted or repelled as if the shell's charge were concentrated at its center.
+        \item A charged particle inside a uniformly charged shell experiences no net electrostatic force.
+    \end{itemize}
+    \item Electric charge is quantized in units of the elementary charge $e \approx 1.602 \times 10^{-19}$ C.
+\end{itemize}
+
+\subsection*{Electric Charge}
+\begin{itemize}
+    \item Two types of charge exist: positive and negative.
+    \item Electrically neutral objects have equal amounts of positive and negative charge.
+    \item Excess charge refers to an imbalance of charge, where an object has either more positive or more negative charge than neutral.
+    \item For example, rubbing a glass rod with silk transfers electrons from the rod to the silk, leaving the rod positively charged and the silk negatively charged.
+\end{itemize}
+
+\subsection*{Conductors and Insulators}
+\begin{itemize}
+    \item \textbf{Conductors:} These are materials where charge (usually electrons) can move freely. Examples include metals like copper and aluminum. In conductors, excess charge resides on the surface due to mutual repulsion and can redistribute itself when the conductor is connected to a grounding source or another conductor.
+    \item \textbf{Insulators:} These materials prevent the free movement of charge. Examples include rubber, plastic, and glass. When charge is applied to an insulator, it remains fixed at the point of application rather than spreading across the surface.
+    \item \textbf{Semiconductors:} These are intermediate materials, like silicon, which can conduct electricity under specific conditions (e.g., doping or temperature changes).
+    \item \textbf{Superconductors:} These materials, at sufficiently low temperatures, allow charge to flow without resistance.
+\end{itemize}
+
+\subsection*{Coulomb's Law}
+\begin{itemize}
+    \item Applies only to point-like charges or objects that can be approximated as point charges.
+    \item Forces are vector quantities: net force is the vector sum of individual forces.
+    \item Analogous to Newton's law of gravitation but can be attractive or repulsive depending on charge.
+\end{itemize}
+
+\subsection*{Worked Example}
+Two point charges $q_1 = +1 \text{ C}$ and $q_2 = -2 \text{ C}$ are separated by $r = 1 \text{ m}$. Calculate the force between them:
+\begin{align*}
+F &= k \frac{|q_1 q_2|}{r^2} \\
+  &= (8.99 \times 10^9) \frac{|1 \cdot (-2)|}{1^2} \\
+  &= 1.798 \times 10^{10} \text{ N} \text{ (attractive force)}.
+\end{align*}
+
+\section*{21-2 Charge Is Quantized}
+\begin{itemize}
+    \item Electric charge is discrete and quantized: $q = n e$, where $n$ is an integer.
+    \item The smallest unit of charge is the elementary charge $e$.
+    \item For example, a particle can have a charge of $+2e$ or $-3e$ but not $0.5e$.
+\end{itemize}
+
+\section*{21-3 Charge Is Conserved}
+\begin{itemize}
+    \item In any isolated system, the total charge remains constant.
+    \item Examples include:
+    \begin{itemize}
+        \item Pair production: $\gamma \to e^- + e^+$, where a photon creates a particle-antiparticle pair with equal and opposite charges.
+        \item Annihilation: $e^- + e^+ \to \gamma + \gamma$, where the total charge before and after remains zero.
+    \end{itemize}
+    \item Conservation of charge means charge can neither be created nor destroyed, only transferred between objects.
+\end{itemize}
+
+\section*{22-1 The Electric Field}
+
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item A charged particle sets up an electric field $\vec{E}$ in the surrounding space. This field is a vector quantity with both magnitude and direction.
+    \item The electric field $\vec{E}$ at any point is defined as the electrostatic force $\vec{F}$ experienced by a positive test charge $q_0$ placed at that point, divided by the magnitude of the test charge:
+    \[
+    \vec{E} = \frac{\vec{F}}{q_0}.
+    \]
+    \item Electric field lines visually represent the field:
+    \begin{itemize}
+        \item The direction of the field at a point is tangent to the field line at that point.
+        \item The density of field lines indicates the strength of the field.
+        \item Field lines originate on positive charges and terminate on negative charges.
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Explanation of Action at a Distance}
+\begin{itemize}
+    \item A charged particle creates an electric field at all points in the surrounding space, even in a vacuum.
+    \item Another particle placed in this field experiences a force due to the interaction with the electric field.
+    \item This interaction explains how charged particles exert forces on each other without direct contact.
+\end{itemize}
+
+\subsection*{Worked Example: Electric Field from a Point Charge}
+\begin{itemize}
+    \item The magnitude of the electric field $E$ due to a point charge $q$ at a distance $r$ is given by:
+    \[
+    E = \frac{1}{4\pi\varepsilon_0} \frac{|q|}{r^2},
+    \]
+    where $\varepsilon_0 \approx 8.85 \times 10^{-12}$ C$^2$/N$\cdot$m$^2$ is the permittivity of free space.
+    \item The direction of $\vec{E}$ is radially outward if $q > 0$ and radially inward if $q < 0$.
+\end{itemize}
+
+\section*{22-2 Electric Field Lines}
+\begin{itemize}
+    \item Electric field lines provide a way to visualize the behavior of the electric field:
+    \begin{itemize}
+        \item Closer spacing of lines indicates a stronger field.
+        \item Lines never cross.
+        \item Field lines begin on positive charges and end on negative charges.
+    \end{itemize}
+    \item Example: For two like charges, field lines repel, creating a symmetric pattern.
+    \item For opposite charges, field lines connect the charges, illustrating attraction.
+\end{itemize}
+
+\section*{22-3 Field Due to a Dipole}
+\begin{itemize}
+    \item An electric dipole consists of two charges of equal magnitude but opposite sign, separated by a distance $d$.
+    \item The dipole moment $\vec{p}$ is defined as:
+    \[
+    \vec{p} = q \vec{d},
+    \]
+    pointing from the negative to the positive charge.
+    \item The electric field at a point on the dipole axis is:
+    \[
+    E = \frac{1}{2\pi\varepsilon_0} \frac{p}{z^3},
+    \]
+    where $z$ is the distance from the center of the dipole to the point.
+\end{itemize}
+
+\section*{22-4 The Electric Field Due to a Line of Charge}
+\begin{itemize}
+    \item A line of charge creates an electric field that depends on the linear charge density $\lambda$ (charge per unit length).
+    \item At a perpendicular distance $r$ from an infinitely long line of charge, the magnitude of the electric field is:
+    \[
+    E = \frac{1}{2\pi\varepsilon_0} \frac{\lambda}{r}.
+    \]
+    \item The direction of the field is radial, pointing away from the line for positive $\lambda$ and toward the line for negative $\lambda$.
+\end{itemize}
+
+\section*{22-5 The Electric Field Due to a Charged Disk}
+\begin{itemize}
+    \item For a uniformly charged disk with surface charge density $\sigma$, the electric field at a point on its axis a distance $z$ from the center is:
+    \[
+    E = \frac{\sigma}{2\varepsilon_0} \left( 1 - \frac{z}{\sqrt{z^2 + R^2}} \right),
+    \]
+    where $R$ is the radius of the disk.
+    \item For points close to the disk ($z \ll R$), the field approaches:
+    \[
+    E \approx \frac{\sigma}{2\varepsilon_0}.
+    \]
+\end{itemize}
+
+\section*{22-6 A Point Charge in an Electric Field}
+\begin{itemize}
+    \item A point charge $q$ in an electric field $\vec{E}$ experiences a force given by:
+    \[
+    \vec{F} = q \vec{E}.
+    \]
+    \item The direction of the force depends on the sign of the charge:
+    \begin{itemize}
+        \item Positive charges are pushed in the direction of the field.
+        \item Negative charges are pushed opposite to the field direction.
+    \end{itemize}
+    \item The motion of the charge is determined by Newton’s second law:
+    \[
+    \vec{a} = \frac{\vec{F}}{m} = \frac{q \vec{E}}{m},
+    \]
+    where $m$ is the mass of the particle.
+\end{itemize}
+
+\section*{22-7 A Dipole in an Electric Field}
+\begin{itemize}
+    \item An electric dipole in a uniform electric field experiences a torque that tends to align the dipole with the field:
+    \[
+    \tau = \vec{p} \times \vec{E},
+    \]
+    where $\vec{p}$ is the dipole moment.
+    \item The potential energy of the dipole in the field is:
+    \[
+    U = -\vec{p} \cdot \vec{E}.
+    \]
+    \item In a non-uniform field, a dipole experiences a net force in addition to the torque, causing translational motion.
+\end{itemize}
+
+\section*{23-1 Electric Flux}
+
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item Electric flux $\Phi_E$ is a measure of the electric field passing through a given surface:
+    \[
+    \Phi_E = \vec{E} \cdot \vec{A} = EA\cos\theta,
+    \]
+    where:
+    \begin{itemize}
+        \item $\vec{E}$ is the electric field vector,
+        \item $\vec{A}$ is the vector normal to the surface with magnitude equal to the surface area $A$,
+        \item $\theta$ is the angle between $\vec{E}$ and $\vec{A}$.
+    \end{itemize}
+    \item For a closed surface, the total electric flux is the sum of contributions from all infinitesimal areas:
+    \[
+    \Phi_E = \oint \vec{E} \cdot d\vec{A}.
+    \]
+\end{itemize}
+
+\section*{23-2 Gauss's Law}
+\begin{itemize}
+    \item Gauss's Law relates the electric flux through a closed surface to the net charge enclosed within that surface:
+    \[
+    \oint \vec{E} \cdot d\vec{A} = \frac{q_\text{enc}}{\varepsilon_0},
+    \]
+    where $q_\text{enc}$ is the total charge enclosed by the surface and $\varepsilon_0$ is the permittivity of free space.
+    \item Gauss's Law is valid for any closed surface, regardless of shape or size.
+\end{itemize}
+
+\section*{23-3 A Charged Isolated Conductor}
+\begin{itemize}
+    \item In a charged isolated conductor in electrostatic equilibrium:
+    \begin{itemize}
+        \item The electric field inside the conductor is zero.
+        \item Any excess charge resides on the surface of the conductor.
+        \item The electric field just outside the conductor is perpendicular to the surface and proportional to the surface charge density:
+        \[
+        E = \frac{\sigma}{\varepsilon_0}.
+        \]
+    \end{itemize}
+\end{itemize}
+
+\section*{23-4 Applying Gauss’ Law: Cylindrical Symmetry}
+\begin{itemize}
+    \item For an infinitely long line of charge with linear charge density $\lambda$ (charge per unit length):
+    \[
+    E = \frac{\lambda}{2\pi\varepsilon_0 r},
+    \]
+    where $r$ is the radial distance from the line.
+    \item The electric field is radial and decreases with distance from the line.
+\end{itemize}
+
+\section*{23-5 Applying Gauss’ Law: Planar Symmetry}
+\begin{itemize}
+    \item For an infinite plane of charge with surface charge density $\sigma$:
+    \[
+    E = \frac{\sigma}{2\varepsilon_0}.
+    \]
+    \item The electric field is uniform and directed away from the plane if the charge is positive, and toward the plane if the charge is negative.
+\end{itemize}
+
+\section*{23-6 Applying Gauss’ Law: Spherical Symmetry}
+\begin{itemize}
+    \item For a point charge or a spherically symmetric charge distribution, the electric field at a distance $r$ from the center is:
+    \[
+    E = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2},
+    \]
+    where $q$ is the total enclosed charge.
+    \item Inside a uniformly charged sphere, the electric field varies linearly with $r$:
+    \[
+    E = \frac{q r}{4\pi\varepsilon_0 R^3},
+    \]
+    where $R$ is the radius of the sphere.
+\end{itemize}
+
+\end{document}
