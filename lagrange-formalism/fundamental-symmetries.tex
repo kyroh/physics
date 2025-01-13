@@ -1,0 +1,199 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\title{Fundamental Symmetries in Classical Field Theories}
+\author{Aaron W. Tarajos}
+
+\begin{document}
+
+\maketitle
+
+\section{Classical Mechanics Proof}
+
+\subsection{Theorem}
+If the action $S$ in a classical mechanical system is invariant under a generalized transformation of coordinates, then the equations of motion are covariant with respect to that same transformation.
+
+\subsection{Definitions}
+Let the action be defined as the integral of the Lagrangian over time
+\begin{equation}
+	S[q] = \int_{t_1}^{t_2} L\left(q, \dot q, t\right) \ dt
+\end{equation}
+where the equations of motion are given by the Euler-Lagrange equation;
+\begin{equation}
+    \frac{d}{dt}\left( \frac{\partial L}{\partial \dot q}\right) - \frac{\partial L}{\partial q} = 0\ .
+\end{equation}
+Then the action is invariant if the coordinate transformation
+\begin{equation}
+	q \to Q = Q\left(q,t\right) \quad \dot q \to \dot Q = \frac{\partial Q}{\partial q}q + \frac{\partial Q}{\partial t}
+\end{equation}
+changes the action by at most a time derivative;
+\begin{align}
+	L'(Q, \dot{Q}, t) = L(q, \dot{q}, t) + \frac{dF}{dt}
+\end{align}
+and the corresponding equations of motion are covariant if they hold their form under the same transformation.
+
+\subsection{Proof}
+Assume that the action is invariant, the Euler-Lagrange equations in terms of the transformed coordinates are;
+\begin{equation}
+	\frac{d}{dt} \left( \frac{\partial L'}{\partial \dot{Q}_i} \right) - \frac{\partial L'}{\partial Q_i} = 0
+\end{equation}
+Using the relationship between $L$ and $L'$, we can express the derivatives of $L'$ with respect to $Q$ and $\dot{Q}$ in terms of derivatives of $L$ with respect to $q$ and $\dot{q}$
+\begin{align}
+	\frac{\partial L'}{\partial Q_i} &= \frac{\partial}{\partial Q_i} \left( L(q, \dot{q}, t) + \frac{dF}{dt} \right) \cr
+	&= \frac{\partial L}{\partial Q_i} + \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) \cr
+	&= \left( \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} \right) + \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) \cr
+	&= \left( \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \cdot 0 \right) + \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) \cr
+	&= \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial Q_i} + \frac{\partial}{\partial Q_i}\left(\frac{dF}{dt}\right)
+\end{align}
+\[
+    \dot q = \frac{d}{dt}q(Q,t) = \frac{\partial q}{\partial Q}\dot Q + \frac{\partial q}{\partial t}
+\]
+Now consider the other term;
+\begin{align}
+	\frac{\partial L'}{\partial \dot{Q}_i} &= \frac{\partial}{\partial \dot{Q}_i} \left( L(q, \dot{q}, t) + \frac{dF}{dt} \right) \cr
+	&= \frac{\partial L}{\partial \dot{Q}_i} + \frac{\partial}{\partial \dot{Q}_i} \left( \frac{dF}{dt} \right) \cr
+	&= \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial \dot{Q}_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial \dot{Q}_i} + \frac{\partial}{\partial \dot{Q}_i} \left( \frac{\partial F}{\partial q_j}\dot q_j + \frac{\partial F}{\partial t} \right) \cr
+    &= \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial \dot{Q}_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial \dot{Q}_i} + \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_k}{\partial \dot Q_i}\dot q_j + \frac{\partial F}{\partial q_j} \frac{\partial \dot q_j}{\partial \dot Q_i} + \frac{\partial^2 F}{\partial t \partial q_j} \frac{\partial q_j}{\partial \dot Q_i} \cr
+ 	&= \frac{\partial L}{\partial q_j} \cdot 0 + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial \dot{Q}_i} + \frac{\partial^2 F}{\partial q_k \partial q_j} \cdot 0 \cdot \dot q_j + \frac{\partial F}{\partial q_j} \frac{\partial \dot q_j}{\partial \dot Q_i} + \frac{\partial^2 F}{\partial t \partial q_j} \cdot 0 \cr
+	&= \left(\frac{\partial L}{\partial \dot{q}_j}  + \frac{\partial F}{\partial q_j}\right) \frac{\partial \dot{q}_j}{\partial \dot{Q}_i}
+\end{align}
+because $q_j$ is a function of $Q_k$ and $t$ only, $\frac{\partial q_j}{\partial \dot{Q}_i} = 0$. Then we can use
+
+\[
+	\dot q_j = \frac{\partial q_j}{\partial Q_k}\dot Q_k + \frac{\partial q_j}{\partial t}
+\]
+to find $\frac{\partial \dot{q}_j}{\partial \dot{Q}_i}$
+\begin{align*}
+	\frac{\partial \dot{q}_j}{\partial \dot{Q}_i} &= \frac{\partial}{\partial \dot{Q}_i}\left(\frac{\partial q_j}{\partial Q_k}\dot Q_k + \frac{\partial q_j}{\partial t}\right) \cr
+	&= \frac{\partial}{\partial \dot{Q}_i}\left(\frac{\partial q_j}{\partial Q_k}\dot Q_k\right) + \frac{\partial}{\partial \dot{Q}_i}\left(\frac{\partial q_j}{\partial t}\right) \cr
+	&= \frac{\partial}{\partial \dot{Q}_i}\left(\frac{\partial q_j}{\partial Q_k}\dot Q_k\right) \cr
+	&= \frac{\partial q_j}{\partial Q_k}\frac{\partial \dot Q_k}{\partial \dot{Q}_i}
+\end{align*}
+then using $\frac{\partial \dot Q_k}{\partial \dot{Q}_i} = \delta_{ik}$, we have
+\begin{align*}
+	\frac{\partial \dot{q}_j}{\partial \dot{Q}_i} &= \frac{\partial q_j}{\partial Q_k} \delta_{ik} \\
+	&= \frac{\partial q_j}{\partial Q_i}
+\end{align*}
+substituting this into the equation (8) we obtain
+\begin{equation}
+	\frac{\partial L'}{\partial \dot{Q}_i} = \left(\frac{\partial L}{\partial \dot{q}_j}  + \frac{\partial F}{\partial q_j}\right) \frac{\partial q_j}{\partial Q_i}
+\end{equation}
+Now we can expand the time derivative of the first term in equation (6)
+\begin{align}
+	\frac{d}{dt} \left( \frac{\partial L'}{\partial \dot{Q}_i} \right) &= \frac{d}{dt} \left( \left(\frac{\partial L}{\partial \dot{q}_j}  + \frac{\partial F}{\partial q_j}\right) \frac{\partial q_j}{\partial Q_i} \right) \cr
+	&= \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \frac{\partial q_j}{\partial Q_i} + \frac{\partial F}{\partial q_j} \frac{\partial q_j}{\partial Q_i} \right) \cr
+	&= \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{d}{dt} \left( \frac{\partial q_j}{\partial Q_i} \right) + \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right) \frac{\partial q_j}{\partial Q_i} + \frac{\partial F}{\partial q_j} \frac{d}{dt} \left( \frac{\partial q_j}{\partial Q_i} \right) \cr
+	&= \left(\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) + \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right)\right) \frac{\partial q_j}{\partial Q_i} + \left(\frac{\partial L}{\partial \dot{q}_j} + \frac{\partial F}{\partial q_j}\right) \frac{\partial \dot{q}_j}{\partial Q_i}
+\end{align}
+which we use to re-write the Euler-Lagrange equations as;
+
+\begin{align}
+    &\left[ \left(\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) + \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right)\right) \frac{\partial q_j}{\partial Q_i} + \left(\frac{\partial L}{\partial \dot{q}_j} + \frac{\partial F}{\partial q_j}\right) \frac{\partial \dot{q}_j}{\partial Q_i} \right] - \left[ \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial Q_i} + \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) \right] = 0 \cr
+    &\left(\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) + \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right)\right) \frac{\partial q_j}{\partial Q_i} + \left(\frac{\partial L}{\partial \dot{q}_j} + \frac{\partial F}{\partial q_j}\right) \frac{\partial \dot{q}_j}{\partial Q_i} - \frac{\partial L}{\partial q_j} \frac{\partial q_j}{\partial Q_i} - \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) = 0 \cr
+    &\left[ \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) - \frac{\partial L}{\partial q_j} \right] \frac{\partial q_j}{\partial Q_i} + \left[ \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right) \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} + \frac{\partial F}{\partial q_j} \frac{\partial \dot{q}_j}{\partial Q_i} - \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) \right] = 0
+\end{align}
+The first term is zero by the Euler-Lagrange equations, so we are left with;
+\begin{equation}
+	\left[ \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right) \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} + \frac{\partial F}{\partial q_j} \frac{\partial \dot{q}_j}{\partial Q_i} - \frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) \right] = 0
+\end{equation}
+Then using
+\begin{equation}
+	\frac{dF}{dt} = \frac{\partial F}{\partial q_j}\dot q_j + \frac{\partial F}{\partial t}
+\end{equation}
+we expand the last term to get
+\begin{align}
+	\frac{\partial}{\partial Q_i} \left( \frac{dF}{dt} \right) &= \frac{\partial}{\partial Q_i} \left( \frac{\partial F}{\partial q_j} \dot{q}_j + \frac{\partial F}{\partial t} \right) \cr
+	&= \frac{\partial}{\partial Q_i} \left( \frac{\partial F}{\partial q_j} \dot{q}_j \right) + \frac{\partial}{\partial Q_i} \left( \frac{\partial F}{\partial t} \right) \cr
+	&= \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_k}{\partial Q_i} \dot{q}_j + \frac{\partial F}{\partial q_j} \frac{\partial \dot{q}_j}{\partial Q_i} + \frac{\partial^2 F}{\partial q_k \partial t} \frac{\partial q_k}{\partial Q_i} \cr
+	&= \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_k}{\partial Q_i} \dot{q}_j + \frac{\partial F}{\partial q_j} \frac{\partial \dot{q}_j}{\partial Q_i}
+\end{align}
+which uses the fact that
+\[
+	\frac{\partial^2 F}{\partial q_k \partial t} = 0
+\]
+Now we substitute this into equation (12) to get
+\begin{align}
+	&\left[ \frac{d}{dt} \left( \frac{\partial F}{\partial q_j} \right) \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} + \frac{\partial F}{\partial q_j} \frac{\partial \dot{q}_j}{\partial Q_i} - \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_k}{\partial Q_i} \dot{q}_j - \frac{\partial F}{\partial q_j} \frac{\partial \dot{q}_j}{\partial Q_i} \right] = 0 \cr
+	&\left[ \left(\frac{\partial^2 F}{\partial q_k \partial q_j}\dot q_k + \frac{\partial^2 F}{\partial t \partial q_j}\right) \frac{\partial q_j}{\partial Q_i} + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} - \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_k}{\partial Q_i} \dot{q}_j \right] = 0 \cr
+	&\left[ \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_j}{\partial Q_i}\dot q_k + \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} - \frac{\partial^2 F}{\partial q_k \partial q_j} \frac{\partial q_k}{\partial Q_i} \dot{q}_j \right] = 0 \cr
+	&\left[ \frac{\partial L}{\partial \dot{q}_j} \frac{\partial \dot{q}_j}{\partial Q_i} \right] = 0
+\end{align}
+
+\section{Field Theory Proof}
+
+\subsection{Theorem}
+If the action is invariant under a continuous transformation of the fields, then the field equations are covariant with respect to that same transformation. That is, the transformed field equations have the same form as the original equations when written in terms of the transformed fields.
+
+\subsection{Definitions}
+Let the action be defined as the integral of the Lagrangian density over $n$-dimensional spacetime:
+
+\begin{equation}
+S[\phi] = \int d^nx , \mathcal{L}\left(\phi, \partial_\mu \phi, x\right)
+\end{equation}
+where the equations of motion are given by the Euler-Lagrange equations:
+
+\begin{equation}
+\partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)}\right) - \frac{\partial \mathcal{L}}{\partial \phi} = 0\ .
+\end{equation}
+The action is invariant under a transformation $\phi \to \phi^\prime$ if:
+
+\begin{align}
+\mathcal{L}(\phi, \partial_\mu \phi, x) \to \mathcal{L}'(\phi', \partial_\mu \phi', x) = \mathcal{L}(\phi, \partial_\mu \phi, x) + \partial_\mu K^\mu(\phi, x)
+\end{align}
+where $K^\mu$ is some vector function of the fields and possibly spacetime coordinates.
+
+\subsection{Proof}
+Consider an infinitesimal transformation:
+
+\begin{align}
+\phi'(x) &= \phi(x) + \delta \phi(x) \cr
+\partial_\mu \phi'(x) &= \partial_\mu \phi(x) + \partial_\mu (\delta \phi(x))
+\end{align}
+Then the Lagrangian transforms as:
+
+\begin{align*}
+\mathcal{L}'(\phi', \partial_\mu \phi', x) &= \mathcal{L}(\phi + \delta \phi, \partial_\mu \phi + \partial_\mu (\delta \phi), x) \cr
+&= \mathcal{L}(\phi, \partial_\mu \phi, x) + \frac{\partial \mathcal{L}}{\partial \phi} \delta \phi + \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \partial_\mu (\delta \phi) + O((\delta \phi)^2)
+\end{align*}
+Since $\delta \phi$ is infinitesimal, we can neglect the higher-order terms $O((\delta \phi)^2)$.
+By equation (17),
+
+\begin{align*}
+\frac{\partial \mathcal{L}}{\partial \phi} \delta \phi + \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \partial_\mu (\delta \phi) &= \partial_\mu K^\mu
+\end{align*}
+By the product rule
+
+\begin{align*}
+\partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right) = \left( \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi + \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \partial_\mu (\delta \phi)
+\end{align*}
+then
+
+\begin{align*}
+\frac{\partial \mathcal{L}}{\partial \phi} \delta \phi + \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right) - \left( \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi &= \partial_\mu K^\mu \cr
+\left( \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi + \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right) &= \partial_\mu K^\mu \cr
+\left( \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi &= \partial_\mu \left( K^\mu - \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right)
+\end{align*}
+Let $\Omega$ be an arbitrary $n$-dimensional region in our spacetime, and let $\partial \Omega$ be its $(n-1)$-dimensional boundary. We integrate both sides of equation (10) over the region $\Omega$:
+\[
+\int_\Omega \left( \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi , d^n x = \int_\Omega \partial_\mu \left( K^\mu - \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right) , d^n x \quad .
+\]
+By Stokes' Theorem,
+
+\[
+\int_\Omega \left( \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi , d^n x = \oint_{\partial \Omega} \left( K^\mu - \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right) , dS_\mu \quad .
+\]
+where $dS_\mu$ is the outward-pointing $(n-1)$-dimensional surface element of $\partial \Omega$.
+We now impose boundary conditions such that the fields $\phi$, their variations $\delta \phi$, and the vector $K^\mu$ vanish sufficiently fast at the boundary $\partial \Omega$. Under these conditions, the surface integral vanishes:
+
+\[
+\oint_{\partial \Omega} \left( K^\mu - \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \delta \phi \right) , dS_\mu = 0 \quad .
+\]
+Therefore,
+
+\[
+\int_\Omega \left( \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) \delta \phi , d^n x = 0 \quad .
+\]
+
+\end{document}
