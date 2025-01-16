@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.10)  15 JAN 2025 19:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.7)  16 JAN 2025 01:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/aaron/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex
-(/home/aaron/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex
+**/home/kyroh/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex
+(/home/kyroh/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -597,25 +597,31 @@ File: image-4.png Graphic file (type png)
 <use image-4.png>
 Package pdftex.def Info: image-4.png  used on input line 92.
 (pdftex.def)             Requested size: 103.88786pt x 115.18002pt.
- [2 <./image-3.png (PNG copy)> <./image-4.png (PNG copy)>] [3] (./Tarajos-Aaron-homework-1.aux)
+ [2 <./image-3.png (PNG copy)> <./image-4.png (PNG copy)>] [3]
+<image-5.png, id=26, 197.73875pt x 159.59625pt>
+File: image-5.png Graphic file (type png)
+<use image-5.png>
+Package pdftex.def Info: image-5.png  used on input line 161.
+(pdftex.def)             Requested size: 148.3037pt x 119.69687pt.
+ [4 <./image-5.png (PNG copy)>] (./Tarajos-Aaron-homework-1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25244 strings out of 476076
- 628228 string characters out of 5793775
- 1935187 words of memory out of 5000000
- 46943 multiletter control sequences out of 15000+600000
+ 25251 strings out of 476076
+ 628353 string characters out of 5793776
+ 1948187 words of memory out of 5000000
+ 46950 multiletter control sequences out of 15000+600000
  585604 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,13n,107p,802b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,107p,802b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-1.pdf (3 pages, 83239 bytes).
+Output written on Tarajos-Aaron-homework-1.pdf (4 pages, 93909 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

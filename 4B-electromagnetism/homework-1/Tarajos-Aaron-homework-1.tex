@@ -30,8 +30,8 @@ Physics 4B - Electromagnetism \hfill Prof. Alfred Cauthen
 \noindent\rule{\textwidth}{0.4pt}
 
 \section*{21-3 Question 2}
-Figure 21-12 shows three pairs of identical spheres that are to be touched together and then separated. 
-The initial charges on them are indicated. 
+Figure 21-12 shows three pairs of identical spheres that are to be touched together and then separated.
+The initial charges on them are indicated.
 Rank the pairs according to (a) the magnitude of the charge transferred during touching and (b) the charge left on the positively charged sphere, greatest first.
 
 \begin{figure}[ht]
@@ -59,7 +59,7 @@ Rank the arrangements according to the magnitude of the net electrostatic force 
 \subsection*{Solution}
 The forces magnitude in $(a)$ and $(d)$ are the same because the configuration of the system is the same just with the opposite charge which changes the direction of the force not the magnitude.
 The same can be said for the relationship between $(b)$ and $(c)$, although their magnitude is less than the other configuration because the difference in charge of the particles acting on $Q$ create forces of the opposite sign in one direction which reduces the magnitude of the total force.
-Therefore we have; 
+Therefore we have;
 
 \[
     \boxed{a = d > b = c}
@@ -83,17 +83,17 @@ Therefore the net force in every other direction will sum to zero with the excep
 \]
 
 \section*{21-3 Problem 10}
-In Fig. 21-25, four particles form a square. The charges are $q1 = q4 = Q$ and $q2 = q3 = q$. 
-(a) What is $Q/q$ if the net electrostatic force on particles 1 and 4 is zero? 
+In Fig. 21-25, four particles form a square. The charges are $q1 = q4 = Q$ and $q2 = q3 = q$.
+(a) What is $Q/q$ if the net electrostatic force on particles 1 and 4 is zero?
 (b) Is there any value of q that makes the net electrostatic force on each of the four particles zero? Explain.
- 
+
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.75]{image-4.png}
 \end{figure}
 
 \subsection*{Solution}
-\textbf{Part a:} From the symmetry we just need to find the $Q/q$ such that 
+\textbf{Part a:} From the symmetry we just need to find the $Q/q$ such that
 \[
     F_{41,y} + F_{31} = 0
 \]
@@ -116,12 +116,51 @@ then
     \frac{Q^2}{2\sqrt{2}} &= - Qq \\
     \frac{Q}{q} &= \boxed{- 2 \sqrt{2}}
 \end{align*}
-\textbf{Part b:} No, there is no value of $q$ that would result in each of the net forces being zero because of the mirror symmetry of the configuration. 
+\textbf{Part b:} No, there is no value of $q$ that would result in each of the net forces being zero because of the mirror symmetry of the configuration.
 Meaning that $q/Q = -2\sqrt{2}$ if the net force on particle 3 is zero and it cannot be simultaneosly true that $q/Q = -2\sqrt{2} \wedge Q/q = -2\sqrt{2}$.
 
 \section*{21-3 Problem 11}
-In Fig. 21-25, the particles have charges $q1 = -q2 = 100$ nC and $q3 = -q4 = 200$ nC, and distance $a = 5.0$ cm. 
+In Fig. 21-25, the particles have charges $q_1 = -q_2 = 100$ nC and $q_3 = -q_4 = 200$ nC, and distance $a = 5.0$ cm.
 What are the (a) $x$ and (b) $y$ components of the net electrostatic force on particle 3?
+
+\subsection*{Solution}
+\textbf{Part a:} We have two forces acting on particle 3 in the $x$ direction, one being the force from particle 4 and the other being the $x$ component of particle 2.
+Both forces are attractive so we have.
+
+\begin{align*}
+    F_{3, x} &= k \frac{|q_3||q_4|}{a^2} + k \frac{|q_3||q_2|}{2a^2} \cdot \frac{1}{\sqrt{2}} \\
+    &= k \left( \frac{|q_3||q_4|}{a^2} + \frac{|q_3||q_2|}{2a^2\sqrt{2}} \right) \\
+    &= 8.99 \times 10^9 \cdot \text{N} \frac{\text{m}^2}{\text{C}^2} \left( \frac{|200||-200|}{5.0^2} \frac{\text{n$^2$C}^2}{\text{m}^2} + \frac{|200||-100|}{2(5.0^2)} \frac{1}{\sqrt{2}} \frac{\text{n$^2$C}^2}{\text{m}^2} \right) \\
+    &= 8.99 \times 10^9 \cdot \text{N} \frac{\text{m}^2}{\text{C}^2} \left( \frac{40000}{25.0} + \frac{20000}{50.0 \sqrt{2}}  \right) \frac{\text{n$^2$C}^2}{\text{m}^2}\\
+    &= \boxed{1.7 \times 10^{-5} \ \text{N}}
+\end{align*}
+\textbf{Part b:} Again we have two forces but now they are acting in opposite directions.
+The $y$ component of the force from particle 2 on particle 3 is in the positive y direction and the force from particle 1 on particle 3 is in the negative y direction.
+Therefore we have;
+
+\begin{align*}
+    F_{3, y} &= -k \frac{|q_3||q_1|}{a^2} + k \frac{|q_3||q_2|}{2a^2} \cdot \frac{1}{\sqrt{2}} \\
+    &= k \left( -\frac{|q_3||q_1|}{a^2} + \frac{|q_3||q_2|}{2a^2\sqrt{2}} \right) \\
+    &= 8.99 \times 10^9 \cdot \text{N} \frac{\text{m}^2}{\text{C}^2} \left( -\frac{|200||100|}{5.0^2} \frac{\text{n$^2$C}^2}{\text{m}^2} + \frac{|200||-100|}{2(5.0^2)} \frac{1}{\sqrt{2}} \frac{\text{n$^2$C}^2}{\text{m}^2} \right) \\
+    &= 8.99 \times 10^9 \cdot \text{N} \frac{\text{m}^2}{\text{C}^2} \left( -\frac{20000}{25.0} + \frac{20000}{50.0 \sqrt{2}}  \right) \frac{\text{n$^2$C}^2}{\text{m}^2}\\
+    &= \boxed{4.6 \times 10^{-6} \ \text{N}}
+\end{align*}
+
+\section*{21-3 Problem 23}
+In Fig. 21-32, particles 1 and 2 of charge $q_1 = q_2 = +3.20 \times 10^{-19}$ C are on a $y$ axis at distance $d = 17.0$ cm from the origin. 
+Particle 3 of charge $q_3 = +6.40 \times 10^{-19}$ C is moved gradually along the $x$ axis from $x = 0$ to $x = +5.0$ m. 
+At what values of x will the magnitude of the electrostatic force on the third particle from the other two particles be 
+(a) minimum and 
+(b) maximum? What are
+the 
+(c) minimum and 
+(d) maximum magnitudes?
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.75]{image-5.png}
+\end{figure}
+
 
 
 \end{document}

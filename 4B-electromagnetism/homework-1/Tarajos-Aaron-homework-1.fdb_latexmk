@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1736997332.95241 "/home/aaron/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex" "Tarajos-Aaron-homework-1.pdf" "Tarajos-Aaron-homework-1" 1736997333.51018 0
-  "/home/aaron/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex" 1736997332.75723 4650 25ef37a27ecc476c1e8b32b8ca180f26 ""
+["pdflatex"] 1737018813.76047 "/home/kyroh/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex" "Tarajos-Aaron-homework-1.pdf" "Tarajos-Aaron-homework-1" 1737018814.15316 0
+  "/home/kyroh/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex" 1737018813.61034 7068 de366429a3f93eb23582dad9ae0afb0f ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1736268207 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm" 1736268207 1020 c53143d3e3747b5c1149bd9a5ecd7b55 ""
@@ -176,14 +176,15 @@
   "/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1736268207 310 4b5d6fe830337242ef847b3bff48ba21 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1736268207 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1736552968.86878 5318467 8236939515598d005dfbcc2e1a40f206 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1736552959 7112993 792a76f651d75d281be11bc76a8a059c ""
-  "Tarajos-Aaron-homework-1.aux" 1736997333.46389 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "Tarajos-Aaron-homework-1.tex" 1736997332.75723 4650 25ef37a27ecc476c1e8b32b8ca180f26 ""
-  "image-2.png" 1736992397.29524 9166 288b852f27a936eca9acc6b779a78fcc ""
-  "image-3.png" 1736994720.42384 6675 234f22e3186b6c7330b5bde94d9bc1ad ""
-  "image-4.png" 1736995514.37885 3851 aa55d09e7dad82fad9e2435cf8e33632 ""
-  "image.png" 1736991885.65057 9097 97dc40be4fd55618116470af17e5308f ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1736310998.00859 5318467 8236939515598d005dfbcc2e1a40f206 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1736310962 7113027 999d1bc93a6b337ebe6442f3772e0a25 ""
+  "Tarajos-Aaron-homework-1.aux" 1737018814.10699 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "Tarajos-Aaron-homework-1.tex" 1737018813.61034 7068 de366429a3f93eb23582dad9ae0afb0f ""
+  "image-2.png" 1736999780.24807 9166 288b852f27a936eca9acc6b779a78fcc ""
+  "image-3.png" 1736999780.24807 6675 234f22e3186b6c7330b5bde94d9bc1ad ""
+  "image-4.png" 1736999780.24807 3851 aa55d09e7dad82fad9e2435cf8e33632 ""
+  "image-5.png" 1737018736.01171 5436 67673026e4cd9db4ecb683497a425982 ""
+  "image.png" 1736999780.24807 9097 97dc40be4fd55618116470af17e5308f ""
   (generated)
   "Tarajos-Aaron-homework-1.aux"
   "Tarajos-Aaron-homework-1.log"

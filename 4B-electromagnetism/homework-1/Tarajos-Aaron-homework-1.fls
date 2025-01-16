@@ -1,7 +1,7 @@
-PWD /home/aaron/University/physics/4B-electromagnetism/homework-1
+PWD /home/kyroh/University/physics/4B-electromagnetism/homework-1
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/aaron/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex
+INPUT /home/kyroh/University/physics/4B-electromagnetism/homework-1/Tarajos-Aaron-homework-1.tex
 OUTPUT Tarajos-Aaron-homework-1.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -344,6 +344,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT ./image-5.png
+INPUT ./image-5.png
+INPUT ./image-5.png
+INPUT ./image-5.png
+INPUT ./image-5.png
 INPUT Tarajos-Aaron-homework-1.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
