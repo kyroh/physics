@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1737787159.4522 "Tarajos-Aaron-homework-1.tex" "Tarajos-Aaron-homework-1.pdf" "Tarajos-Aaron-homework-1" 1737787159.87069 0
+["pdflatex"] 1738217242.09378 "Tarajos-Aaron-homework-2.tex" "Tarajos-Aaron-homework-2.pdf" "Tarajos-Aaron-homework-2" 1738217242.49017 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1736268207 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1736268207 520 4889cce2180234b97cad636b6039c722 ""
@@ -179,15 +179,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1736310998.00859 5318467 8236939515598d005dfbcc2e1a40f206 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1736310962 7113027 999d1bc93a6b337ebe6442f3772e0a25 ""
-  "Tarajos-Aaron-homework-1.aux" 1737787159.82807 32 77e0dffd05b653a64f0caf3eb9bb454a "pdflatex"
-  "Tarajos-Aaron-homework-1.tex" 1737787158.47142 10532 0d6d172aa0b4550d045757ab9ffd8b17 ""
-  "image-2.png" 1736999780.24807 9166 288b852f27a936eca9acc6b779a78fcc ""
-  "image-3.png" 1736999780.24807 6675 234f22e3186b6c7330b5bde94d9bc1ad ""
-  "image-4.png" 1736999780.24807 3851 aa55d09e7dad82fad9e2435cf8e33632 ""
-  "image-5.png" 1737018736.01171 5436 67673026e4cd9db4ecb683497a425982 ""
-  "image.png" 1736999780.24807 9097 97dc40be4fd55618116470af17e5308f ""
+  "Tarajos-Aaron-homework-2.aux" 1738217242.45043 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
+  "Tarajos-Aaron-homework-2.tex" 1738217241.96044 10660 6d16547733fe795f5ee2a38b81c8bd84 ""
+  "image-1.png" 1738195863.01354 14344 5ab7c6b437ff27b7fa2d4e1c42c04d9f ""
+  "image-2.png" 1738195884.39319 3418 1424bd231eebc5baf9c2322d406da010 ""
+  "image-3.png" 1738195928.42914 7628 7cb31e771147d4104b2c0b1084a8d6b9 ""
+  "image-4.png" 1738195949.92212 8490 e5b16fdb98766d5888b0c9e89959ce90 ""
   (generated)
-  "Tarajos-Aaron-homework-1.aux"
-  "Tarajos-Aaron-homework-1.log"
-  "Tarajos-Aaron-homework-1.pdf"
+  "Tarajos-Aaron-homework-2.aux"
+  "Tarajos-Aaron-homework-2.log"
+  "Tarajos-Aaron-homework-2.pdf"
   (rewritten before read)
