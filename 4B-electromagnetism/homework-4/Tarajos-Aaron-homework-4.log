@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.10)  10 FEB 2025 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.7)  11 FEB 2025 23:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -587,17 +587,17 @@ L3 programming layer <2024-02-20>
  ) 
 Here is how much of TeX's memory you used:
  25218 strings out of 476076
- 627542 string characters out of 5793775
- 1939187 words of memory out of 5000000
+ 627542 string characters out of 5793776
+ 1940187 words of memory out of 5000000
  46918 multiletter control sequences out of 15000+600000
  586782 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,13n,107p,740b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-4.pdf (2 pages, 51718 bytes).
+</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tarajos-Aaron-homework-4.pdf (2 pages, 55225 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
