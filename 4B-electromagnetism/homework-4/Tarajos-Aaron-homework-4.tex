@@ -107,24 +107,45 @@ so we have
 \end{align*}
 
 \section*{Chapter 22 Problem 60}
-A certain electric dipole is placed in a uniform electric field $\vec E$ of magnitude $40 \N/\C$ Figure 22-63 gives the magnitude $\tau$ of the torque on the dipole versus the angle $\theta$ between the field $\vec E$ and the dipole moment $\vec p$. The vertical axis scale is set by $\tau_s = 100 \times 10^{-28}\ \N \cdot \m $ What is the magnitude of $\vec p$?
+A certain electric dipole is placed in a uniform electric field $\vec E$ of magnitude $40.0\ \N/\C$ Figure 22-63 gives the magnitude $\tau$ of the torque on the dipole versus the angle $\theta$ between the field $\vec E$ and the dipole moment $\vec p$. The vertical axis scale is set by $\tau_s = 100 \times 10^{-28}\ \N \cdot \m $ What is the magnitude of $\vec p$?
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.55]{image-1.png}
+\end{figure}
+
 
 \subsection*{Solution}
-
+\[
+	\vec \tau_s = \vec E \times \vec p \implies \tau_s = Ep\sin \theta
+\]
+we know that at $\theta = \frac{\pi}{2}$ that $\sin \theta = 1$ which is the maximum value and the graph seems to imply that is where the torque is equivalent to the scale. Therefore;
+\begin{align*}
+	\tau_{s,\text{max}} &= Ep \\
+	p &= \frac{\tau_{s,\text{max}}}{E}   \\
+	p &= \frac{100 \times 10^{-28}}{40.0} \frac{\N \cdot \m \cdot C}{\N}\\
+	  &= \boxed{2.5\times10^{-28}\ \C \cdot \m}
+\end{align*}
 
 \section*{Chapter 22 Problem 76}
-In Figure 22-67, an electric dipole swings from an initial orientation $\theta_1 = 20.0^\circ$ to a final orientation $\theta_2 = 20.0^\circ$ in a uniform external electric field $\vec E$. The electric dipole moment is $1.60 \time 10^{-27}\ \C \cdot \m$; the field magnitude is $3.00 \time 10^6\ \N/\C$. What is the change in the dipole's potential energy?
+In Figure 22-67, an electric dipole swings from an initial orientation $\theta_1 = 20.0^\circ$ to a final orientation $\theta_2 = 20.0^\circ$ in a uniform external electric field $\vec E$. The electric dipole moment is $1.60 \times 10^{-27}\ \C \cdot \m$; the field magnitude is $3.00 \times 10^6\ \N/\C$. What is the change in the dipole's potential energy?
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{image-2.png}
+\end{figure}
 
 \subsection*{Solution}
+We just have to find the potential in both configurations and then take the difference,
+\begin{align*}
+	\Delta U &= Ep\cos(\theta_1) - Ep\cos(\theta_f) \\
+			 &= 3.00 \times 10^6 \cdot 1.60 \times 10^{-27} \cdot \cos(70) - 3.00 \times 10^6 \cdot 1.60 \times 10^{-27} \cdot \cos(110) \\
+			 &= \boxed{3.283\times10^{-21}\ \J}
+\end{align*}
 
 % \begin{figure}[ht]
 %     \centering
 %     \includegraphics[scale=0.75]{image.png}
 % \end{figure}
-
-\subsection*{Solution}
-
-
-
 
 \end{document}
