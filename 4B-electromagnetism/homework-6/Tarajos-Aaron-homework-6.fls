@@ -1,7 +1,7 @@
-PWD /home/aaron/University/physics/4B-electromagnetism/homework-6
+PWD /home/kyroh/University/physics/4B-electromagnetism/homework-6
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/aaron/University/physics/4B-electromagnetism/homework-6/Tarajos-Aaron-homework-6.tex
+INPUT Tarajos-Aaron-homework-6.tex
 OUTPUT Tarajos-Aaron-homework-6.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls

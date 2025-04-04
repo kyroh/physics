@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.24)  4 MAR 2025 20:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.1)  5 MAR 2025 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/aaron/university/physics/4B-electromagnetism/homework-7/Tarajos-Aaron-homework-7.tex
-(/home/aaron/university/physics/4B-electromagnetism/homework-7/Tarajos-Aaron-homework-7.tex
+**/home/kyroh/university/physics/4B-electromagnetism/homework-7/Tarajos-Aaron-homework-7.tex
+(/home/kyroh/university/physics/4B-electromagnetism/homework-7/Tarajos-Aaron-homework-7.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -570,48 +570,102 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 47.
+<image.png, id=4, 1025.8325pt x 287.0725pt>
+File: image.png Graphic file (type png)
+<use image.png>
+Package pdftex.def Info: image.png  used on input line 52.
+(pdftex.def)             Requested size: 241.84843pt x 67.67668pt.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 50.
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 53.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 56.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 59.
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 53.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 59.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 59.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 53.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 59.
  (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) [1
+)
+<image-2.png, id=5, 1026.83624pt x 317.185pt>
+File: image-2.png Graphic file (type png)
+<use image-2.png>
+Package pdftex.def Info: image-2.png  used on input line 78.
+(pdftex.def)             Requested size: 241.84843pt x 74.70303pt.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 132.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./image.png (PNG copy)> <./image-2.png (PNG copy)>]
+<image-3.png, id=17, 1017.8025pt x 441.65pt>
+File: image-3.png Graphic file (type png)
+<use image-3.png>
+Package pdftex.def Info: image-3.png  used on input line 124.
+(pdftex.def)             Requested size: 241.84843pt x 104.94012pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+<image-4.png, id=21, 488.82625pt x 449.68pt>
+File: image-4.png Graphic file (type png)
+<use image-4.png>
+Package pdftex.def Info: image-4.png  used on input line 140.
+(pdftex.def)             Requested size: 241.84843pt x 222.48593pt.
+ [3 <./image-3.png (PNG copy)> <./image-4.png (PNG copy)>]
+<image-5.png, id=25, 675.52374pt x 613.29124pt>
+File: image-5.png Graphic file (type png)
+<use image-5.png>
+Package pdftex.def Info: image-5.png  used on input line 154.
+(pdftex.def)             Requested size: 241.84843pt x 219.56813pt.
+<image-6.png, id=26, 667.49374pt x 397.485pt>
+File: image-6.png Graphic file (type png)
+<use image-6.png>
+Package pdftex.def Info: image-6.png  used on input line 173.
+(pdftex.def)             Requested size: 241.84843pt x 144.01639pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./image-5.png (PNG copy)>] [5 <./image-6.png (PNG copy)>]
+<image-7.png, id=34, 701.62125pt x 455.7025pt>
+File: image-7.png Graphic file (type png)
+<use image-7.png>
+Package pdftex.def Info: image-7.png  used on input line 222.
+(pdftex.def)             Requested size: 241.84843pt x 157.07845pt.
+ [6 <./image-7.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 239.
  (/usr/share/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [3] (./Tarajos-Aaron-homework-7.aux)
+)
+<image-8.png, id=38, 594.22pt x 593.21625pt>
+File: image-8.png Graphic file (type png)
+<use image-8.png>
+Package pdftex.def Info: image-8.png  used on input line 245.
+(pdftex.def)             Requested size: 241.84843pt x 241.44609pt.
+ [7 <./image-8.png (PNG copy)>] (./Tarajos-Aaron-homework-7.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25433 strings out of 476076
- 630853 string characters out of 5793775
- 1939187 words of memory out of 5000000
- 47118 multiletter control sequences out of 15000+600000
+ 25493 strings out of 476076
+ 631957 string characters out of 5793776
+ 1940187 words of memory out of 5000000
+ 47178 multiletter control sequences out of 15000+600000
  586371 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,10n,107p,802b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tarajos-Aaron-homework-7.pdf (3 pages, 55894 bytes).
+ 99i,13n,107p,802b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tarajos-Aaron-homework-7.pdf (7 pages, 1647597 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

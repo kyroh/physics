@@ -81,13 +81,13 @@ so now we adjust $Q$ and $r$ for the respective surfaces;
 therefore, all 3 fields are equal.
 
 \section*{Chapter 23 Question 6}
-Three infinite nonconducting sheets, with uniform positive surface charge densities $\sigma$, $2\sigma$, and $3\sigma$, are arranged to be parallel like the two sheets in Fig. 23-19a. What is their order, from left to right, if the electric field $E$ produced by the arrangement has magnitude $E = 0$ in one region and $E = 2\sigma/\epsilon_0$ in another region?
+Three infinite nonconducting sheets, with uniform positive surface charge densities $\sigma$, $2\sigma$, and $3\sigma$, are arranged to be parallel like the two sheets in Fig. 23-19a. What is their order, from left to right, if the electric field $E$ produced by the arrangement has magnitude $E = 0$ in one region and $E = 2\sigma/\varepsilon_0$ in another region?
 
 \subsection*{Solution}
 The order would be $3\sigma$, $1\sigma$, $2\sigma$ because the the electric field from one side of a single sheet of charge density $\sigma$ is given by;
 \begin{align*}
     \Phi &= \vec{E} \cdot \vec{A} \\
-    \vec{E} &= \frac{Q_\text{enc}}{\varepsilon_0} \\
+	\vec{E} \cdot \vec{A} &= \frac{Q_\text{enc}}{\varepsilon_0} \\
     \vec{E} \cdot \vec{A} &= \frac{\sigma \vec{A}}{\varepsilon_0} \\
     \vec{E} &= \frac{\sigma}{\varepsilon_0}
 \end{align*}
@@ -185,11 +185,24 @@ so we have;
 \section*{Chapter 23 Problem 22}
 An electron is released $9.0\ \centi \m$ from a very long nonconducting rod with a uniform $6.0\ \mu\C/\m$. What is the magnitude of the electron's initial acceleration?
 
+\subsection*{Solution}
+The field is given by;
+\[
+	E = \frac{\lambda}{2\pi \varepsilon r}
+\]
+and the force is just $q E$ so using Newton's second law
+\begin{align*}
+	a &= \frac{F}{m} \\
+	&= \frac{q\lambda}{2\pi \varepsilon_0 r m} \\
+	&= \frac{\left(1.602 \times 10.0^{-19}\right)\left(6.0 \times 10^{-6}\right)}{2\pi \varepsilon_0 (0.09)\left(9.109 \times 10^{-31}\right)} \\
+	&= \boxed{2.108\times10^{17}\ \m/\s^2}
+\end{align*}
+
 \section*{Chapter 23 Problem 28}
 A charge of uniform linear density $2.0\ \text{n}\C/\m$ is distributed along a long, thin, nonconducting rod. The rod is coaxial with a long conducting cylindrical shell (inner radius = $5.0\ \centi \m$, outer radius = $10\ \centi \m$). The net charge on the shell is zero. (a) What is the magnitude of the electric field $15\ \centi \m$ from the axis of the shell? What is the surface charge density on the (b) inner and (c) outer surface of the shell?
 
 \subsection*{Solution}
-We can use Gauss' law here;
+\textbf{Part a:} We can use Gauss' law here;
 \begin{align*}
     \vec{E} \cdot \vec{A} &= \frac{Q}{\varepsilon_0} \\
     \vec{E} \cdot 2\pi r L &= \frac{\lambda L}{\varepsilon_0} \\
@@ -197,7 +210,18 @@ We can use Gauss' law here;
     &= \frac{2 \times 10^{-9}}{2\pi \varepsilon_0 0.15} \\
     &= \boxed{239.781 \frac{\N}{\C}}
 \end{align*}
-
+\textbf{Part b:} The linear charge density of the inside of the shell must be equal but opposite to the rod. We convert that to the surface charge density by
+\begin{align*}
+	\sigma &= \frac{-\lambda}{2\pi r} \\
+		   &= \frac{-2.0 \times 10^{-9}}{2\pi 0.05} \\
+		   &= \boxed{-6.366\ \times 10^9\ \C/\m^2}
+\end{align*}
+\textbf{Part c:} We do the same for the outer shell surface but again the charge is opposite to the inner surface;
+\begin{align*}
+	\sigma &= \frac{-\lambda}{2\pi r} \\
+		   &= \frac{-2.0 \times 10^{-9}}{2\pi 0.10} \\
+		   &= \boxed{3.183\ \times 10^9\ \C/\m^2}
+\end{align*}
 
 \section*{Chapter 23 Problem 34}
 A small circular hole of radius $R = 1.80\ \centi \m$ has been cut in the middle of an infinite, flat, nonconducting surface that has uniform charge density $\sigma = 4.50\ \text{p}\C/\m^2$. A $z$ axis, with its origin at the hole's center, is perpendicular to the surface. In unit-vector notation, what is the electric field at point $P$ at $z = 2.56\ \centi \m$?

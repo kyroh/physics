@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+\usepackage{multicol}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=1cm, left=1cm, right=1cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Physics 4B - Electromagnetism \hfill Aaron W. Tarajos
+\begin{center}
+	\textbf{Exam 1 Notes}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{multicols}{2}
+\flushleft
+polar $\to$ component: $a_x = a\cos\theta \quad \text{and} \quad a_y = a\sin\theta$\\
+component $\to$ polar: $a = \sqrt{a_x^2 + a_y^2} \quad \text{and} \quad \tan\theta = \frac{a_y}{a_x}$
+
+\subsection*{Angular kinematics}
+It works the same as linear motion but with different variables. Position is defined by $\theta$ in radians;
+\[
+	\theta = \frac{S}{r}
+\]
+angular velocity is
+\[
+	\omega = \frac{d\theta}{dt}
+\]
+angular acceleration is
+\[
+	\alpha = \frac{d^2\theta^2}{dt^2}
+\]
+kinematic equations \\
+    \begin{tabular}{|l|l|}
+        \hline
+        Variable & Equation \\
+        \hline
+        Velocity & $v = at + v_0$ \\
+        Position & $\Delta x = v_0t + \frac{1}{2}at^2$ \\
+        Missing $t$ & $v^2 = 2a\Delta x + v_0^2$ \\
+        Missing $a$ & $\Delta x = \frac{v +v_0}{2}t$ \\
+        Missing $v_0$ & $\Delta x = vt - \frac{1}{2}at^2$ \\
+        \hline
+    \end{tabular}\\
+other useful stuff;
+\begin{align*}
+	v_t &= \omega r \\
+	a_t &= \alpha r
+\end{align*}
+for tangential acceleration and velocity. \\
+Centripetal acceleration;
+\[
+	a_c = \omega^2 r
+\]
+Period of revolution;
+\[
+	T = \frac{2 \pi r}{v} = \frac{2 \pi}{\omega}
+\]
+
+\begin{tabular}{|l|l|}
+	\hline
+	Variable & Equation \\
+	\hline
+	Horizontal displacement & $\Delta x = v_0 \cos \theta t$ \\
+	Vertical displacement & $\Delta y = v_0 \sin \theta t - \frac{1}{2}gt^2$ \\
+	Vertical velocity & $v_y = v_0 \sin \theta - gt$ \\
+	Trajectory & $\Delta y = \tan \theta \Delta x - \frac{g \Delta x^2}{2(v_0\cos \theta)^2}$ \\
+	Range & $R = \frac{v_0^2 \sin 2\theta}{g}$ \\
+	\hline
+\end{tabular}
+
+
+\subsection*{Useful units}
+Work: J $\rightarrow$ kg m$^2$/s$^2$ \\
+Impulse: N$\cdot$s $\rightarrow$ kg m/s \\
+Force: N $\rightarrow$ kg m/s$^2$
+
+
+\subsection*{Check your algebra you fucking idiot}
+
+\subsection*{Electrostatic Force}
+Coulomb's Law
+\[
+	\vec{F} = k\frac{q_1q_2}{r^2}
+\]
+
+\subsection*{Fields}
+Electric field for a point is just force but divide out $q_1$.\\
+Electric field due to a line of charge (point perpendicular to the end);
+\begin{align*}
+	\vec{E} &= \int_{-L}^0 k \frac{dq}{r^2}\ \vu r\\
+			&= \int_{-L}^0 k \frac{dq}{x^2 + z^2}\ \vu r \\
+			&= \int_{-L}^0 k \frac{\lambda dx}{x^2+z^2}\ \vu r \\
+			&= \int_{-L}^0 k \frac{\lambda dx}{x^2+z^2}\ \frac{-x\ \vu i + z\ \vu j}{\sqrt{x^2+z^2}} \\
+			&= k\lambda \left[ \frac{1}{\sqrt{z^2}}-\frac{1}{\sqrt{L^2+z^2}} \right]\ \vu i + \frac{k \lambda L}{z\left(L^2+z^2\right)^{1/2}}\ \vu j
+\end{align*}
+Electric field due to a disc;
+\begin{align*}
+	\vec{E} &= \int d\vec{E} \\
+			&= \int \frac{1}{4\pi\epsilon_0} \frac{dq}{r^2 + z^2}\ \vu r \\
+			&= \frac{1}{4\pi\epsilon_0} \int \frac{\sigma \cdot dA}{r^2+z^2}\ \vu r \\
+			&= \frac{1}{4\pi\epsilon_0} \int \frac{\sigma \cdot (2\pi r dr)}{r^2+z^2}\ \vu r \\
+			&= \frac{1}{4\pi\epsilon_0} \int \frac{\sigma \cdot (2r dr)}{\left(r^2+z^2\right)^{3/2}}\ z \vu j \\
+			&= \frac{\sigma z}{4\pi\epsilon_0} \int_0^R \frac{2r dr}{\left(r^2+z^2\right)^{3/2}} \vu j \\
+			&= \frac{\sigma}{2 \epsilon_0} \left(1 - \frac{z}{\sqrt{z^2+R^2}} \right)
+\end{align*}
+\textbf{Charge Density:} $dq = \lambda ds$ for a line, $dq = \sigma dA$ for a sufrace, etc... and these are simply $\frac{\text{charge}}{\text{quantity}}$ \\
+Electric Field due to a dipole;
+\[
+	\vec{E} = \frac{2kQd}{z^3\left(1-d^2/4z^2\right)^2}\ \vu k
+\]
+
+\subsection*{Dipole stuff}
+\begin{align*}
+	\vec{p} &= Qd\vu k \\
+	\vec{\tau} &= \vec{p} \times \vec{E} \\
+	U &= -\vec{p} \cdot \vec{E} \\
+	W &= - \Delta U
+\end{align*}
+
+\end{multicols}
+
+
+\end{document}
